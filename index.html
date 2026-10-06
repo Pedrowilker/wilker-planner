@@ -586,6 +586,26 @@ function renderRoadmap(){
  renderResourceLibrary('course');
 }
 function recentStudies(){if(!state.studySessions.length)return '<div class="muted">Registre seus estudos para acompanhar sua evolução.</div>';let out='';state.studySessions.slice().sort(function(a,b){return String(b.date).localeCompare(String(a.date))}).slice(0,5).forEach(function(x){out+='<div class="studyRecent"><div><b>'+esc(x.topic)+'</b><div class="muted">'+x.date+' · '+Number(x.hours).toFixed(1)+'h</div></div><button class="btn small danger" data-id="'+x.id+'" onclick="askDeleteStudy(this.dataset.id)">Excluir</button></div>'});return out}
+function qaStudyTabs(){
+ const modes={course:{title:'Cursos',hint:'Cursos completos, trilhas estruturadas e formação guiada.'},game:{title:'Jogos & desafios',hint:'Aprenda resolvendo fases, katas, labs e desafios.'},video:{title:'Vídeos',hint:'Aulas didáticas para aprender vendo e praticando junto.'},practice:{title:'Prática',hint:'Exercícios, laboratórios e desafios para escrever código.'}};
+ const panelMap={plan:'#studyTabPlan',resources:'#studyTabResources',college:'#studyTabCollege'};
+ qa('.studyTab').forEach(function(btn){
+  btn.onclick=function(){
+   qa('.studyTab').forEach(function(b){b.classList.toggle('active',b===btn)});
+   const tab=btn.dataset.tab;
+   Object.keys(panelMap).forEach(function(k){
+    const el=q(panelMap[k]);
+    if(el)el.classList.toggle('active',(tab==='plan'&&k==='plan')||(tab==='college'&&k==='college')||((modes[tab])&&k==='resources'));
+   });
+   if(modes[tab]){
+    const info=modes[tab],title=q('#libraryTitle'),hint=q('#libraryHint');
+    if(title)title.textContent=info.title;
+    if(hint)hint.textContent=info.hint;
+    if(typeof renderResourceLibrary==='function')renderResourceLibrary(tab);
+   }
+  };
+ });
+}
 function navigate(view){qa('.nav').forEach(function(n){n.classList.toggle('active',n.dataset.view===view)});qa('.view').forEach(function(v){v.classList.toggle('active',v.id===view)});const titles={dashboard:'Visão geral',tasks:'Tarefas',schedule:'Cronograma',finance:'Finanças',investments:'Investimentos',roadmap:'Trilha TI'};const hints={dashboard:'Seu centro pessoal de planejamento.',tasks:'Organize, priorize e mova suas tarefas.',schedule:'Veja sua semana sem perder o contexto.',finance:'Controle receitas, gastos, contas e metas.',investments:'Acompanhe seu patrimônio de forma simples.',roadmap:'Registre sua evolução e mantenha o foco.'};q('#pageTitle').textContent=titles[view]||'WILKER Planner';q('#pageHint').textContent=hints[view]||''}
 function renderAll(){q('#dateText').textContent=new Date().toLocaleDateString('pt-BR',{weekday:'long',day:'2-digit',month:'long',year:'numeric'});const status=q('.quickStat');const hint=q('#pageHint');if(hostedMode){if(status)status.innerHTML='<i class="quickDot"></i>Online · dados neste navegador';if(hint&&q('#pageTitle').textContent==='Visão geral')hint.textContent='Seu centro pessoal de planejamento, hospedado no GitHub Pages.'}else{if(status)status.innerHTML='<i class="quickDot"></i>Local · salvo automaticamente'}
  state=normalize(state);
