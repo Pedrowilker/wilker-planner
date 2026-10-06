@@ -83,6 +83,46 @@ input::placeholder,textarea::placeholder{color:#a4afbf}
 ::-webkit-scrollbar-thumb:hover{background:#b8c4d5;border:2px solid transparent;background-clip:padding-box}
 @media(max-width:700px){.topbar{backdrop-filter:none}.card:hover{transform:none}.taskRow:hover,.tableRow:hover{transform:none}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* ===== WILKER FINAL POLISH V5 ===== */
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+body{font-size:13px;letter-spacing:.002em}
+.app{width:100%;min-width:0}.sidebar{flex:0 0 250px;width:250px;height:100vh;min-height:0;position:sticky;top:0;overflow:auto;scrollbar-width:thin}.main{width:0;max-width:calc(100vw - 250px);min-width:0;overflow:hidden}.view{width:100%;max-width:100%;overflow:hidden}.grid{min-width:0}.grid>*{min-width:0}
+.topbar{min-width:0}.topbar>div:first-child{min-width:0}.topbar h1,.pageHint{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.toolbar{min-width:0}
+.stats{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.two{grid-template-columns:minmax(0,1.45fr) minmax(300px,.85fr)}
+.card{padding:20px;border-radius:16px}
+.stats .card{min-height:122px;display:flex;flex-direction:column;justify-content:center}
+.stats .label{font-size:9px;font-weight:800;letter-spacing:1.2px}.big{font-size:30px;line-height:1.05}.sub{font-size:11px}
+.nav{font-size:13px;min-height:42px;display:flex;align-items:center;gap:9px}
+.nav .navIcon{width:18px;height:18px;display:grid;place-items:center;flex:0 0 18px;color:currentColor}
+.nav .navIcon svg{width:17px;height:17px;stroke:currentColor;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.nav.active .navIcon{color:var(--blue)}
+.brand{padding-bottom:22px}.brand .logo{width:40px;height:40px}
+.local{padding:9px 10px}.localTitle{display:flex;align-items:center;justify-content:space-between;gap:6px;font-weight:800}.local small{color:var(--muted)}
+.sideActions{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:8px}
+.sideBtn{margin-top:0;padding:8px 7px;font-size:10px;display:flex;align-items:center;justify-content:center;gap:5px;white-space:nowrap}
+.sideBtn span{font-size:14px;line-height:1}
+.sideBtn input{display:none}
+.sectionTop{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:16px}
+.sectionTitle{font-size:18px;font-weight:850;letter-spacing:-.02em}
+.sectionHint{font-size:11px;color:var(--muted);margin-top:3px}
+.quickStat{display:flex;align-items:center;gap:8px;padding:7px 10px;border:1px solid var(--line);border-radius:999px;background:#fbfcff;color:#617088;font-size:10px;font-weight:750}
+.quickDot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px var(--green2)}
+.taskRow{grid-template-columns:24px 1fr auto 34px;padding:12px 13px}.taskRow .taskName{font-size:13px}.taskRow .meta{font-size:10px}
+.check{width:21px;height:21px;border-radius:6px;display:grid;place-items:center;font-size:12px;font-weight:900}
+.check.done{box-shadow:0 0 0 4px var(--green2)}
+.kcard{padding:13px}.kTitle{font-size:13px}.kMeta{font-size:10px}.kActions{margin-top:10px}
+.kanban{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.lane{min-width:0}
+.calendar{grid-template-columns:repeat(7,minmax(0,1fr))}
+.formGrid{min-width:0}.modalBox{width:min(720px,100%);border:1px solid rgba(228,233,241,.9)}
+.modal label{font-size:10px}.modal input,.modal select,.modal textarea{font-size:13px}
+.tableRow,.tableHead{min-width:0}.tableRow>div{min-width:0;overflow:hidden;text-overflow:ellipsis}
+.view.active{animation:viewIn .2s ease}
+.emptyState{display:grid;place-items:center;padding:30px;text-align:center;color:var(--muted)}
+.emptyState strong{color:var(--text);font-size:13px;margin-bottom:4px}
+@media(max-width:1100px){.sidebar{flex-basis:78px;width:78px}.main{max-width:calc(100vw - 78px)}.brand>div:last-child,.nav span,.sideBottom{display:none}.nav{justify-content:center}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.two{grid-template-columns:1fr}.kanban{grid-template-columns:1fr}}
+@media(max-width:700px){.sidebar{display:none}.main{max-width:100vw;width:100%}.stats{grid-template-columns:1fr}.two{grid-template-columns:1fr}.topbar{padding:0 16px}.topbar .toolbar{gap:5px}.topbar .btn{padding:8px}.topbar .quickStat{display:none}.view{padding:18px 15px 36px}.card{padding:16px}.calendar{grid-template-columns:1fr}.day{min-height:80px}}
 </style>
 </head>
 <body>
@@ -90,21 +130,20 @@ input::placeholder,textarea::placeholder{color:#a4afbf}
 <aside class="sidebar">
   <div class="brand"><div class="logo">W</div><div><b>WILKER</b><small>PLANNER</small></div></div>
   <nav>
-    <button class="nav active" data-view="dashboard">◈ <span>Visão geral</span></button>
-    <button class="nav" data-view="tasks">☷ <span>Tarefas</span></button>
-    <button class="nav" data-view="schedule">◷ <span>Cronograma</span></button>
-    <button class="nav" data-view="finance">R$ <span>Finanças</span></button>
-    <button class="nav" data-view="investments">◆ <span>Investimentos</span></button>
-    <button class="nav" data-view="roadmap">↗ <span>Trilha TI</span></button>
+    <button class="nav active" data-view="dashboard"><i class="navIcon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg></i><span>Visão geral</span></button>
+    <button class="nav" data-view="tasks"><i class="navIcon"><svg viewBox="0 0 24 24"><path d="M8 6h12"/><path d="M8 12h12"/><path d="M8 18h12"/><path d="M4 6h.01"/><path d="M4 12h.01"/><path d="M4 18h.01"/></svg></i><span>Tarefas</span></button>
+    <button class="nav" data-view="schedule"><i class="navIcon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v5l3 2"/></svg></i><span>Cronograma</span></button>
+    <button class="nav" data-view="finance"><i class="navIcon"><svg viewBox="0 0 24 24"><path d="M5 6h14"/><path d="M5 10h14"/><path d="M5 14h14"/><path d="M5 18h9"/></svg></i><span>Finanças</span></button>
+    <button class="nav" data-view="investments"><i class="navIcon"><svg viewBox="0 0 24 24"><path d="M5 17 9 13l3 3 7-8"/><path d="M15 8h4v4"/></svg></i><span>Investimentos</span></button>
+    <button class="nav" data-view="roadmap"><i class="navIcon"><svg viewBox="0 0 24 24"><path d="M5 19 19 5"/><path d="M10 5h9v9"/></svg></i><span>Trilha TI</span></button>
   </nav>
   <div class="sideBottom">
-    <div class="local"><span class="dot"></span><b>Dados locais</b><br>Salvos neste PC</div>
-    <button id="backupBtn" class="sideBtn">↓ Exportar backup</button>
-    <label class="sideBtn">↑ Importar backup<input id="restoreInput" type="file" accept=".json"></label>
+    <div class="local"><div class="localTitle"><span><span class="dot"></span>Dados locais</span><small>Auto</small></div><small>Salvos neste PC</small></div>
+    <div class="sideActions"><button id="backupBtn" class="sideBtn"><span>↓</span> Exportar</button><label class="sideBtn"><span>↑</span> Importar<input id="restoreInput" type="file" accept=".json"></label></div>
   </div>
 </aside>
 <main class="main">
-<header class="topbar"><div><div class="eyebrow" id="dateText"></div><h1 id="pageTitle">Visão geral</h1><div id="pageHint" class="muted" style="margin-top:4px">Seu centro pessoal de planejamento.</div></div><div class="toolbar"><button class="btn" id="routineBtn">Rotina</button><button class="btn primary" id="newTaskBtn">＋ Nova tarefa</button></div></header>
+<header class="topbar"><div><div class="eyebrow" id="dateText"></div><h1 id="pageTitle">Visão geral</h1><div id="pageHint" class="muted" style="margin-top:4px">Seu centro pessoal de planejamento.</div></div><div class="toolbar"><div class="quickStat"><i class="quickDot"></i>Local · salvo automaticamente</div><button class="btn" id="routineBtn">↻ Rotina</button><button class="btn primary" id="newTaskBtn">＋ Nova tarefa</button></div></header>
 <section id="dashboard" class="view active"></section>
 <section id="tasks" class="view"></section>
 <section id="schedule" class="view"></section>
