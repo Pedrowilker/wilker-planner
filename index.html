@@ -227,7 +227,10 @@ body{font-size:13px;letter-spacing:.002em}
   .view.active{animation:none}
   .topbar{box-shadow:0 1px 0 rgba(20,35,60,.04)}
   .main{background:linear-gradient(180deg,#f0f3fb 0%,#f7f9fc 72%)}
-}</style>
+}
+.mobileBoot{display:none}
+@media(max-width:700px){.mobileBoot{display:block;margin:0}.mobileBoot .head{margin-bottom:6px}}
+</style>
 <meta name="theme-color" content="#2868EE">
 <link rel="manifest" href="manifest.webmanifest">
 </head>
@@ -250,7 +253,7 @@ body{font-size:13px;letter-spacing:.002em}
 </aside>
 <main class="main">
 <header class="topbar"><div class="mobileBrand"><div class="mobileLogo">W</div><div class="mobileBrandText"><b>WILKER</b><small>PLANNER</small></div></div><div class="headerCopy"><div class="eyebrow" id="dateText"></div><h1 id="pageTitle">Visão geral</h1><div id="pageHint" class="muted" style="margin-top:4px">Seu centro pessoal de planejamento.</div></div></div><div class="toolbar"><div class="quickStat"><i class="quickDot"></i>Local · salvo automaticamente</div><button class="btn" id="routineBtn">↻ Rotina</button><button class="btn primary" id="newTaskBtn">＋ Nova tarefa</button></div></header>
-<section id="dashboard" class="view active"></section>
+<section id="dashboard" class="view active"><div class="card mobileBoot"><div class="head"><h2>Carregando WILKER…</h2></div><div class="muted">Preparando seus dados.</div></div></section>
 <section id="tasks" class="view"></section>
 <section id="schedule" class="view"></section>
 <section id="finance" class="view"></section>
@@ -442,7 +445,11 @@ function renderRoadmap(){
  q('#roadmap').innerHTML='<div class="grid two"><div class="card"><div class="head"><div><h2>Trilha principal</h2><span class="muted">Software → Backend → Cloud → IA + Segurança</span></div><span class="pill purple">12 meses</span></div><div class="bar"><i style="width:'+(target?Math.min(100,hours/target*100):0)+'%"></i></div><div class="muted" style="margin-top:8px">'+hours.toFixed(1)+'h nesta semana · meta '+target+'h</div><button class="btn primary" style="margin-top:12px" onclick="openStudy()">＋ Registrar estudo</button></div><div class="card"><div class="head"><h2>Histórico recente</h2></div>'+recent+'</div></div><div class="grid phaseGrid" style="margin-top:14px">'+cards+'</div>'
 }
 function navigate(view){qa('.nav').forEach(function(n){n.classList.toggle('active',n.dataset.view===view)});qa('.view').forEach(function(v){v.classList.toggle('active',v.id===view)});const titles={dashboard:'Visão geral',tasks:'Tarefas',schedule:'Cronograma',finance:'Finanças',investments:'Investimentos',roadmap:'Trilha TI'};const hints={dashboard:'Seu centro pessoal de planejamento.',tasks:'Organize, priorize e mova suas tarefas.',schedule:'Veja sua semana sem perder o contexto.',finance:'Controle receitas, gastos, contas e metas.',investments:'Acompanhe seu patrimônio de forma simples.',roadmap:'Registre sua evolução e mantenha o foco.'};q('#pageTitle').textContent=titles[view]||'WILKER Planner';q('#pageHint').textContent=hints[view]||''}
-function renderAll(){q('#dateText').textContent=new Date().toLocaleDateString('pt-BR',{weekday:'long',day:'2-digit',month:'long',year:'numeric'});const status=q('.quickStat');const hint=q('#pageHint');if(hostedMode){if(status)status.innerHTML='<i class="quickDot"></i>Online · dados neste navegador';if(hint&&q('#pageTitle').textContent==='Visão geral')hint.textContent='Seu centro pessoal de planejamento, hospedado no GitHub Pages.'}else{if(status)status.innerHTML='<i class="quickDot"></i>Local · salvo automaticamente'}try{state=normalize(state);renderDashboard();renderTasks();renderSchedule();renderFinance();renderInvestments();renderRoadmap()}catch(err){console.error('WILKER render error',err);q('#dashboard').innerHTML='<div class="card"><div class="head"><h2>Seu Planner está carregando</h2></div><div class="muted">Atualize a página para sincronizar os dados deste navegador.</div></div>';}}
+function renderAll(){q('#dateText').textContent=new Date().toLocaleDateString('pt-BR',{weekday:'long',day:'2-digit',month:'long',year:'numeric'});const status=q('.quickStat');const hint=q('#pageHint');if(hostedMode){if(status)status.innerHTML='<i class="quickDot"></i>Online · dados neste navegador';if(hint&&q('#pageTitle').textContent==='Visão geral')hint.textContent='Seu centro pessoal de planejamento, hospedado no GitHub Pages.'}else{if(status)status.innerHTML='<i class="quickDot"></i>Local · salvo automaticamente'}
+ state=normalize(state);
+ const jobs=[['dashboard',renderDashboard],['tasks',renderTasks],['schedule',renderSchedule],['finance',renderFinance],['investments',renderInvestments],['roadmap',renderRoadmap]];
+ jobs.forEach(function(job){try{job[1]()}catch(err){console.error('WILKER '+job[0]+' error',err);const box=q('#'+job[0]);if(box)box.innerHTML='<div class="card"><div class="head"><h2>Não foi possível carregar esta seção</h2></div><div class="muted">Atualize a página e tente novamente.</div></div>';}});
+}
 
 qa('.nav').forEach(function(n){n.onclick=function(){navigate(n.dataset.view)}});
 q('#newTaskBtn').onclick=openTask;q('#routineBtn').onclick=applyRoutine;
