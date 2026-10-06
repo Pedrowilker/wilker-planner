@@ -135,7 +135,7 @@ function renderTasksV3(){
  let html='<div class="toolbar"><button class="btn primary" onclick="openTask()">＋ Nova tarefa</button><button class="btn" onclick="applyRoutine()">Aplicar rotina da semana</button><span class="muted">Arraste um cartão para mudar o status.</span></div><div class="kanban">';
  Object.entries(groups).forEach(function(pair){
   const name=pair[0],list=pair[1];
-  html+='<div class="lane" ondragover="event.preventDefault()" ondrop="dropTask(event,\\''+name+'\\')"><div class="laneTitle"><span>'+name+'</span><span>'+list.length+'</span></div>';
+  html+='<div class="lane" data-status="'+name+'" ondragover="event.preventDefault()" ondrop="dropTask(event,this.dataset.status)"><div class="laneTitle"><span>'+name+'</span><span>'+list.length+'</span></div>';
   html+=list.length?list.map(taskCard).join(""):'<div class="muted" style="padding:8px">Nenhuma tarefa.</div>';
   html+='</div>';
  });
