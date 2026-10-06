@@ -1,122 +1,93 @@
 # WILKER Planner
 
-Planejador pessoal **local para Windows** com tarefas, rotina, estudos, finanças e investimentos.
+Planejador pessoal **local + web** para tarefas, rotina, estudos, finanças e investimentos.
 
 ## Versão estável
 
 **WILKER Planner 1.0.0**
 
-A versão atual foi preparada como base estável do projeto: interface refinada, navegação responsiva, persistência local e funcionamento offline/local.
+A aplicação possui duas formas de uso:
 
-## Como executar
+- **Web:** publicada pelo GitHub Pages, sem Node.js e sem precisar iniciar servidor.
+- **Local:** executada pelo server.js, com armazenamento local em arquivo JSON.
 
-### Opção 1 — mais simples
+## Acesso web
+
+Após habilitar o GitHub Pages no repositório, a aplicação fica disponível em:
+
+https://pedrowilker.github.io/wilker-planner/
+
+O deploy é automático a cada push para main usando GitHub Actions.
+
+### Habilitar pela primeira vez
+
+No GitHub:
+
+1. Abra o repositório Pedrowilker/wilker-planner.
+2. Entre em Settings → Pages.
+3. Em Build and deployment → Source, selecione GitHub Actions.
+4. Aguarde a execução do workflow "Deploy WILKER Planner".
+
+O GitHub Pages suporta publicação por GitHub Actions e o endereço usa o padrão usuário.github.io/repositório.
+
+**Observação sobre dados:** a versão web usa localStorage. Portanto, tarefas, gastos e investimentos ficam no navegador daquele dispositivo e não são sincronizados entre computadores ou celulares.
+
+## Uso local
 
 Dê dois cliques em:
 
-`ABRIR_WILKER_PLANNER.cmd`
+ABRIR_WILKER_PLANNER.cmd
 
-O servidor local será iniciado e o navegador abrirá:
+Ou:
 
-`http://127.0.0.1:8080`
-
-### Opção 2 — PowerShell
-
-```powershell
-cd C:\Users\PC\Desktop\wilker-planner
-npm start
-```
+    cd C:\Users\PC\Desktop\wilker-planner
+    npm start
 
 Depois acesse:
 
-`http://127.0.0.1:8080`
-
-Para encerrar o servidor, use `Ctrl + C`.
+http://127.0.0.1:8080
 
 ## Recursos
 
-### Organização
-
 - Dashboard pessoal
 - Tarefas com prioridade, área, data, horário, duração e observações
-- Kanban: **A fazer / Em andamento / Concluída**
+- Kanban: A fazer / Em andamento / Concluída
 - Arrastar e soltar entre colunas
-- Tarefas recorrentes: **Seg–Sex** ou **semanal**
+- Tarefas recorrentes: Seg–Sex ou semanal
 - Cronograma semanal
-- Rotina automática de estudo, academia e revisão financeira
-
-### Finanças
-
-- Receitas
-- Despesas
-- Saldo
-- Taxa de poupança
+- Rotina automática
+- Receitas e despesas
 - Orçamento por categoria
 - Contas e parcelamentos
-- Marcação de conta como paga
 - Metas financeiras
+- Carteira manual de investimentos
+- Registro de horas de estudo
+- Trilha TI
+- Backup e restauração em JSON
+- Interface responsiva
 
-### Investimentos
+## Privacidade
 
-- Cadastro manual de ativos
-- Tipo de ativo
-- Valor atual
-- Rentabilidade informada
-- Patrimônio total
-- Sem conexão com corretoras
+No modo web, seus dados não são gravados no GitHub: eles ficam no localStorage do navegador.
 
-### Estudos / TI
+No modo local, o servidor grava:
 
-- Registro de sessões de estudo
-- Horas estudadas
-- Histórico recente
-- Meta semanal
-- Trilha:
-  **Fundamentos + Software → Backend + APIs → Cloud + DevOps → IA + Segurança**
+data/wilker-planner.json
 
-### Backup
+Esse arquivo fica ignorado pelo Git.
 
-O WILKER permite exportar e importar um arquivo JSON pelo próprio aplicativo.
+O site do GitHub Pages pode ser publicamente acessível mesmo quando o repositório é privado, dependendo do plano do GitHub. Não coloque senhas ou segredos no código.
 
-## Armazenamento e privacidade
+## Estrutura
 
-Os dados do Planner são mantidos localmente no computador.
-
-O servidor grava os dados em:
-
-`data/wilker-planner.json`
-
-A pasta `data` é protegida pelo `.gitignore`, portanto o arquivo com suas tarefas, gastos e informações financeiras não é enviado ao repositório Git.
-
-Existe também um fallback no `localStorage` do navegador caso o servidor fique indisponível.
-
-## Estrutura principal
-
-```text
-wilker-planner/
-├─ index.html
-├─ server.js
-├─ package.json
-├─ ABRIR_WILKER_PLANNER.cmd
-├─ README.md
-├─ .gitignore
-└─ data/
-   └─ wilker-planner.json   (local, ignorado pelo Git)
-```
-
-## Requisitos
-
-- Windows
-- Node.js 18 ou superior
-
-## Repositório
-
-Projeto mantido em repositório GitHub privado:
-
-`Pedrowilker/wilker-planner`
-
-A pasta local deve ser atualizada com:
-
-```powershell
-git pull origin main
-```
+    wilker-planner/
+    ├─ index.html
+    ├─ server.js
+    ├─ package.json
+    ├─ ABRIR_WILKER_PLANNER.cmd
+    ├─ README.md
+    ├─ .github/
+    │  └─ workflows/
+    │     └─ deploy-pages.yml
+    └─ data/
+       └─ wilker-planner.json   (local, ignorado pelo Git)
