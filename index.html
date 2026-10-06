@@ -194,6 +194,32 @@ body{font-size:13px;letter-spacing:.002em}
   .mobileNav .nav.active .navIcon{color:var(--blue)}
 }
 @media(min-width:701px){.mobileNav{display:none}}
+
+.mobileBrand{display:none}
+@media(max-width:700px){
+  .topbar{height:78px;min-height:78px;padding:10px 12px;align-items:center;gap:10px}
+  .mobileBrand{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+  .mobileLogo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#2868ee,#7a50df);display:grid;place-items:center;color:#fff;font-weight:900;font-size:16px;box-shadow:0 7px 16px rgba(39,103,238,.18)}
+  .mobileBrandText{display:block;line-height:1}
+  .mobileBrandText b{display:block;font-size:11px;letter-spacing:.4px}
+  .mobileBrandText small{display:block;font-size:7px;letter-spacing:1.5px;color:#8a95a7;margin-top:3px}
+  .headerCopy{min-width:0;flex:1}
+  .headerCopy .eyebrow{font-size:8px;margin-bottom:2px;white-space:nowrap}
+  .headerCopy h1{font-size:18px}
+  .pageHint{font-size:9px!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .topbar .toolbar{gap:5px}
+  .topbar #routineBtn,.topbar #newTaskBtn{border-radius:11px;box-shadow:0 5px 13px rgba(39,103,238,.08)}
+  .mobileNav{height:66px;left:7px;right:7px;bottom:calc(7px + env(safe-area-inset-bottom));padding:4px;border-radius:17px}
+  .mobileNav .nav{flex:1 0 58px;min-width:58px;height:56px;min-height:56px;padding:6px 3px;gap:4px}
+  .mobileNav .nav span{display:block!important;font-size:8px!important;line-height:1;font-weight:750}
+  .mobileNav .navIcon{width:20px;height:20px;flex-basis:20px}
+  .mobileNav .navIcon svg{width:18px;height:18px}
+  .mobileNav .nav.active{box-shadow:0 5px 14px rgba(39,103,238,.10),inset 0 0 0 1px rgba(39,103,238,.08)}
+  .mobileNav .nav.active .navIcon svg{stroke-width:2.1}
+  .stats .card{min-height:98px}
+  .stats{gap:9px}
+  .card{border-radius:15px}
+}
 </style>
 <meta name="theme-color" content="#2868EE">
 <link rel="manifest" href="manifest.webmanifest">
@@ -216,7 +242,7 @@ body{font-size:13px;letter-spacing:.002em}
   </div>
 </aside>
 <main class="main">
-<header class="topbar"><div><div class="eyebrow" id="dateText"></div><h1 id="pageTitle">Visão geral</h1><div id="pageHint" class="muted" style="margin-top:4px">Seu centro pessoal de planejamento.</div></div><div class="toolbar"><div class="quickStat"><i class="quickDot"></i>Local · salvo automaticamente</div><button class="btn" id="routineBtn">↻ Rotina</button><button class="btn primary" id="newTaskBtn">＋ Nova tarefa</button></div></header>
+<header class="topbar"><div class="mobileBrand"><div class="mobileLogo">W</div><div class="mobileBrandText"><b>WILKER</b><small>PLANNER</small></div></div><div class="headerCopy"><div class="eyebrow" id="dateText"></div><h1 id="pageTitle">Visão geral</h1><div id="pageHint" class="muted" style="margin-top:4px">Seu centro pessoal de planejamento.</div></div></div><div class="toolbar"><div class="quickStat"><i class="quickDot"></i>Local · salvo automaticamente</div><button class="btn" id="routineBtn">↻ Rotina</button><button class="btn primary" id="newTaskBtn">＋ Nova tarefa</button></div></header>
 <section id="dashboard" class="view active"></section>
 <section id="tasks" class="view"></section>
 <section id="schedule" class="view"></section>
