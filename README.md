@@ -1,36 +1,122 @@
 # WILKER Planner
 
-Planejador pessoal local para **estudos, trabalho, academia, tarefas, finanças e investimentos**.
+Planejador pessoal **local para Windows** com tarefas, rotina, estudos, finanças e investimentos.
 
-## Executar no Windows
+## Versão estável
 
-1. Tenha Node.js instalado.
-2. Dê dois cliques em ABRIR_WILKER_PLANNER.cmd.
-3. O navegador abrirá em http://127.0.0.1:8080.
+**WILKER Planner 1.0.0**
 
-## Armazenamento local
+A versão atual foi preparada como base estável do projeto: interface refinada, navegação responsiva, persistência local e funcionamento offline/local.
 
-A V2 grava os dados em:
+## Como executar
 
-data/wilker-planner.json
+### Opção 1 — mais simples
 
-A pasta data fica ignorada pelo Git, então seus dados pessoais e financeiros permanecem no PC e não são enviados para o GitHub.
+Dê dois cliques em:
 
-O navegador mantém um fallback local em localStorage caso o servidor esteja indisponível.
+`ABRIR_WILKER_PLANNER.cmd`
 
-## Recursos atuais
+O servidor local será iniciado e o navegador abrirá:
+
+`http://127.0.0.1:8080`
+
+### Opção 2 — PowerShell
+
+```powershell
+cd C:\Users\PC\Desktop\wilker-planner
+npm start
+```
+
+Depois acesse:
+
+`http://127.0.0.1:8080`
+
+Para encerrar o servidor, use `Ctrl + C`.
+
+## Recursos
+
+### Organização
 
 - Dashboard pessoal
-- Quadro Kanban de tarefas: A fazer / Em andamento / Concluída
+- Tarefas com prioridade, área, data, horário, duração e observações
+- Kanban: **A fazer / Em andamento / Concluída**
+- Arrastar e soltar entre colunas
+- Tarefas recorrentes: **Seg–Sex** ou **semanal**
 - Cronograma semanal
-- Rotina automática para estudo, academia e revisão financeira
-- Controle de receitas e despesas
-- Resumo financeiro por categoria e período
-- Carteira manual de investimentos
-- Trilha de estudos de TI
-- Backup e restauração em JSON
-- Interface responsiva
+- Rotina automática de estudo, academia e revisão financeira
 
-## Direção da trilha TI
+### Finanças
 
-Software → Backend → Cloud/DevOps → IA + Segurança
+- Receitas
+- Despesas
+- Saldo
+- Taxa de poupança
+- Orçamento por categoria
+- Contas e parcelamentos
+- Marcação de conta como paga
+- Metas financeiras
+
+### Investimentos
+
+- Cadastro manual de ativos
+- Tipo de ativo
+- Valor atual
+- Rentabilidade informada
+- Patrimônio total
+- Sem conexão com corretoras
+
+### Estudos / TI
+
+- Registro de sessões de estudo
+- Horas estudadas
+- Histórico recente
+- Meta semanal
+- Trilha:
+  **Fundamentos + Software → Backend + APIs → Cloud + DevOps → IA + Segurança**
+
+### Backup
+
+O WILKER permite exportar e importar um arquivo JSON pelo próprio aplicativo.
+
+## Armazenamento e privacidade
+
+Os dados do Planner são mantidos localmente no computador.
+
+O servidor grava os dados em:
+
+`data/wilker-planner.json`
+
+A pasta `data` é protegida pelo `.gitignore`, portanto o arquivo com suas tarefas, gastos e informações financeiras não é enviado ao repositório Git.
+
+Existe também um fallback no `localStorage` do navegador caso o servidor fique indisponível.
+
+## Estrutura principal
+
+```text
+wilker-planner/
+├─ index.html
+├─ server.js
+├─ package.json
+├─ ABRIR_WILKER_PLANNER.cmd
+├─ README.md
+├─ .gitignore
+└─ data/
+   └─ wilker-planner.json   (local, ignorado pelo Git)
+```
+
+## Requisitos
+
+- Windows
+- Node.js 18 ou superior
+
+## Repositório
+
+Projeto mantido em repositório GitHub privado:
+
+`Pedrowilker/wilker-planner`
+
+A pasta local deve ser atualizada com:
+
+```powershell
+git pull origin main
+```
