@@ -1,0 +1,16 @@
+{
+  "name": "WILKER Planner",
+  "short_name": "WILKER",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#2868EE",
+  "icons": [
+    {
+      "src": "favicon.svg?v=2",
+      "sizes": "64x64",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
