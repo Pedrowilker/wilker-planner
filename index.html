@@ -447,13 +447,14 @@ const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,7);
 const money=v=>new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(Number(v)||0);
 const esc=s=>String(s??'').replace(/[&<>"']/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]});
 const isDone=t=>t.status==='Concluída';
+const isAutoStudySession=function(x){return !!(x&&(x.sourceTaskId||x.studyRecordId||x.studyRecorded||x.phase==='Tarefa concluída'));};
 
 function toast(msg){const e=q('#toast');e.textContent=msg;e.classList.add('show');setTimeout(()=>e.classList.remove('show'),1800)}
 function normalize(raw){const x=raw&&typeof raw==='object'?raw:{};
  const clean=function(v){return Array.isArray(v)?v.filter(function(item){return item&&typeof item==='object'}):[]};
  return {
  tasks:clean(x.tasks),finances:clean(x.finances),investments:clean(x.investments),
- budgets:x.budgets&&typeof x.budgets==='object'?x.budgets:{},goals:clean(x.goals),bills:clean(x.bills),studySessions:clean(x.studySessions),
+ budgets:x.budgets&&typeof x.budgets==='object'?x.budgets:{},goals:clean(x.goals),bills:clean(x.bills),studySessions:clean(x.studySessions).filter(function(x){return !isAutoStudySession(x)}),
  curriculumDone:x.curriculumDone&&typeof x.curriculumDone==='object'?x.curriculumDone:{},
  envelopes:clean(x.envelopes),recurring:clean(x.recurring),
  financialSettings:{...DEFAULTS.financialSettings,...(x.financialSettings||{})},
@@ -490,46 +491,33 @@ async function load(){
 function studyHoursFromCompletedTasks(){
  return state.tasks.filter(function(t){return isDone(t)&&t.area==='Estudos'}).reduce(function(a,t){return a+Number(t.duration||0)/60},0);
 }
+function studyHoursManual(){
+ return state.studySessions.filter(function(x){return !isAutoStudySession(x)}).reduce(function(a,x){return a+Number(x.hours||0)},0);
+}
 function studyHoursTotal(){
- const manual=state.studySessions.reduce(function(a,x){return a+Number(x.hours||0)},0);
- return manual+studyHoursFromCompletedTasks();
+ return studyHoursManual()+studyHoursFromCompletedTasks();
 }
 function stats(){
  const income=state.finances.filter(x=>x.type==='Receita').reduce((a,x)=>a+Number(x.value),0),
  expense=state.finances.filter(x=>x.type==='Despesa').reduce((a,x)=>a+Number(x.value),0),
  invested=state.investments.reduce((a,x)=>a+Number(x.value),0),
- manualHours=state.studySessions.reduce((a,x)=>a+Number(x.hours||0),0),
+ manualHours=studyHoursManual(),
  taskHours=studyHoursFromCompletedTasks(),
+ manualRecords=state.studySessions.filter(function(x){return !isAutoStudySession(x)}).length,
  hours=manualHours+taskHours;
- return{income,expense,balance:income-expense,invested,hours,manualHours,taskHours};
+ return{income,expense,balance:income-expense,invested,hours,manualHours,taskHours,manualRecords};
 }
 function openModal(id){q('#'+id).classList.remove('hidden')}
 function closeModal(id){q('#'+id).classList.add('hidden')}
 
 function syncStudyTaskRecord(task,previous){
- const oldRecordId=previous&&previous.studyRecordId?previous.studyRecordId:'';
- if(task.area==='Estudos'&&isDone(task)){
-  const recordId=task.studyRecordId||oldRecordId||uid();
-  task.studyRecordId=recordId;
-  task.studyRecorded=true;
-  let session=state.studySessions.find(function(x){return x.id===recordId});
-  if(!session){
-   session={id:recordId,sourceTaskId:task.id,topic:task.title,hours:Number(task.duration||0)/60,date:task.date||today(),phase:'Tarefa concluída',notes:'Registrado automaticamente ao concluir o compromisso.'};
-   state.studySessions.push(session);
-  }else{
-   session.sourceTaskId=task.id;
-   session.topic=task.title;
-   session.hours=Number(task.duration||0)/60;
-   session.date=task.date||today();
-   session.phase='Tarefa concluída';
-   session.notes=session.notes||'Registrado automaticamente ao concluir o compromisso.';
-  }
- }else{
-  const recordId=task.studyRecordId||oldRecordId;
-  if(recordId)state.studySessions=state.studySessions.filter(function(x){return x.id!==recordId});
-  task.studyRecordId='';
-  task.studyRecorded=false;
+ const oldId=previous&&previous.studyRecordId?previous.studyRecordId:'';
+ const currentId=task&&task.studyRecordId?task.studyRecordId:'';
+ const legacyId=currentId||oldId;
+ if(legacyId){
+  state.studySessions=state.studySessions.filter(function(x){return x.id!==legacyId && x.sourceTaskId!==(task&&task.id)});
  }
+ if(task){task.studyRecordId='';task.studyRecorded=false;}
 }
 function removeStudyRecordForTask(task){
  if(task&&task.studyRecordId)state.studySessions=state.studySessions.filter(function(x){return x.id!==task.studyRecordId});
@@ -559,7 +547,7 @@ function renderDashboard(){
  const counts={Estudos:0,Trabalho:0,Academia:0,Finanças:0,Pessoal:0};state.tasks.forEach(x=>counts[x.area]=(counts[x.area]||0)+1);const max=Math.max(1,...Object.values(counts));
  let rows='';todayTasks.slice(0,8).forEach(t=>{rows+='<div class="taskRow"><button class="check '+(isDone(t)?'done':'')+'" data-id="'+t.id+'" onclick="toggleTask(this.dataset.id)">'+(isDone(t)?'✓':'')+'</button><div><div class="taskName">'+esc(t.title)+'</div><div class="meta">'+(t.time||'--')+' · '+(t.duration||0)+' min · '+esc(t.area)+'</div></div><span class="pill '+(t.priority==='Alta'?'redP':t.priority==='Média'?'orange':'blue')+'">'+t.priority+'</span><button class="btn small" data-id="'+t.id+'" onclick="editTask(this.dataset.id)">✎</button><button class="btn small danger" data-id="'+t.id+'" onclick="askDeleteTask(this.dataset.id)">Excluir</button></div>'});
  let bars='';Object.entries(counts).forEach(function(p){bars+='<div class="barRow"><span>'+p[0]+'</span><div class="bar"><i style="width:'+(p[1]/max*100)+'%"></i></div><b>'+p[1]+'</b></div>'});
- q('#dashboard').innerHTML='<div class="grid stats"><div class="card"><div class="label">Tarefas concluídas</div><div class="big">'+finished+'/'+total+'</div><div class="sub">'+(total?Math.round(finished/total*100):0)+'% do planejado</div></div><div class="card"><div class="label">Saldo</div><div class="big">'+money(s.balance)+'</div><div class="sub">receitas − despesas</div></div><div class="card"><div class="label">Investimentos</div><div class="big">'+money(s.invested)+'</div><div class="sub">controle manual</div></div><div class="card"><div class="label">Estudo registrado</div><div class="big">'+s.hours.toFixed(1)+'h</div><div class="sub">'+state.studySessions.length+' registro(s) · '+s.taskHours.toFixed(1)+'h de compromissos concluídos</div></div></div>'+
+ q('#dashboard').innerHTML='<div class="grid stats"><div class="card"><div class="label">Tarefas concluídas</div><div class="big">'+finished+'/'+total+'</div><div class="sub">'+(total?Math.round(finished/total*100):0)+'% do planejado</div></div><div class="card"><div class="label">Saldo</div><div class="big">'+money(s.balance)+'</div><div class="sub">receitas − despesas</div></div><div class="card"><div class="label">Investimentos</div><div class="big">'+money(s.invested)+'</div><div class="sub">controle manual</div></div><div class="card"><div class="label">Estudo registrado</div><div class="big">'+s.hours.toFixed(1)+'h</div><div class="sub">'+s.manualRecords+' registro(s) manual(is) · '+s.taskHours.toFixed(1)+'h de compromissos concluídos</div></div></div>'+
  '<div class="grid two" style="margin-top:14px"><div class="card"><div class="head"><div><h2>Hoje</h2><span class="muted">'+todayTasks.length+' compromisso(s)</span></div><button class="btn small" onclick="openTask()">＋</button></div><div class="rows">'+(rows||'<div class="muted">Nenhuma tarefa para hoje.</div>')+'</div></div>'+
  '<div class="card"><div class="head"><h2>Distribuição</h2></div><div class="bars">'+bars+'</div></div></div>'+
  '<div class="grid two" style="margin-top:14px"><div class="card"><div class="head"><div><h2>Rotina base</h2><span class="muted">equilíbrio entre trabalho, estudo e saúde</span></div></div><div class="muted" style="line-height:2.1">08:00–17:00 trabalho<br>18:00–19:00 academia em 3 dias<br>19:30–21:30 estudo principal<br>Domingo: revisão financeira<br>Manter uma noite livre.</div></div><div class="card"><div class="head"><h2>Meta rápida</h2><span class="pill purple">foco</span></div><div class="muted" style="line-height:2.1">5 blocos de estudo<br>3 treinos<br>1 revisão financeira<br>Registrar gastos no mesmo dia.</div></div></div>'
@@ -707,7 +695,7 @@ function renderResourceLibrary(mode){
     const locked=x!=='all'&&!isPhaseUnlocked(Number(x)-1);
     return '<button class="filterBtn '+(phase===x?'selected':'')+' '+(locked?'lockedFilter':'')+'" data-phase="'+x+'" '+(locked?'disabled':'')+'>'+(x==='all'?'Todas':(locked?'🔒 Fase '+x:'Fase '+x))+'</button>';
   }).join('');
-  box.innerHTML='<div class="resourceFilters"><div class="filterGroup"><button class="filterBtn selected" disabled>'+resourceTypeLabel(active)+'</button></div><div class="filterGroup">'+phaseBtns+'</div></div><div class="resourceCount muted">'+list.length+' material(is) liberado(s) nesta categoria</div><div class="resourceGrid">'+(cards||'<div class="emptyState"><strong>Conteúdo bloqueado ou indisponível</strong><span>Conclua a fase anterior para liberar os próximos materiais.</span></div>')+'</div>';
+  box.innerHTML='<div class="resourceFilters"><div class="filterGroup"><button class="filterBtn selected" disabled>'+resourceTypeLabel(active)+'</button></div><div class="filterGroup">'+phaseBtns+'</div></div><div class="resourceCount muted">'+list.length+' referência(s) disponível(is) nesta categoria</div><div class="resourceGrid">'+(cards||'<div class="emptyState"><strong>Sem referências disponíveis</strong><span>Essa referência fica disponível quando eu quiser acompanhar esta etapa.</span></div>')+'</div>';
   qa('#studyLibrary .filterBtn').forEach(function(b){if(b.dataset.phase&&!b.disabled)b.onclick=function(){phase=b.dataset.phase;draw()}});
  }
  draw();
@@ -745,9 +733,9 @@ async function refreshCareerRadar(force){
 function renderCareerRadar(){
  const box=q('#careerRadar');if(!box)return;
  const updated=careerRadarUpdated||'Ainda não consultado';
- box.innerHTML='<div class="card radarHero"><div><div class="label">RADAR WILKER · ATUALIZAÇÃO DIÁRIA</div><h2>Áreas com melhor perspectiva</h2><p class="muted">Cada área já traz links para pesquisar faculdades EaD, conferir o curso no e-MEC e encontrar vagas. A pontuação indica tendência e não garante emprego.</p></div><div class="radarActions"><span class="quickStat"><i class="quickDot"></i>'+updated+'</span><button class="btn primary small" onclick="refreshCareerRadar(true)">↻ Atualizar</button></div></div>'+
+ box.innerHTML='<div class="card radarHero"><div><div class="label">RADAR WILKER · ATUALIZAÇÃO DIÁRIA</div><h2>Áreas com melhor perspectiva</h2><p class="muted">Radar pessoal das áreas que acompanho. A pontuação indica tendência de mercado e não garante emprego.</p></div><div class="radarActions"><span class="quickStat"><i class="quickDot"></i>'+updated+'</span><button class="btn primary small" onclick="refreshCareerRadar(true)">↻ Atualizar</button></div></div>'+
  '<div class="radarGrid">'+CAREER_RADAR.map(function(a){const courseUrl="https://www.google.com/search?q="+encodeURIComponent(a.degree+" graduação EaD Brasil"),jobUrl="https://www.google.com/search?q="+encodeURIComponent(a.query),emec="https://emec.mec.gov.br/";return '<article class="radarCard"><div class="radarTop"><span class="radarIcon">'+a.icon+'</span><span class="radarScore">'+a.score+'/100</span></div><h3>'+esc(a.name)+'</h3><div class="academicMeta">'+esc(a.degree)+'</div><p>'+esc(a.why)+'</p><div class="radarSkills">'+esc(a.skills)+'</div><div class="radarResearch"><a class="btn small radarPrimary" href="'+courseUrl+'" target="_blank" rel="noopener">🎓 Pesquisar faculdades</a><a class="btn small" href="'+emec+'" target="_blank" rel="noopener">✓ Conferir e-MEC</a><a class="btn small" href="'+jobUrl+'" target="_blank" rel="noopener">💼 Ver vagas</a></div></article>'}).join('')+'</div>'+
- '<div class="card radarSources"><div class="head"><div><h2>Fontes de referência</h2><span class="muted">Fontes para validar cursos, tendências e oportunidades.</span></div></div><div class="sourceGrid">'+CAREER_SOURCES.map(function(s){return '<a class="sourceCard" href="'+s.url+'" target="_blank" rel="noopener"><b>'+esc(s.name)+' ↗</b><span>Fonte para conferência</span></a>'}).join('')+'</div></div>';
+ '<div class="card radarSources"><div class="head"><div><h2>Fontes de referência</h2><span class="muted">Referências que acompanho para manter meu radar atualizado.</span></div></div><div class="sourceGrid">'+CAREER_SOURCES.map(function(s){return '<a class="sourceCard" href="'+s.url+'" target="_blank" rel="noopener"><b>'+esc(s.name)+' ↗</b><span>Fonte para conferência</span></a>'}).join('')+'</div></div>';
 }
 
 const ACADEMIC_SECTION="<div class=\"academicBox\"><div class=\"academicIntro\"><div class=\"academicIntroText\"><div class=\"academicTitleRow\"><span class=\"academicIcon\">🎓</span><div><h2>Faculdade EAD — Engenharia de Software</h2><p>Opções EaD, sem turno da manhã, priorizadas por qualidade, flexibilidade e custo-benefício.</p></div></div></div><div class=\"academicIntroActions\"><a class=\"btn primary\" href=\"https://www.uninter.com/processos-seletivos/\" target=\"_blank\" rel=\"noopener\">Ver seleção ↗</a><a class=\"btn\" href=\"https://emec.mec.gov.br/\" target=\"_blank\" rel=\"noopener\">e-MEC ↗</a></div></div><div class=\"academicGrid\"><article class=\"academicCard featured\"><div class=\"academicCardHead\"><div class=\"academicBadge\">🏆 1ª OPÇÃO</div><span class=\"academicFit\">Melhor encaixe agora</span></div><h3>Engenharia de Software — UNINTER</h3><div class=\"academicMeta\">Bacharelado · EaD · 48 meses · Nota MEC 4</div><p>Boa combinação de reconhecimento, entrada imediata e horário noturno. Oferta atual com atividades entre 18h30 e 21h40.</p><div class=\"academicActions\"><a class=\"btn small primary\" href=\"https://www.uninter.com/graduacao/a-distancia/bacharelado-em-engenharia-de-software/\" target=\"_blank\" rel=\"noopener\">Ver curso ↗</a><a class=\"btn small\" href=\"https://fichadeinscricao.uninter.com/\" target=\"_blank\" rel=\"noopener\">Inscrição ↗</a></div></article><article class=\"academicCard\"><div class=\"academicCardHead\"><div class=\"academicBadge blueBadge\">⭐ 2ª OPÇÃO</div><span class=\"academicFit\">Flexibilidade</span></div><h3>Engenharia de Software — UniCesumar</h3><div class=\"academicMeta\">Bacharelado · EaD · 4 anos · 100% online</div><p>Boa escolha para estudar com mais liberdade de horário e acompanhar projetos práticos ao longo do curso.</p><div class=\"academicActions\"><a class=\"btn small primary\" href=\"https://inscricoes.unicesumar.edu.br/curso/engenharia-de-software\" target=\"_blank\" rel=\"noopener\">Inscrever-se ↗</a><a class=\"btn small\" href=\"https://emec.mec.gov.br/\" target=\"_blank\" rel=\"noopener\">e-MEC ↗</a></div></article><article class=\"academicCard\"><div class=\"academicCardHead\"><div class=\"academicBadge purpleBadge\">💎 3ª OPÇÃO</div><span class=\"academicFit\">Premium / prática</span></div><h3>Engenharia de Software — Infnet</h3><div class=\"academicMeta\">Bacharelado · EaD Live · 4 anos · aulas noturnas</div><p>Ótima alternativa para quem prioriza projetos, professores de mercado e aulas ao vivo no período noturno.</p><div class=\"academicActions\"><a class=\"btn small\" href=\"https://ead.infnet.edu.br/faculdade/cursos/faculdade-ead-engenharia-de-software/\" target=\"_blank\" rel=\"noopener\">Ver curso ↗</a><a class=\"btn small\" href=\"https://ead.infnet.edu.br/\" target=\"_blank\" rel=\"noopener\">Atendimento ↗</a></div></article><article class=\"academicCard\"><div class=\"academicCardHead\"><div class=\"academicBadge\">💰 4ª OPÇÃO</div><span class=\"academicFit\">Custo-benefício</span></div><h3>Engenharia de Software — Estácio</h3><div class=\"academicMeta\">Bacharelado · EaD · 4 anos · turno virtual</div><p>Alternativa para reduzir o custo inicial. Compare a oferta, a grade e as condições do polo antes da matrícula.</p><div class=\"academicActions\"><a class=\"btn small primary\" href=\"https://estacio.br/cursos/graduacao?interest_area=Tecnologia&modelo_ensino=TOTAL+EAD\" target=\"_blank\" rel=\"noopener\">Ver EAD ↗</a><a class=\"btn small\" href=\"https://estacio.br/cursos/graduacao\" target=\"_blank\" rel=\"noopener\">Inscrição ↗</a></div></article></div></div>";const STUDY_PLAN=[
@@ -792,7 +780,7 @@ function renderRoadmap(){
  const totalModules=STUDY_PLAN.reduce(function(a,p){return a+p.modules.length},0);
  const overall=Math.round(doneCount/totalModules*100);
  const now=new Date(),ws=new Date(now); ws.setDate(now.getDate()-((now.getDay()+6)%7)); ws.setHours(0,0,0,0);
- const manualHours=state.studySessions.filter(function(x){return !x.sourceTaskId}).filter(function(x){const d=new Date(x.date+'T12:00:00');return d>=ws&&d<=now}).reduce(function(a,x){return a+Number(x.hours||0)},0);
+ const manualHours=state.studySessions.filter(function(x){return !isAutoStudySession(x)}).filter(function(x){const d=new Date(x.date+'T12:00:00');return d>=ws&&d<=now}).reduce(function(a,x){return a+Number(x.hours||0)},0);
  const taskHours=state.tasks.filter(function(x){const d=new Date((x.date||today())+'T12:00:00');return isDone(x)&&x.area==='Estudos'&&d>=ws&&d<=now}).reduce(function(a,x){return a+Number(x.duration||0)/60},0);
  const hours=manualHours+taskHours;
  const target=Number(state.settings.studyHours||2)*5;
@@ -805,7 +793,7 @@ function renderRoadmap(){
    p.modules.forEach(function(m){const checked=!!state.curriculumDone[m.id];mods+='<div class="studyModule '+(checked?'completed':'')+'"><button class="studyCheck '+(checked?'done':'')+'" data-id="'+m.id+'" onclick="toggleCurriculum(this.dataset.id)">'+(checked?'✓':'')+'</button><div class="studyModuleBody"><div class="studyModuleTop"><div><b>'+m.title+'</b><div class="muted">'+(checked?'Concluído':'Pendente')+'</div></div><span class="pill '+(checked?'green':'blue')+'">'+(checked?'Feito':'Em foco')+'</span></div></div></div>'});
   }else{
    const prev=STUDY_PLAN[idx-1];
-   mods='<div class="phaseLocked"><div class="lockBig">🔒</div><b>Fase bloqueada</b><span>Finalize <strong>'+prev.num+' — '+prev.title+'</strong> para liberar esta fase.</span></div>';
+   mods='<div class="phaseLocked"><div class="lockBig">🔒</div><b>Fase bloqueada</b><span>Finalize <strong>'+prev.num+' — '+prev.title+'</strong> para registrar este marco.</span></div>';
   }
   phases+='<details class="studyPhase card '+(unlocked?'':'lockedPhase')+'" '+(unlocked&&idx===firstOpen?'open':'')+' '+(unlocked?'':'data-locked="true"')+'><summary onclick="if(this.parentElement.dataset.locked){event.preventDefault();toast(&quot;🔒 Finalize a fase anterior para desbloquear esta fase.&quot;)}"><div class="phaseSummary"><div class="phaseNo">'+(unlocked?p.num:'🔒')+'</div><div class="phaseTitle"><b>'+p.title+'</b><span>'+p.period+' · '+pdone+'/'+p.modules.length+' concluídos</span></div><span class="pill '+(!unlocked?'redP':pdone===p.modules.length?'green':'purple')+'">'+(!unlocked?'Bloqueada':Math.round(pdone/p.modules.length*100)+'%')+'</span></div></summary><div class="phaseContent"><p class="studyGoal">'+p.goal+'</p><div class="bar"><i style="width:'+(unlocked?(pdone/p.modules.length*100):0)+'%"></i></div><div class="studyModules">'+mods+'</div><div class="studyProject"><b>Meu marco</b><span>'+p.project+'</span></div></div></details>';
  });
@@ -815,7 +803,7 @@ function renderRoadmap(){
  q('#roadmap').innerHTML=
  '<div class="studyHero grid two"><div class="card"><div class="head"><div><h2>Minha Trilha TI</h2><span class="muted">Acompanhamento pessoal da minha evolução em tecnologia.</span></div><span class="pill purple">'+overall+'%</span></div><div class="studyHeroStats"><div><b>'+doneCount+'/'+totalModules+'</b><span>marcos concluídos</span></div><div><b>'+hours.toFixed(1)+'h</b><span>estudadas nesta semana</span></div><div><b>'+target+'h</b><span>meta semanal</span></div></div><div class="bar" style="margin-top:14px"><i style="width:'+overall+'%"></i></div></div><div class="card"><div class="head"><h2>Meu momento</h2><span class="pill blue">agora</span></div><div class="personalFocus"><div><span>Fase atual</span><b>'+currentPhase.title+'</b></div><div><span>Próximo marco</span><b>'+(nextModule?nextModule.title:'Trilha concluída')+'</b></div><div><span>Ritmo</span><b>'+hours.toFixed(1)+'h / '+target+'h nesta semana</b></div></div></div></div>'+
  '<div class="studyTabs"><button class="studyTab active" data-tab="plan">🗺 Minha trilha</button><button class="studyTab" data-tab="college">🎓 Faculdade</button><button class="studyTab" data-tab="radar">📡 Radar futuro</button></div>'+
- '<div id="studyTabPlan" class="studyTabPanel active"><div class="studyResourceBox card"><div class="head"><div><h2>Minha evolução</h2><span class="muted">Marque o que você já concluiu.</span></div><span class="quickStat"><i class="quickDot"></i>'+STUDY_PLAN.filter(function(_,i){return isPhaseUnlocked(i)}).length+' fase(s) liberada(s)</span></div>'+phases+'</div></div>'+
+ '<div id="studyTabPlan" class="studyTabPanel active"><div class="studyResourceBox card"><div class="head"><div><h2>Minha evolução</h2><span class="muted">Minha evolução registrada até aqui.</span></div><span class="quickStat"><i class="quickDot"></i>'+STUDY_PLAN.filter(function(_,i){return isPhaseUnlocked(i)}).length+' fase(s) acompanhada(s)</span></div>'+phases+'</div></div>'+
  '<div id="studyTabCollege" class="studyTabPanel">'+ACADEMIC_SECTION+'</div>'+
  '<div id="studyTabRadar" class="studyTabPanel"><div id="careerRadar"></div></div>'+
  '<div class="grid two" style="margin-top:14px"><div class="card"><div class="head"><h2>Histórico recente</h2><span class="muted">'+state.studySessions.filter(function(x){return !x.sourceTaskId}).length+' registros manuais</span></div>'+recentStudies()+'</div><div class="card"><div class="head"><h2>Meu próximo passo</h2></div><div class="muted" style="line-height:2.1">'+(nextModule?'<b style="color:var(--text)">'+esc(nextModule.title)+'</b><br>'+esc(currentPhase.goal):'Trilha concluída. Hora de revisar objetivos e escolher o próximo foco.')+'</div></div></div>';
