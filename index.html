@@ -298,7 +298,62 @@ body{font-size:13px;letter-spacing:.002em}
   }
 }
 .radarHero{display:flex;justify-content:space-between;gap:22px;align-items:center;margin-bottom:18px;padding:20px 22px;border-left:4px solid #6450d9}.radarHero h2{margin:4px 0 3px}.radarActions{display:flex;gap:7px;align-items:center;flex-wrap:wrap;justify-content:flex-end}.radarGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:stretch}.radarCard{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;padding:17px;background:#fff;min-width:0;box-shadow:0 5px 16px rgba(28,44,72,.04)}.radarTop{display:flex;align-items:center;justify-content:space-between}.radarIcon{width:30px;height:30px;display:grid;place-items:center;border-radius:9px;background:#f0edff}.radarScore{font-size:8px;font-weight:900;color:#5d47c4;background:#f3efff;border-radius:999px;padding:4px 6px}.radarCard h3{font-size:12px;line-height:1.3;margin:10px 0 5px;min-height:31px}.radarCard p{font-size:9px;line-height:1.6;color:#657188;margin:10px 0 14px;min-height:43px}.radarSkills{font-size:8px;color:#52617a;background:#fafcff;border:1px solid var(--line);border-radius:9px;padding:8px;line-height:1.55;margin-bottom:2px}.radarFoot{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-top:9px}.radarFoot span{font-size:8px;color:var(--muted)}.radarSources{margin-top:18px;padding:18px}.radarSignalGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}.radarSignalGroup{min-width:0}.radarSignal{display:grid;gap:4px;padding:8px 0;border-top:1px solid #eef1f5;color:inherit;text-decoration:none}.radarSignal span{font-size:8px;color:#5d47c4;font-weight:900}.radarSignal b{font-size:9px;line-height:1.4}.radarSignal small{font-size:7px;color:var(--muted)}@media(max-width:1200px){.radarGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:700px){.radarHero{display:grid}.radarActions{justify-content:flex-start}.radarGrid,.radarSignalGrid{grid-template-columns:1fr}}
-.academicChecklist,.academicNote{display:none!important}.radarResearch{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:9px;margin-top:auto;padding-top:14px;border-top:1px solid #eef1f5}.radarResearch .btn{width:100%;text-align:center;justify-content:center;white-space:nowrap}.radarResearch .radarPrimary{background:#eef3ff;color:#2563eb;border-color:#d9e4ff}@media(max-width:1100px){.radarResearch{grid-template-columns:1fr 1fr}.radarResearch .radarPrimary{grid-column:1/-1}}@media(max-width:700px){.radarResearch{grid-template-columns:1fr}.radarResearch .radarPrimary{grid-column:auto}.radarResearch .btn{font-size:9px}}</style>
+.academicChecklist,.academicNote{display:none!important}.radarResearch{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:9px;margin-top:auto;padding-top:14px;border-top:1px solid #eef1f5}.radarResearch .btn{width:100%;text-align:center;justify-content:center;white-space:nowrap}.radarResearch .radarPrimary{background:#eef3ff;color:#2563eb;border-color:#d9e4ff}@media(max-width:1100px){.radarResearch{grid-template-columns:1fr 1fr}.radarResearch .radarPrimary{grid-column:1/-1}}@media(max-width:700px){.radarResearch{grid-template-columns:1fr}.radarResearch .radarPrimary{grid-column:auto}.radarResearch .btn{font-size:9px}}
+/* ===== WILKER FINAL — RESPIRO E LEITURA ===== */
+.view{padding:32px 34px 68px}
+.grid{gap:20px}
+.card{padding:21px}
+.rows{gap:12px}
+.taskRow{padding:14px 15px;gap:10px}
+.kanban{gap:16px}
+.kcard{padding:14px;margin:9px 0}
+.studyRecent{padding:12px 0}
+
+.academicBox{padding:22px}
+.academicIntro{gap:20px;margin-bottom:20px}
+.academicIntro h2{font-size:18px}
+.academicIntro p{font-size:11px;line-height:1.6;margin-top:7px}
+.academicGrid{grid-template-columns:1fr !important;gap:16px !important}
+.academicCard{padding:19px 20px !important;min-height:150px}
+.academicCard h3{font-size:15px;margin:12px 0 6px}
+.academicMeta{font-size:10px;line-height:1.55}
+.academicCard p{font-size:10.5px;line-height:1.7;margin:10px 0 15px}
+.academicActions{gap:8px;margin-top:8px}
+
+.radarGrid{gap:18px}
+.radarCard{padding:19px}
+.radarCard h3{font-size:14px;margin:12px 0 7px;min-height:0}
+.radarCard p{font-size:10px;line-height:1.7;margin:10px 0 16px;min-height:0}
+.radarSkills{font-size:9px;line-height:1.6;padding:10px;margin-bottom:3px}
+.radarResearch{gap:8px;padding-top:15px;margin-top:15px}
+
+.event{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.event .eventText{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.eventDelete{flex:0 0 auto;border:0;background:transparent;color:inherit;opacity:.65;font-weight:900;padding:1px 3px;border-radius:5px;cursor:pointer}
+.eventDelete:hover{opacity:1;background:rgba(0,0,0,.06)}
+
+.studyHoursHint{font-size:9px;color:var(--muted);margin-top:5px;line-height:1.45}
+
+@media(max-width:1000px){
+  .academicGrid{grid-template-columns:1fr !important}
+}
+@media(max-width:700px){
+  .view{padding:24px 14px 50px}
+  .card{padding:17px}
+  .academicCard{padding:16px !important}
+}
+
+
+/* WILKER FINAL PERSONAL POLISH */
+.taskRow{grid-template-columns:22px minmax(0,1fr) auto auto auto;gap:10px;padding:14px 15px}
+.taskRow .btn{white-space:nowrap}
+.personalFocus{display:grid;gap:12px}
+.personalFocus>div{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:#fbfcff}
+.personalFocus span{font-size:10px;color:var(--muted)}
+.personalFocus b{font-size:12px;text-align:right}
+.studyModuleBody{min-width:0}
+
+</style>
 <meta name="theme-color" content="#2868EE">
 <link rel="manifest" href="manifest.webmanifest">
 </head>
@@ -432,17 +487,79 @@ async function load(){
  if(!state.tasks.length)seed();
  renderAll();
 }
-function stats(){const income=state.finances.filter(x=>x.type==='Receita').reduce((a,x)=>a+Number(x.value),0),expense=state.finances.filter(x=>x.type==='Despesa').reduce((a,x)=>a+Number(x.value),0),invested=state.investments.reduce((a,x)=>a+Number(x.value),0),hours=state.studySessions.reduce((a,x)=>a+Number(x.hours),0);return{income,expense,balance:income-expense,invested,hours}}
+function studyHoursFromCompletedTasks(){
+ return state.tasks.filter(function(t){return isDone(t)&&t.area==='Estudos'}).reduce(function(a,t){return a+Number(t.duration||0)/60},0);
+}
+function studyHoursTotal(){
+ const manual=state.studySessions.reduce(function(a,x){return a+Number(x.hours||0)},0);
+ return manual+studyHoursFromCompletedTasks();
+}
+function stats(){
+ const income=state.finances.filter(x=>x.type==='Receita').reduce((a,x)=>a+Number(x.value),0),
+ expense=state.finances.filter(x=>x.type==='Despesa').reduce((a,x)=>a+Number(x.value),0),
+ invested=state.investments.reduce((a,x)=>a+Number(x.value),0),
+ manualHours=state.studySessions.reduce((a,x)=>a+Number(x.hours||0),0),
+ taskHours=studyHoursFromCompletedTasks(),
+ hours=manualHours+taskHours;
+ return{income,expense,balance:income-expense,invested,hours,manualHours,taskHours};
+}
 function openModal(id){q('#'+id).classList.remove('hidden')}
 function closeModal(id){q('#'+id).classList.add('hidden')}
 
+function syncStudyTaskRecord(task,previous){
+ const oldRecordId=previous&&previous.studyRecordId?previous.studyRecordId:'';
+ if(task.area==='Estudos'&&isDone(task)){
+  const recordId=task.studyRecordId||oldRecordId||uid();
+  task.studyRecordId=recordId;
+  task.studyRecorded=true;
+  let session=state.studySessions.find(function(x){return x.id===recordId});
+  if(!session){
+   session={id:recordId,sourceTaskId:task.id,topic:task.title,hours:Number(task.duration||0)/60,date:task.date||today(),phase:'Tarefa concluída',notes:'Registrado automaticamente ao concluir o compromisso.'};
+   state.studySessions.push(session);
+  }else{
+   session.sourceTaskId=task.id;
+   session.topic=task.title;
+   session.hours=Number(task.duration||0)/60;
+   session.date=task.date||today();
+   session.phase='Tarefa concluída';
+   session.notes=session.notes||'Registrado automaticamente ao concluir o compromisso.';
+  }
+ }else{
+  const recordId=task.studyRecordId||oldRecordId;
+  if(recordId)state.studySessions=state.studySessions.filter(function(x){return x.id!==recordId});
+  task.studyRecordId='';
+  task.studyRecorded=false;
+ }
+}
+function removeStudyRecordForTask(task){
+ if(task&&task.studyRecordId)state.studySessions=state.studySessions.filter(function(x){return x.id!==task.studyRecordId});
+}
+function askDeleteTask(id){
+ const t=state.tasks.find(function(x){return x.id===id});
+ if(!t)return;
+ q('#confirmTitle').textContent='Excluir compromisso?';
+ q('#confirmMessage').textContent='“'+t.title+'” será removido do Dashboard, das Tarefas e do Cronograma. Se ele gerou horas de estudo, essas horas também serão retiradas.';
+ q('#confirmOk').textContent='Excluir compromisso';
+ q('#confirmOk').onclick=async function(){
+  closeModal('confirmModal');
+  removeStudyRecordForTask(t);
+  state.tasks=state.tasks.filter(function(x){return x.id!==id});
+  await save();
+  renderAll();
+  toast('Compromisso removido.');
+ };
+ openModal('confirmModal');
+}
+async function removeTask(id){
+ askDeleteTask(id);
+}
 function renderDashboard(){
  const s=stats(),total=state.tasks.length,finished=state.tasks.filter(isDone).length;
  const todayTasks=state.tasks.filter(x=>x.date===today()).sort((a,b)=>(a.time||'').localeCompare(b.time||''));
  const counts={Estudos:0,Trabalho:0,Academia:0,Finanças:0,Pessoal:0};state.tasks.forEach(x=>counts[x.area]=(counts[x.area]||0)+1);const max=Math.max(1,...Object.values(counts));
- let rows='';todayTasks.slice(0,8).forEach(t=>{rows+='<div class="taskRow"><button class="check '+(isDone(t)?'done':'')+'" data-id="'+t.id+'" onclick="toggleTask(this.dataset.id)">'+(isDone(t)?'✓':'')+'</button><div><div class="taskName">'+esc(t.title)+'</div><div class="meta">'+(t.time||'--')+' · '+(t.duration||0)+' min · '+esc(t.area)+'</div></div><span class="pill '+(t.priority==='Alta'?'redP':t.priority==='Média'?'orange':'blue')+'">'+t.priority+'</span><button class="btn small" data-id="'+t.id+'" onclick="editTask(this.dataset.id)">✎</button></div>'});
+ let rows='';todayTasks.slice(0,8).forEach(t=>{rows+='<div class="taskRow"><button class="check '+(isDone(t)?'done':'')+'" data-id="'+t.id+'" onclick="toggleTask(this.dataset.id)">'+(isDone(t)?'✓':'')+'</button><div><div class="taskName">'+esc(t.title)+'</div><div class="meta">'+(t.time||'--')+' · '+(t.duration||0)+' min · '+esc(t.area)+'</div></div><span class="pill '+(t.priority==='Alta'?'redP':t.priority==='Média'?'orange':'blue')+'">'+t.priority+'</span><button class="btn small" data-id="'+t.id+'" onclick="editTask(this.dataset.id)">✎</button><button class="btn small danger" data-id="'+t.id+'" onclick="askDeleteTask(this.dataset.id)">Excluir</button></div>'});
  let bars='';Object.entries(counts).forEach(function(p){bars+='<div class="barRow"><span>'+p[0]+'</span><div class="bar"><i style="width:'+(p[1]/max*100)+'%"></i></div><b>'+p[1]+'</b></div>'});
- q('#dashboard').innerHTML='<div class="grid stats"><div class="card"><div class="label">Tarefas concluídas</div><div class="big">'+finished+'/'+total+'</div><div class="sub">'+(total?Math.round(finished/total*100):0)+'% do planejado</div></div><div class="card"><div class="label">Saldo</div><div class="big">'+money(s.balance)+'</div><div class="sub">receitas − despesas</div></div><div class="card"><div class="label">Investimentos</div><div class="big">'+money(s.invested)+'</div><div class="sub">controle manual</div></div><div class="card"><div class="label">Estudo registrado</div><div class="big">'+s.hours.toFixed(1)+'h</div><div class="sub">'+state.studySessions.length+' registro(s)</div></div></div>'+
+ q('#dashboard').innerHTML='<div class="grid stats"><div class="card"><div class="label">Tarefas concluídas</div><div class="big">'+finished+'/'+total+'</div><div class="sub">'+(total?Math.round(finished/total*100):0)+'% do planejado</div></div><div class="card"><div class="label">Saldo</div><div class="big">'+money(s.balance)+'</div><div class="sub">receitas − despesas</div></div><div class="card"><div class="label">Investimentos</div><div class="big">'+money(s.invested)+'</div><div class="sub">controle manual</div></div><div class="card"><div class="label">Estudo registrado</div><div class="big">'+s.hours.toFixed(1)+'h</div><div class="sub">'+state.studySessions.length+' registro(s) · '+s.taskHours.toFixed(1)+'h de compromissos concluídos</div></div></div>'+
  '<div class="grid two" style="margin-top:14px"><div class="card"><div class="head"><div><h2>Hoje</h2><span class="muted">'+todayTasks.length+' compromisso(s)</span></div><button class="btn small" onclick="openTask()">＋</button></div><div class="rows">'+(rows||'<div class="muted">Nenhuma tarefa para hoje.</div>')+'</div></div>'+
  '<div class="card"><div class="head"><h2>Distribuição</h2></div><div class="bars">'+bars+'</div></div></div>'+
  '<div class="grid two" style="margin-top:14px"><div class="card"><div class="head"><div><h2>Rotina base</h2><span class="muted">equilíbrio entre trabalho, estudo e saúde</span></div></div><div class="muted" style="line-height:2.1">08:00–17:00 trabalho<br>18:00–19:00 academia em 3 dias<br>19:30–21:30 estudo principal<br>Domingo: revisão financeira<br>Manter uma noite livre.</div></div><div class="card"><div class="head"><h2>Meta rápida</h2><span class="pill purple">foco</span></div><div class="muted" style="line-height:2.1">5 blocos de estudo<br>3 treinos<br>1 revisão financeira<br>Registrar gastos no mesmo dia.</div></div></div>'
@@ -455,16 +572,46 @@ function renderTasks(){
 }
 function allowDrop(e){e.preventDefault();e.currentTarget.classList.add('drop')}
 function dragTask(e,id){e.dataTransfer.setData('text/plain',id);if(e.currentTarget)e.currentTarget.classList.add('dragging')}
-function dropTask(e,status){e.preventDefault();e.currentTarget.classList.remove('drop');qa('.lane').forEach(function(l){l.classList.remove('drop')});qa('.kcard.dragging').forEach(function(k){k.classList.remove('dragging')});const id=e.dataTransfer.getData('text/plain'),t=state.tasks.find(x=>x.id===id);if(!t)return;t.status=status;save().then(renderAll)}
-async function toggleTask(id){const t=state.tasks.find(x=>x.id===id);if(!t)return;t.status=isDone(t)?'A fazer':'Concluída';await save();renderAll()}
-async function advanceTask(id){const t=state.tasks.find(x=>x.id===id);if(!t)return;const flow=['A fazer','Em andamento','Concluída'];const i=flow.indexOf(t.status);t.status=flow[(i+1)%flow.length];await save();renderAll();toast('Tarefa movida para '+t.status+'.')}
-async function removeTask(id){state.tasks=state.tasks.filter(x=>x.id!==id);await save();renderAll();toast('Tarefa removida.')}
+function dropTask(e,status){
+ e.preventDefault();
+ e.currentTarget.classList.remove('drop');
+ qa('.lane').forEach(function(l){l.classList.remove('drop')});
+ qa('.kcard.dragging').forEach(function(k){k.classList.remove('dragging')});
+ const id=e.dataTransfer.getData('text/plain'),t=state.tasks.find(x=>x.id===id);
+ if(!t)return;
+ const previous={...t};
+ t.status=status;
+ syncStudyTaskRecord(t,previous);
+ save().then(renderAll);
+}
+async function toggleTask(id){
+ const t=state.tasks.find(x=>x.id===id);
+ if(!t)return;
+ const previous={...t};
+ t.status=isDone(t)?'A fazer':'Concluída';
+ syncStudyTaskRecord(t,previous);
+ await save();
+ renderAll();
+}
+async function advanceTask(id){
+ const t=state.tasks.find(x=>x.id===id);
+ if(!t)return;
+ const previous={...t};
+ const flow=['A fazer','Em andamento','Concluída'];
+ const i=flow.indexOf(t.status);
+ t.status=flow[(i+1)%flow.length];
+ syncStudyTaskRecord(t,previous);
+ await save();
+ renderAll();
+ toast('Tarefa movida para '+t.status+'.');
+}
+
 function openTask(){q('#taskModalTitle').textContent='Nova tarefa';q('#taskId').value='';q('#taskTitle').value='';q('#taskArea').value='Estudos';q('#taskStatus').value='A fazer';q('#taskPriority').value='Média';q('#taskDate').value=today();q('#taskTime').value='19:30';q('#taskDuration').value=60;q('#taskRepeat').value='none';q('#taskNotes').value='';openModal('taskModal')}
 function editTask(id){const t=state.tasks.find(x=>x.id===id);if(!t)return;q('#taskModalTitle').textContent='Editar tarefa';q('#taskId').value=t.id;q('#taskTitle').value=t.title;q('#taskArea').value=t.area;q('#taskStatus').value=t.status;q('#taskPriority').value=t.priority;q('#taskDate').value=t.date||today();q('#taskTime').value=t.time||'';q('#taskDuration').value=t.duration||60;q('#taskRepeat').value=t.repeat||'none';q('#taskNotes').value=t.notes||'';openModal('taskModal')}
-async function saveTask(e){e.preventDefault();const id=q('#taskId').value||uid(),repeat=q('#taskRepeat').value,item={id:id,title:q('#taskTitle').value.trim(),area:q('#taskArea').value,status:q('#taskStatus').value,priority:q('#taskPriority').value,date:q('#taskDate').value,time:q('#taskTime').value,duration:Number(q('#taskDuration').value||60),notes:q('#taskNotes').value,repeat:repeat};const idx=state.tasks.findIndex(x=>x.id===id);if(idx>=0)state.tasks[idx]=item;else state.tasks.push(item);if(idx<0&&repeat!=='none'){const base=new Date(item.date+'T12:00:00');for(let n=1;n<=8;n++){const d=new Date(base);if(repeat==='weekdays'){let count=0;while(count<n){d.setDate(d.getDate()+1);if(d.getDay()!==0&&d.getDay()!==6)count++}}else d.setDate(d.getDate()+7*n);const iso=d.toISOString().slice(0,10);if(!state.tasks.some(x=>x.title===item.title&&x.date===iso))state.tasks.push({...item,id:uid(),date:iso})}}await save();closeModal('taskModal');renderAll();toast(repeat==='none'?'Tarefa salva.':'Tarefa recorrente criada.')}
+async function saveTask(e){e.preventDefault();const id=q('#taskId').value||uid(),repeat=q('#taskRepeat').value,idx=state.tasks.findIndex(x=>x.id===id),previous=idx>=0?{...state.tasks[idx]}:null,item={id:id,title:q('#taskTitle').value.trim(),area:q('#taskArea').value,status:q('#taskStatus').value,priority:q('#taskPriority').value,date:q('#taskDate').value,time:q('#taskTime').value,duration:Number(q('#taskDuration').value||60),notes:q('#taskNotes').value,repeat:repeat,studyRecordId:previous&&previous.studyRecordId?previous.studyRecordId:''};syncStudyTaskRecord(item,previous);if(idx>=0)state.tasks[idx]=item;else state.tasks.push(item);if(idx<0&&repeat!=='none'){const base=new Date(item.date+'T12:00:00');for(let n=1;n<=8;n++){const d=new Date(base);if(repeat==='weekdays'){let count=0;while(count<n){d.setDate(d.getDate()+1);if(d.getDay()!==0&&d.getDay()!==6)count++}}else d.setDate(d.getDate()+7*n);const iso=d.toISOString().slice(0,10);if(!state.tasks.some(x=>x.title===item.title&&x.date===iso))state.tasks.push({...item,id:uid(),date:iso,studyRecordId:'',studyRecorded:false})}}await save();closeModal('taskModal');renderAll();toast(repeat==='none'?'Tarefa salva.':'Tarefa recorrente criada.')}
 function renderSchedule(){
  const base=new Date();base.setDate(base.getDate()-base.getDay());const names=['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'];let cal='';
- for(let i=0;i<7;i++){const d=new Date(base);d.setDate(base.getDate()+i);const id=d.toISOString().slice(0,10),ev=state.tasks.filter(x=>x.date===id).sort((a,b)=>(a.time||'').localeCompare(b.time||''));let items='';ev.forEach(t=>{let cls=t.area==='Academia'?'gym':t.area==='Trabalho'?'work':t.area==='Finanças'?'fin':t.area==='Estudos'?'study':'';items+='<div class="event '+cls+'" data-id="'+t.id+'" onclick="editTask(this.dataset.id)">'+(t.time||'')+' · '+esc(t.title)+'</div>'});cal+='<div class="day"><div class="dhead">'+names[d.getDay()]+'</div><div class="dnum">'+d.getDate()+'</div>'+(items||'<span class="muted">livre</span>')+'</div>'}
+ for(let i=0;i<7;i++){const d=new Date(base);d.setDate(base.getDate()+i);const id=d.toISOString().slice(0,10),ev=state.tasks.filter(x=>x.date===id).sort((a,b)=>(a.time||'').localeCompare(b.time||''));let items='';ev.forEach(t=>{let cls=t.area==='Academia'?'gym':t.area==='Trabalho'?'work':t.area==='Finanças'?'fin':t.area==='Estudos'?'study':'';items+='<div class="event '+cls+'" data-id="'+t.id+'" onclick="editTask(this.dataset.id)"><span class="eventText">'+(t.time||'')+' · '+esc(t.title)+'</span><button class="eventDelete" data-id="'+t.id+'" onclick="event.stopPropagation();askDeleteTask(this.dataset.id)" title="Excluir compromisso" aria-label="Excluir compromisso">×</button></div>'});cal+='<div class="day"><div class="dhead">'+names[d.getDay()]+'</div><div class="dnum">'+d.getDate()+'</div>'+(items||'<span class="muted">livre</span>')+'</div>'}
  q('#schedule').innerHTML='<div class="card"><div class="head"><div><h2>Cronograma da semana</h2><span class="muted">visualização dos compromissos</span></div><button class="btn primary" onclick="applyRoutine()">Aplicar rotina</button></div><div class="calendar">'+cal+'</div></div><div class="grid two" style="margin-top:14px"><div class="card"><div class="head"><h2>Rotina recomendada</h2></div><div class="muted" style="line-height:2.2">08:00–17:00 trabalho<br>17:00–18:00 pausa/deslocamento<br>18:00–19:00 academia em 3 dias<br>19:30–21:30 estudo<br>21:30–21:50 organização rápida</div></div><div class="card"><div class="head"><h2>Regra</h2></div><div class="muted" style="line-height:2.2">Planeje menos e execute melhor.<br>Uma noite livre por semana.<br>Domingo: revisão financeira + planejamento.</div></div></div>'
 }
 async function applyRoutine(){const base=new Date();base.setDate(base.getDate()-base.getDay());for(let i=1;i<=5;i++){const d=new Date(base);d.setDate(base.getDate()+i);const id=d.toISOString().slice(0,10);if(!state.tasks.some(x=>x.date===id&&x.title==='Estudo principal'))state.tasks.push({id:uid(),title:'Estudo principal',area:'Estudos',status:'A fazer',priority:'Alta',date:id,time:'19:30',duration:120,notes:'',repeat:'none'});if([1,3,5].includes(d.getDay())&&!state.tasks.some(x=>x.date===id&&x.title==='Academia'))state.tasks.push({id:uid(),title:'Academia',area:'Academia',status:'A fazer',priority:'Média',date:id,time:'18:00',duration:60,notes:'',repeat:'none'})}const s=new Date(base);s.setDate(base.getDate()+7);const sid=s.toISOString().slice(0,10);if(!state.tasks.some(x=>x.date===sid&&x.title==='Revisão financeira semanal'))state.tasks.push({id:uid(),title:'Revisão financeira semanal',area:'Finanças',status:'A fazer',priority:'Média',date:sid,time:'19:00',duration:30,notes:'',repeat:'none'});await save();renderAll();toast('Rotina aplicada.')}
@@ -641,55 +788,52 @@ function toggleCurriculum(id){
 }
 function openPlanResource(url){window.open(url,'_blank','noopener,noreferrer')}
 function renderRoadmap(){
- const doneCount=Object.values(state.curriculumDone||{}).filter(Boolean).length,totalModules=STUDY_PLAN.reduce(function(a,p){return a+p.modules.length},0),overall=Math.round(doneCount/totalModules*100),now=new Date(),ws=new Date(now);
- ws.setDate(now.getDate()-((now.getDay()+6)%7));ws.setHours(0,0,0,0);
- const hours=state.studySessions.filter(function(x){const d=new Date(x.date+'T12:00:00');return d>=ws&&d<=now}).reduce(function(a,x){return a+Number(x.hours)},0),target=Number(state.settings.studyHours||2)*5;
+ const doneCount=Object.values(state.curriculumDone||{}).filter(Boolean).length;
+ const totalModules=STUDY_PLAN.reduce(function(a,p){return a+p.modules.length},0);
+ const overall=Math.round(doneCount/totalModules*100);
+ const now=new Date(),ws=new Date(now); ws.setDate(now.getDate()-((now.getDay()+6)%7)); ws.setHours(0,0,0,0);
+ const manualHours=state.studySessions.filter(function(x){return !x.sourceTaskId}).filter(function(x){const d=new Date(x.date+'T12:00:00');return d>=ws&&d<=now}).reduce(function(a,x){return a+Number(x.hours||0)},0);
+ const taskHours=state.tasks.filter(function(x){const d=new Date((x.date||today())+'T12:00:00');return isDone(x)&&x.area==='Estudos'&&d>=ws&&d<=now}).reduce(function(a,x){return a+Number(x.duration||0)/60},0);
+ const hours=manualHours+taskHours;
+ const target=Number(state.settings.studyHours||2)*5;
  const firstOpen=Math.max(0,STUDY_PLAN.findIndex(function(p,i){return isPhaseUnlocked(i)&&p.modules.some(function(m){return !state.curriculumDone[m.id]})}));
  let phases='';
  STUDY_PLAN.forEach(function(p,idx){
-  const unlocked=isPhaseUnlocked(idx),pdone=p.modules.filter(function(m){return !!state.curriculumDone[m.id]}).length;let mods='';
+  const unlocked=isPhaseUnlocked(idx),pdone=p.modules.filter(function(m){return !!state.curriculumDone[m.id]}).length;
+  let mods='';
   if(unlocked){
-   p.modules.forEach(function(m){const checked=!!state.curriculumDone[m.id];mods+='<div class="studyModule '+(checked?'completed':'')+'"><button class="studyCheck '+(checked?'done':'')+'" data-id="'+m.id+'" onclick="toggleCurriculum(this.dataset.id)">'+(checked?'✓':'')+'</button><div class="studyModuleBody"><div class="studyModuleTop"><div><b>'+m.title+'</b><div class="muted">'+m.topics+'</div></div><span class="pill '+(checked?'green':'blue')+'">'+(checked?'Concluído':'Módulo')+'</span></div><div class="studyResource"><span>📚 '+m.resource+'</span><button class="btn small" onclick="openPlanResource('+'\''+m.url+'\''+')">Abrir material ↗</button></div></div></div>'});
+   p.modules.forEach(function(m){const checked=!!state.curriculumDone[m.id];mods+='<div class="studyModule '+(checked?'completed':'')+'"><button class="studyCheck '+(checked?'done':'')+'" data-id="'+m.id+'" onclick="toggleCurriculum(this.dataset.id)">'+(checked?'✓':'')+'</button><div class="studyModuleBody"><div class="studyModuleTop"><div><b>'+m.title+'</b><div class="muted">'+(checked?'Concluído':'Pendente')+'</div></div><span class="pill '+(checked?'green':'blue')+'">'+(checked?'Feito':'Em foco')+'</span></div></div></div>'});
   }else{
    const prev=STUDY_PLAN[idx-1];
-   mods='<div class="phaseLocked"><div class="lockBig">🔒</div><b>Fase bloqueada</b><span>Conclua <strong>'+prev.num+' — '+prev.title+'</strong> para liberar esta fase.</span><small>'+pdone+'/'+p.modules.length+' módulos desta fase estarão disponíveis após o desbloqueio.</small></div>';
+   mods='<div class="phaseLocked"><div class="lockBig">🔒</div><b>Fase bloqueada</b><span>Finalize <strong>'+prev.num+' — '+prev.title+'</strong> para liberar esta fase.</span></div>';
   }
-  phases+='<details class="studyPhase card '+(unlocked?'':'lockedPhase')+'" '+(unlocked&&idx===firstOpen?'open':'')+' '+(unlocked?'':'data-locked="true"')+'><summary onclick="if(this.parentElement.dataset.locked){event.preventDefault();toast(&quot;🔒 Conclua a fase anterior para desbloquear esta fase.&quot;)}"><div class="phaseSummary"><div class="phaseNo">'+(unlocked?p.num:'🔒')+'</div><div class="phaseTitle"><b>'+p.title+'</b><span>'+p.period+' · '+pdone+'/'+p.modules.length+' módulos</span></div><span class="pill '+(!unlocked?'redP':pdone===p.modules.length?'green':'purple')+'">'+(!unlocked?'Bloqueada':Math.round(pdone/p.modules.length*100)+'%')+'</span></div></summary><div class="phaseContent"><p class="studyGoal">'+p.goal+'</p><div class="bar"><i style="width:'+(unlocked?(pdone/p.modules.length*100):0)+'%"></i></div><div class="studyModules">'+mods+'</div><div class="studyProject"><b>Projeto da fase</b><span>'+p.project+'</span></div></div></details>';
+  phases+='<details class="studyPhase card '+(unlocked?'':'lockedPhase')+'" '+(unlocked&&idx===firstOpen?'open':'')+' '+(unlocked?'':'data-locked="true"')+'><summary onclick="if(this.parentElement.dataset.locked){event.preventDefault();toast(&quot;🔒 Finalize a fase anterior para desbloquear esta fase.&quot;)}"><div class="phaseSummary"><div class="phaseNo">'+(unlocked?p.num:'🔒')+'</div><div class="phaseTitle"><b>'+p.title+'</b><span>'+p.period+' · '+pdone+'/'+p.modules.length+' concluídos</span></div><span class="pill '+(!unlocked?'redP':pdone===p.modules.length?'green':'purple')+'">'+(!unlocked?'Bloqueada':Math.round(pdone/p.modules.length*100)+'%')+'</span></div></summary><div class="phaseContent"><p class="studyGoal">'+p.goal+'</p><div class="bar"><i style="width:'+(unlocked?(pdone/p.modules.length*100):0)+'%"></i></div><div class="studyModules">'+mods+'</div><div class="studyProject"><b>Meu marco</b><span>'+p.project+'</span></div></div></details>';
  });
+ const currentIdx=Math.max(0,STUDY_PLAN.findIndex(function(p,i){return isPhaseUnlocked(i)&&p.modules.some(function(m){return !state.curriculumDone[m.id]})}));
+ const currentPhase=STUDY_PLAN[currentIdx]||STUDY_PLAN[STUDY_PLAN.length-1];
+ const nextModule=currentPhase.modules.find(function(m){return !state.curriculumDone[m.id]});
  q('#roadmap').innerHTML=
- '<div class="studyHero grid two"><div class="card"><div class="head"><div><h2>Minha Trilha TI</h2><span class="muted">Avance uma fase por vez. A próxima é liberada somente quando a anterior estiver concluída.</span></div><span class="pill purple">'+overall+'%</span></div><div class="studyHeroStats"><div><b>'+doneCount+'/'+totalModules+'</b><span>módulos</span></div><div><b>'+hours.toFixed(1)+'h</b><span>esta semana</span></div><div><b>'+target+'h</b><span>meta</span></div></div><div class="bar" style="margin-top:14px"><i style="width:'+overall+'%"></i></div></div><div class="card"><div class="head"><h2>Método 30 / 60 / 30</h2><span class="pill blue">prático</span></div><div class="studyMethod"><div><b>30m</b><span>teoria</span></div><div><b>60m</b><span>código</span></div><div><b>30m</b><span>projeto</span></div></div><div class="muted" style="line-height:1.7;margin-top:10px">Aprenda um assunto, pratique e conclua o módulo antes de seguir.</div></div></div>'+
- '<div class="studyTabs"><button class="studyTab active" data-tab="plan">🗺 Trilha</button><button class="studyTab" data-tab="course">📚 Cursos</button><button class="studyTab" data-tab="game">🎮 Jogos & desafios</button><button class="studyTab" data-tab="video">🎥 Vídeos</button><button class="studyTab" data-tab="practice">🧪 Prática</button><button class="studyTab" data-tab="college">🎓 Faculdade</button><button class="studyTab" data-tab="radar">📡 Radar futuro</button></div>'+
- '<div id="studyTabPlan" class="studyTabPanel active"><div class="studyResourceBox card"><div class="head"><div><h2>Mapa da formação</h2><span class="muted">4 fases progressivas.</span></div><span class="quickStat"><i class="quickDot"></i>'+STUDY_PLAN.filter(function(_,i){return isPhaseUnlocked(i)}).length+' fase(s) liberada(s)</span></div>'+phases+'</div></div>'+
- '<div id="studyTabResources" class="studyTabPanel"><div class="card studyLibraryWrap"><div class="head"><div><h2 id="libraryTitle">Cursos</h2><span class="muted" id="libraryHint">Cursos liberados conforme seu progresso.</span></div><span class="quickStat"><i class="quickDot"></i>'+STUDY_RESOURCES.filter(function(r){return isPhaseUnlocked(phaseIndex(r.phase))}).length+' liberados</span></div><div id="studyLibrary"></div></div></div>'+
+ '<div class="studyHero grid two"><div class="card"><div class="head"><div><h2>Minha Trilha TI</h2><span class="muted">Acompanhamento pessoal da minha evolução em tecnologia.</span></div><span class="pill purple">'+overall+'%</span></div><div class="studyHeroStats"><div><b>'+doneCount+'/'+totalModules+'</b><span>marcos concluídos</span></div><div><b>'+hours.toFixed(1)+'h</b><span>estudadas nesta semana</span></div><div><b>'+target+'h</b><span>meta semanal</span></div></div><div class="bar" style="margin-top:14px"><i style="width:'+overall+'%"></i></div></div><div class="card"><div class="head"><h2>Meu momento</h2><span class="pill blue">agora</span></div><div class="personalFocus"><div><span>Fase atual</span><b>'+currentPhase.title+'</b></div><div><span>Próximo marco</span><b>'+(nextModule?nextModule.title:'Trilha concluída')+'</b></div><div><span>Ritmo</span><b>'+hours.toFixed(1)+'h / '+target+'h nesta semana</b></div></div></div></div>'+
+ '<div class="studyTabs"><button class="studyTab active" data-tab="plan">🗺 Minha trilha</button><button class="studyTab" data-tab="college">🎓 Faculdade</button><button class="studyTab" data-tab="radar">📡 Radar futuro</button></div>'+
+ '<div id="studyTabPlan" class="studyTabPanel active"><div class="studyResourceBox card"><div class="head"><div><h2>Minha evolução</h2><span class="muted">Marque o que você já concluiu.</span></div><span class="quickStat"><i class="quickDot"></i>'+STUDY_PLAN.filter(function(_,i){return isPhaseUnlocked(i)}).length+' fase(s) liberada(s)</span></div>'+phases+'</div></div>'+
  '<div id="studyTabCollege" class="studyTabPanel">'+ACADEMIC_SECTION+'</div>'+
  '<div id="studyTabRadar" class="studyTabPanel"><div id="careerRadar"></div></div>'+
- '<div class="grid two" style="margin-top:14px"><div class="card"><div class="head"><h2>Histórico recente</h2><span class="muted">'+state.studySessions.length+' registro(s)</span></div>'+recentStudies()+'</div><div class="card"><div class="head"><h2>Projetos obrigatórios</h2></div><div class="muted" style="line-height:2.1">01 · Mini dashboard pessoal<br>02 · API do WILKER + PostgreSQL<br>03 · API containerizada + CI/CD + Cloud<br>04 · WILKER AI + segurança + portfólio</div></div></div>';
+ '<div class="grid two" style="margin-top:14px"><div class="card"><div class="head"><h2>Histórico recente</h2><span class="muted">'+state.studySessions.filter(function(x){return !x.sourceTaskId}).length+' registros manuais</span></div>'+recentStudies()+'</div><div class="card"><div class="head"><h2>Meu próximo passo</h2></div><div class="muted" style="line-height:2.1">'+(nextModule?'<b style="color:var(--text)">'+esc(nextModule.title)+'</b><br>'+esc(currentPhase.goal):'Trilha concluída. Hora de revisar objetivos e escolher o próximo foco.')+'</div></div></div>';
  qaStudyTabs();
- renderResourceLibrary('course');
 }
 function recentStudies(){if(!state.studySessions.length)return '<div class="muted">Registre seus estudos para acompanhar sua evolução.</div>';let out='';state.studySessions.slice().sort(function(a,b){return String(b.date).localeCompare(String(a.date))}).slice(0,5).forEach(function(x){out+='<div class="studyRecent"><div><b>'+esc(x.topic)+'</b><div class="muted">'+x.date+' · '+Number(x.hours).toFixed(1)+'h</div></div><button class="btn small danger" data-id="'+x.id+'" onclick="askDeleteStudy(this.dataset.id)">Excluir</button></div>'});return out}
 function qaStudyTabs(){
- const modes={course:{title:'Cursos',hint:'Cursos completos, trilhas estruturadas e formação guiada.'},game:{title:'Jogos & desafios',hint:'Aprenda resolvendo fases, katas, labs e desafios.'},video:{title:'Vídeos',hint:'Aulas didáticas para aprender vendo e praticando junto.'},practice:{title:'Prática',hint:'Exercícios, laboratórios e desafios para escrever código.'},radar:{title:'Radar futuro',hint:'Áreas, faculdades e sinais de mercado atualizados diariamente.'}};
- const panelMap={plan:'#studyTabPlan',resources:'#studyTabResources',college:'#studyTabCollege',radar:'#studyTabRadar'};
+ const panelMap={plan:'#studyTabPlan',college:'#studyTabCollege',radar:'#studyTabRadar'};
  qa('.studyTab').forEach(function(btn){
   btn.onclick=function(){
    qa('.studyTab').forEach(function(b){b.classList.toggle('active',b===btn)});
    const tab=btn.dataset.tab;
-   Object.keys(panelMap).forEach(function(k){
-    const el=q(panelMap[k]);
-    if(el)el.classList.toggle('active',(tab==='plan'&&k==='plan')||(tab==='college'&&k==='college')||((modes[tab])&&k==='resources'));
-   });
-   if(modes[tab]){
-    const info=modes[tab],title=q('#libraryTitle'),hint=q('#libraryHint');
-    if(tab==='radar'&&typeof refreshCareerRadar==='function')refreshCareerRadar(false);
-    if(title)title.textContent=info.title;
-    if(hint)hint.textContent=info.hint;
-    if(typeof renderResourceLibrary==='function')renderResourceLibrary(tab);
-   }
+   Object.keys(panelMap).forEach(function(k){const el=q(panelMap[k]);if(el)el.classList.toggle('active',k===tab)});
+   if(tab==='radar'&&typeof refreshCareerRadar==='function')refreshCareerRadar(false);
   };
  });
 }
-function navigate(view){qa('.nav').forEach(function(n){n.classList.toggle('active',n.dataset.view===view)});qa('.view').forEach(function(v){v.classList.toggle('active',v.id===view)});const titles={dashboard:'Visão geral',tasks:'Tarefas',schedule:'Cronograma',finance:'Finanças',investments:'Investimentos',roadmap:'Trilha TI'};const hints={dashboard:'Seu centro pessoal de planejamento.',tasks:'Organize, priorize e mova suas tarefas.',schedule:'Veja sua semana sem perder o contexto.',finance:'Controle receitas, gastos, contas e metas.',investments:'Acompanhe seu patrimônio de forma simples.',roadmap:'Registre sua evolução e mantenha o foco.'};q('#pageTitle').textContent=titles[view]||'WILKER Planner';q('#pageHint').textContent=hints[view]||''}
+function navigate(view){qa('.nav').forEach(function(n){n.classList.toggle('active',n.dataset.view===view)});qa('.view').forEach(function(v){v.classList.toggle('active',v.id===view)});const titles={dashboard:'Visão geral',tasks:'Tarefas',schedule:'Cronograma',finance:'Finanças',investments:'Investimentos',roadmap:'Trilha TI'};const hints={dashboard:'Seu centro pessoal de planejamento.',tasks:'Organize, priorize e mova suas tarefas.',schedule:'Veja sua semana sem perder o contexto.',finance:'Controle receitas, gastos, contas e metas.',investments:'Acompanhe seu patrimônio de forma simples.',roadmap:'Meu acompanhamento pessoal de tecnologia.'};q('#pageTitle').textContent=titles[view]||'WILKER Planner';q('#pageHint').textContent=hints[view]||''}
 function renderAll(){q('#dateText').textContent=new Date().toLocaleDateString('pt-BR',{weekday:'long',day:'2-digit',month:'long',year:'numeric'});const status=q('.quickStat');const hint=q('#pageHint');if(hostedMode){if(status)status.innerHTML='<i class="quickDot"></i>Online · dados neste navegador';if(hint&&q('#pageTitle').textContent==='Visão geral')hint.textContent='Seu centro pessoal de planejamento, hospedado no GitHub Pages.'}else{if(status)status.innerHTML='<i class="quickDot"></i>Local · salvo automaticamente'}
  state=normalize(state);
  const jobs=[['dashboard',renderDashboard],['tasks',renderTasks],['schedule',renderSchedule],['finance',renderFinance],['investments',renderInvestments],['roadmap',renderRoadmap]];
@@ -809,6 +953,8 @@ q('#taskForm').onsubmit=saveTask;q('#finForm').onsubmit=saveFinance;q('#invForm'
 qa('[data-close]').forEach(function(b){b.onclick=function(){closeModal(b.dataset.close)}});
 q('#backupBtn').onclick=function(){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(state,null,2)],{type:'application/json'}));a.download='wilker-planner-backup.json';a.click();URL.revokeObjectURL(a.href);toast('Backup exportado.')};
 q('#restoreInput').onchange=async function(e){const f=e.target.files[0];if(!f)return;try{state=normalize(JSON.parse(await f.text()));await save();renderAll();toast('Backup restaurado.')}catch{toast('Backup inválido.')}e.target.value=''};
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){qa('.modal:not(.hidden)').forEach(function(m){m.classList.add('hidden')})}});
+qa('.modal').forEach(function(m){m.addEventListener('click',function(e){if(e.target===m)m.classList.add('hidden')})});
 load();
 </script>
 </body>
