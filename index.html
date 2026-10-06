@@ -193,6 +193,7 @@ const APP_KEY='wilker-planner-state-v3';
 const DEFAULTS={tasks:[],finances:[],investments:[],budgets:{},goals:[],bills:[],studySessions:[],settings:{studyHours:2}};
 let state=JSON.parse(JSON.stringify(DEFAULTS));
 let apiReady=false;
+const hostedMode=location.hostname.endsWith('.github.io');
 const q=s=>document.querySelector(s);
 const qa=s=>Array.from(document.querySelectorAll(s));
 const today=()=>new Date().toISOString().slice(0,10);
@@ -214,7 +215,27 @@ function seed(){const d=today();state.tasks=[
 {id:uid(),title:'Academia',area:'Academia',status:'A fazer',priority:'Média',date:d,time:'18:00',duration:60,notes:''},
 {id:uid(),title:'Estudo principal',area:'Estudos',status:'A fazer',priority:'Alta',date:d,time:'19:30',duration:120,notes:''},
 {id:uid(),title:'Revisão financeira',area:'Finanças',status:'A fazer',priority:'Média',date:d,time:'21:30',duration:20,notes:''}];state.finances=[];state.investments=[];localSave()}
-async function load(){try{const r=await fetch('/api/state',{cache:'no-store'});if(!r.ok)throw new Error();state=normalize(await r.json());apiReady=true;localSave()}catch{const raw=localStorage.getItem(APP_KEY);state=raw?normalize(JSON.parse(raw)):normalize(DEFAULTS);apiReady=false}if(!state.tasks.length)seed();renderAll()}
+async function load(){
+ if(hostedMode){
+  const raw=localStorage.getItem(APP_KEY);
+  state=raw?normalize(JSON.parse(raw)):normalize(DEFAULTS);
+  apiReady=false;
+  if(!state.tasks.length)seed();
+  renderAll();
+  return;
+ }
+ try{
+  const r=await fetch('/api/state',{cache:'no-store'});
+  if(!r.ok)throw new Error();
+  state=normalize(await r.json());apiReady=true;localSave();
+ }catch{
+  const raw=localStorage.getItem(APP_KEY);
+  state=raw?normalize(JSON.parse(raw)):normalize(DEFAULTS);
+  apiReady=false;
+ }
+ if(!state.tasks.length)seed();
+ renderAll();
+}
 function stats(){const income=state.finances.filter(x=>x.type==='Receita').reduce((a,x)=>a+Number(x.value),0),expense=state.finances.filter(x=>x.type==='Despesa').reduce((a,x)=>a+Number(x.value),0),invested=state.investments.reduce((a,x)=>a+Number(x.value),0),hours=state.studySessions.reduce((a,x)=>a+Number(x.hours),0);return{income,expense,balance:income-expense,invested,hours}}
 function openModal(id){q('#'+id).classList.remove('hidden')}
 function closeModal(id){q('#'+id).classList.add('hidden')}
@@ -291,7 +312,7 @@ function renderRoadmap(){
  q('#roadmap').innerHTML='<div class="grid two"><div class="card"><div class="head"><div><h2>Trilha principal</h2><span class="muted">Software → Backend → Cloud → IA + Segurança</span></div><span class="pill purple">12 meses</span></div><div class="bar"><i style="width:'+(target?Math.min(100,hours/target*100):0)+'%"></i></div><div class="muted" style="margin-top:8px">'+hours.toFixed(1)+'h nesta semana · meta '+target+'h</div><button class="btn primary" style="margin-top:12px" onclick="openStudy()">＋ Registrar estudo</button></div><div class="card"><div class="head"><h2>Histórico recente</h2></div>'+recent+'</div></div><div class="grid phaseGrid" style="margin-top:14px">'+cards+'</div>'
 }
 function navigate(view){qa('.nav').forEach(function(n){n.classList.toggle('active',n.dataset.view===view)});qa('.view').forEach(function(v){v.classList.toggle('active',v.id===view)});const titles={dashboard:'Visão geral',tasks:'Tarefas',schedule:'Cronograma',finance:'Finanças',investments:'Investimentos',roadmap:'Trilha TI'};const hints={dashboard:'Seu centro pessoal de planejamento.',tasks:'Organize, priorize e mova suas tarefas.',schedule:'Veja sua semana sem perder o contexto.',finance:'Controle receitas, gastos, contas e metas.',investments:'Acompanhe seu patrimônio de forma simples.',roadmap:'Registre sua evolução e mantenha o foco.'};q('#pageTitle').textContent=titles[view]||'WILKER Planner';q('#pageHint').textContent=hints[view]||''}
-function renderAll(){q('#dateText').textContent=new Date().toLocaleDateString('pt-BR',{weekday:'long',day:'2-digit',month:'long',year:'numeric'});renderDashboard();renderTasks();renderSchedule();renderFinance();renderInvestments();renderRoadmap()}
+function renderAll(){q('#dateText').textContent=new Date().toLocaleDateString('pt-BR',{weekday:'long',day:'2-digit',month:'long',year:'numeric'});const status=q('.quickStat');const hint=q('#pageHint');if(hostedMode){if(status)status.innerHTML='<i class="quickDot"></i>Online · dados neste navegador';if(hint&&q('#pageTitle').textContent==='Visão geral')hint.textContent='Seu centro pessoal de planejamento, hospedado no GitHub Pages.'}else{if(status)status.innerHTML='<i class="quickDot"></i>Local · salvo automaticamente'}renderDashboard();renderTasks();renderSchedule();renderFinance();renderInvestments();renderRoadmap()}
 
 qa('.nav').forEach(function(n){n.onclick=function(){navigate(n.dataset.view)}});
 q('#newTaskBtn').onclick=openTask;q('#routineBtn').onclick=applyRoutine;
