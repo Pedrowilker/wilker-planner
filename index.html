@@ -133,6 +133,67 @@ body{font-size:13px;letter-spacing:.002em}
 .confirmBox .actions{margin-top:20px}
 .confirmBox .btn.primary{background:var(--red);border-color:var(--red);box-shadow:0 8px 18px rgba(214,69,69,.2)}
 .confirmBox .btn.primary:hover{box-shadow:0 11px 24px rgba(214,69,69,.28)}
+
+.mobileNav{display:none}
+.mobileMove{display:none}
+.touchHint{display:none}
+@media(max-width:700px){
+  html,body{width:100%;min-width:0;overflow-x:hidden;-webkit-text-size-adjust:100%}
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+  .app{display:block;min-height:100vh}
+  .main{width:100%;max-width:none;min-width:0;overflow:visible;padding-bottom:10px}
+  .topbar{height:auto;min-height:74px;padding:12px 14px;gap:10px;align-items:flex-start}
+  .topbar>div:first-child{flex:1;min-width:0}
+  .topbar h1{font-size:20px;line-height:1.15}
+  .eyebrow{font-size:9px}
+  .pageHint{font-size:10px!important;max-width:90vw}
+  .topbar .toolbar{flex:0 0 auto;gap:5px}
+  .topbar #routineBtn{font-size:0;width:40px;height:40px;padding:0;display:grid;place-items:center}
+  .topbar #routineBtn:after{content:'↻';font-size:18px}
+  .topbar #newTaskBtn{font-size:0;width:40px;height:40px;padding:0;display:grid;place-items:center}
+  .topbar #newTaskBtn:after{content:'+';font-size:22px;line-height:1}
+  .view{padding:14px 12px 28px;overflow:visible}
+  .stats{gap:10px}
+  .stats .card{min-height:102px;padding:15px}
+  .big{font-size:25px}
+  .two{gap:10px}
+  .card{padding:15px;border-radius:14px}
+  .head{align-items:flex-start}
+  .taskRow{grid-template-columns:22px minmax(0,1fr) auto 32px;gap:7px;padding:10px}
+  .taskRow .taskName{font-size:12px}
+  .taskRow .meta{font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .pill{font-size:8px;padding:4px 6px}
+  .kanban{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;margin-right:-2px}
+  .kanban .lane{flex:0 0 min(88vw,330px);min-height:390px;scroll-snap-align:start}
+  .mobileMove{display:inline-flex}
+  .touchHint{display:block;font-size:10px;color:var(--muted);margin-top:6px}
+  .calendar{display:flex;overflow-x:auto;gap:10px;border:0;background:transparent;border-radius:0;padding-bottom:6px;scroll-snap-type:x mandatory}
+  .calendar .day{flex:0 0 min(82vw,320px);min-height:170px;border:1px solid var(--line);border-radius:12px;background:#fff;scroll-snap-align:start;padding:12px}
+  .event{font-size:10px;padding:7px 8px}
+  .tableHead{display:none}
+  .tableRow{grid-template-columns:1fr!important;gap:5px;margin:7px 0;padding:12px}
+  .tableRow>div{overflow:visible;text-overflow:clip;white-space:normal}
+  .tableRow>div:empty{display:none}
+  .monthBars{height:145px;gap:6px}
+  .mbar i{max-width:26px}
+  .formGrid{grid-template-columns:1fr!important}
+  .modal{padding:10px;align-items:end}
+  .modalBox{width:100%;max-height:88vh;border-radius:18px 18px 10px 10px;padding:18px}
+  .modalHead h2{font-size:17px}
+  .modal label{font-size:10px}
+  .modal input,.modal select,.modal textarea{font-size:16px;min-height:44px}
+  .actions{gap:7px}
+  .actions .btn{flex:1;min-height:44px}
+  .confirmBox{padding:20px}
+  .mobileNav{display:flex;position:fixed;left:8px;right:8px;bottom:calc(8px + env(safe-area-inset-bottom));height:64px;z-index:80;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border:1px solid rgba(218,225,236,.95);border-radius:18px;box-shadow:0 12px 36px rgba(20,35,60,.16);padding:5px;gap:3px;overflow-x:auto}
+  .mobileNav .nav{flex:1 0 67px;min-width:67px;height:54px;min-height:54px;padding:5px 4px;margin:0;border-radius:12px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:3px;font-size:9px;color:#69758a}
+  .mobileNav .nav:before{display:none}
+  .mobileNav .navIcon{width:19px;height:19px;flex:0 0 19px}
+  .mobileNav .navIcon svg{width:17px;height:17px}
+  .mobileNav .nav.active{background:var(--blue2);color:var(--blue);box-shadow:inset 0 0 0 1px rgba(39,103,238,.08)}
+  .mobileNav .nav.active .navIcon{color:var(--blue)}
+}
+@media(min-width:701px){.mobileNav{display:none}}
 </style>
 <meta name="theme-color" content="#2868EE">
 <link rel="manifest" href="manifest.webmanifest">
@@ -164,6 +225,14 @@ body{font-size:13px;letter-spacing:.002em}
 <section id="roadmap" class="view"></section>
 </main>
 </div>
+<nav class="mobileNav" aria-label="Navegação principal">
+  <button class="nav active" data-view="dashboard"><i class="navIcon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg></i><span>Início</span></button>
+  <button class="nav" data-view="tasks"><i class="navIcon"><svg viewBox="0 0 24 24"><path d="M8 6h12"/><path d="M8 12h12"/><path d="M8 18h12"/><path d="M4 6h.01"/><path d="M4 12h.01"/><path d="M4 18h.01"/></svg></i><span>Tarefas</span></button>
+  <button class="nav" data-view="schedule"><i class="navIcon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v5l3 2"/></svg></i><span>Semana</span></button>
+  <button class="nav" data-view="finance"><i class="navIcon"><svg viewBox="0 0 24 24"><path d="M5 6h14"/><path d="M5 10h14"/><path d="M5 14h14"/><path d="M5 18h9"/></svg></i><span>Finanças</span></button>
+  <button class="nav" data-view="investments"><i class="navIcon"><svg viewBox="0 0 24 24"><path d="M5 17 9 13l3 3 7-8"/><path d="M15 8h4v4"/></svg></i><span>Invest.</span></button>
+  <button class="nav" data-view="roadmap"><i class="navIcon"><svg viewBox="0 0 24 24"><path d="M5 19 19 5"/><path d="M10 5h9v9"/></svg></i><span>TI</span></button>
+</nav>
 
 <div id="taskModal" class="modal hidden"><div class="modalBox"><div class="modalHead"><h2 id="taskModalTitle">Nova tarefa</h2><button class="close" data-close="taskModal">×</button></div>
 <form id="taskForm"><input type="hidden" id="taskId">
@@ -269,7 +338,7 @@ function renderDashboard(){
  '<div class="card"><div class="head"><h2>Distribuição</h2></div><div class="bars">'+bars+'</div></div></div>'+
  '<div class="grid two" style="margin-top:14px"><div class="card"><div class="head"><div><h2>Rotina base</h2><span class="muted">equilíbrio entre trabalho, estudo e saúde</span></div></div><div class="muted" style="line-height:2.1">08:00–17:00 trabalho<br>18:00–19:00 academia em 3 dias<br>19:30–21:30 estudo principal<br>Domingo: revisão financeira<br>Manter uma noite livre.</div></div><div class="card"><div class="head"><h2>Meta rápida</h2><span class="pill purple">foco</span></div><div class="muted" style="line-height:2.1">5 blocos de estudo<br>3 treinos<br>1 revisão financeira<br>Registrar gastos no mesmo dia.</div></div></div>'
 }
-function taskCard(t){return '<div class="kcard" draggable="true" ondragstart="dragTask(event,this.dataset.id)" data-id="'+t.id+'"><div class="kTitle">'+esc(t.title)+'</div><div class="kMeta">'+(t.date||'sem data')+' · '+(t.time||'--')+' · '+esc(t.area)+(t.repeat&&t.repeat!=='none'?' · ↻':'')+'</div><div class="kActions"><span class="pill '+(t.priority==='Alta'?'redP':t.priority==='Média'?'orange':'blue')+'">'+t.priority+'</span><button class="btn small" data-id="'+t.id+'" onclick="editTask(this.dataset.id)">Editar</button><button class="btn small danger" data-id="'+t.id+'" onclick="removeTask(this.dataset.id)">Excluir</button></div></div>'}
+function taskCard(t){return '<div class="kcard" draggable="true" ondragstart="dragTask(event,this.dataset.id)" data-id="'+t.id+'"><div class="kTitle">'+esc(t.title)+'</div><div class="kMeta">'+(t.date||'sem data')+' · '+(t.time||'--')+' · '+esc(t.area)+(t.repeat&&t.repeat!=='none'?' · ↻':'')+'</div><div class="kActions"><span class="pill '+(t.priority==='Alta'?'redP':t.priority==='Média'?'orange':'blue')+'">'+t.priority+'</span><button class="btn small" data-id="'+t.id+'" onclick="editTask(this.dataset.id)">Editar</button><button class="btn small danger" data-id="'+t.id+'" onclick="removeTask(this.dataset.id)">Excluir</button><button class="btn small mobileMove" data-id="'+t.id+'" onclick="advanceTask(this.dataset.id)">Mover</button></div></div>'}
 function renderTasks(){
  const groups={'A fazer':state.tasks.filter(x=>x.status==='A fazer'),'Em andamento':state.tasks.filter(x=>x.status==='Em andamento'),'Concluída':state.tasks.filter(isDone)};
  let lanes='';Object.entries(groups).forEach(function(p){let cards='';p[1].forEach(t=>cards+=taskCard(t));lanes+='<div class="lane" data-status="'+p[0]+'" ondragover="allowDrop(event)" ondrop="dropTask(event,this.dataset.status)"><div class="laneTitle"><span>'+p[0]+'</span><span>'+p[1].length+'</span></div>'+(cards||'<div class="muted" style="padding:8px">Nenhuma tarefa.</div>')+'</div>'});
@@ -279,6 +348,7 @@ function allowDrop(e){e.preventDefault();e.currentTarget.classList.add('drop')}
 function dragTask(e,id){e.dataTransfer.setData('text/plain',id);if(e.currentTarget)e.currentTarget.classList.add('dragging')}
 function dropTask(e,status){e.preventDefault();e.currentTarget.classList.remove('drop');qa('.lane').forEach(function(l){l.classList.remove('drop')});qa('.kcard.dragging').forEach(function(k){k.classList.remove('dragging')});const id=e.dataTransfer.getData('text/plain'),t=state.tasks.find(x=>x.id===id);if(!t)return;t.status=status;save().then(renderAll)}
 async function toggleTask(id){const t=state.tasks.find(x=>x.id===id);if(!t)return;t.status=isDone(t)?'A fazer':'Concluída';await save();renderAll()}
+async function advanceTask(id){const t=state.tasks.find(x=>x.id===id);if(!t)return;const flow=['A fazer','Em andamento','Concluída'];const i=flow.indexOf(t.status);t.status=flow[(i+1)%flow.length];await save();renderAll();toast('Tarefa movida para '+t.status+'.')}
 async function removeTask(id){state.tasks=state.tasks.filter(x=>x.id!==id);await save();renderAll();toast('Tarefa removida.')}
 function openTask(){q('#taskModalTitle').textContent='Nova tarefa';q('#taskId').value='';q('#taskTitle').value='';q('#taskArea').value='Estudos';q('#taskStatus').value='A fazer';q('#taskPriority').value='Média';q('#taskDate').value=today();q('#taskTime').value='19:30';q('#taskDuration').value=60;q('#taskRepeat').value='none';q('#taskNotes').value='';openModal('taskModal')}
 function editTask(id){const t=state.tasks.find(x=>x.id===id);if(!t)return;q('#taskModalTitle').textContent='Editar tarefa';q('#taskId').value=t.id;q('#taskTitle').value=t.title;q('#taskArea').value=t.area;q('#taskStatus').value=t.status;q('#taskPriority').value=t.priority;q('#taskDate').value=t.date||today();q('#taskTime').value=t.time||'';q('#taskDuration').value=t.duration||60;q('#taskRepeat').value=t.repeat||'none';q('#taskNotes').value=t.notes||'';openModal('taskModal')}
