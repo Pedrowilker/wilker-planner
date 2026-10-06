@@ -1,0 +1,29 @@
+﻿name: WILKER - Noticias Financeiras
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Atualizar cache
+        run: node scripts/update-finance-news.mjs
+      - name: Publicar cache
+        run: |
+          git config user.name "WILKER Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/finance-news.json
+          git diff --cached --quiet || git commit -m "Atualiza noticias financeiras"
+          git push
