@@ -131,9 +131,15 @@ function taskCard(t){
 function dragTask(e,id){e.dataTransfer.setData("text/plain",id);e.dataTransfer.effectAllowed="move"}
 function dropTask(e,status){e.preventDefault();const id=e.dataTransfer.getData("text/plain");const t=state.tasks.find(x=>x.id===id);if(!t)return;t.status=status;saveState().then(renderAll)}
 function renderTasksV3(){
- const groups={"A fazer":state.tasks.filter(x=>x.status==="A fazer"),"Em andamento":state.tasks.filter(x=>x.status==="Em andamento"),"Concluída":state.tasks.filter(done)};
- $("#tasks").innerHTML=`<div class="toolbar"><button class="btn primary" onclick="openTask()">＋ Nova tarefa</button><button class="btn" onclick="applyRoutine()">Aplicar rotina da semana</button><span class="muted">Arraste um cartão para mudar o status.</span></div>
- <div class="kanban">${Object.entries(groups).map(([name,list])=>`<div class="lane" ondragover="event.preventDefault()" ondrop="dropTask(event,'${name}')"><div class="laneTitle"><span>${name}</span><span>${list.length}</span></div>${list.length?list.map(taskCard).join(""):'<div class="muted" style="padding:8px">Nenhuma tarefa.</div>'}</div>`).join("")}</div>`
+ const groups={"A fazer":state.tasks.filter(function(x){return x.status==="A fazer"}),"Em andamento":state.tasks.filter(function(x){return x.status==="Em andamento"}),"Concluída":state.tasks.filter(done)};
+ let html='<div class="toolbar"><button class="btn primary" onclick="openTask()">＋ Nova tarefa</button><button class="btn" onclick="applyRoutine()">Aplicar rotina da semana</button><span class="muted">Arraste um cartão para mudar o status.</span></div><div class="kanban">';
+ Object.entries(groups).forEach(function(pair){
+  const name=pair[0],list=pair[1];
+  html+='<div class="lane" ondragover="event.preventDefault()" ondrop="dropTask(event,\\''+name+'\\')"><div class="laneTitle"><span>'+name+'</span><span>'+list.length+'</span></div>';
+  html+=list.length?list.map(taskCard).join(""):'<div class="muted" style="padding:8px">Nenhuma tarefa.</div>';
+  html+='</div>';
+ });
+ html+='</div>';$("#tasks").innerHTML=html;
 }
 async function submitTaskV3(e){
  e.preventDefault();const id=$("#taskId").value||uid(),repeat=$("#taskRepeat").value;
