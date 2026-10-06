@@ -126,6 +126,13 @@ body{font-size:13px;letter-spacing:.002em}
 .emptyState strong{color:var(--text);font-size:13px;margin-bottom:4px}
 @media(max-width:1100px){.sidebar{flex-basis:78px;width:78px}.main{max-width:calc(100vw - 78px)}.brand>div:last-child,.nav span,.sideBottom{display:none}.nav{justify-content:center}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.two{grid-template-columns:1fr}.kanban{grid-template-columns:1fr}}
 @media(max-width:700px){.sidebar{display:none}.main{max-width:100vw;width:100%}.stats{grid-template-columns:1fr}.two{grid-template-columns:1fr}.topbar{padding:0 16px}.topbar .toolbar{gap:5px}.topbar .btn{padding:8px}.topbar .quickStat{display:none}.view{padding:18px 15px 36px}.card{padding:16px}.calendar{grid-template-columns:1fr}.day{min-height:80px}}
+
+.confirmBox{width:min(430px,100%);padding:24px 24px 20px}
+.confirmIcon{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:var(--red2);color:var(--red);font-weight:900;font-size:18px;margin-bottom:14px;box-shadow:0 8px 20px rgba(214,69,69,.12)}
+.confirmMessage{font-size:12px;line-height:1.6;margin:8px 0 2px}
+.confirmBox .actions{margin-top:20px}
+.confirmBox .btn.primary{background:var(--red);border-color:var(--red);box-shadow:0 8px 18px rgba(214,69,69,.2)}
+.confirmBox .btn.primary:hover{box-shadow:0 11px 24px rgba(214,69,69,.28)}
 </style>
 <meta name="theme-color" content="#2868EE">
 <link rel="manifest" href="manifest.webmanifest">
@@ -191,6 +198,12 @@ body{font-size:13px;letter-spacing:.002em}
 <div id="studyModal" class="modal hidden"><div class="modalBox"><div class="modalHead"><h2>Registrar estudo</h2><button class="close" data-close="studyModal">×</button></div>
 <form id="studyForm"><label>Tema<input id="studyTopic" required placeholder="TypeScript, AWS, segurança..."></label><div class="formGrid"><label>Horas<input id="studyHours" required type="number" min="0.25" step="0.25" value="2"></label><label>Data<input id="studyDate" required type="date"></label><label>Módulo<select id="studyPhase"><option>01 — Fundamentos + Software</option><option>02 — Backend + APIs</option><option>03 — Cloud + DevOps</option><option>04 — IA + Segurança</option></select></label></div><label>Observações<textarea id="studyNotes" rows="3"></textarea></label><div class="actions"><button type="button" class="btn" data-close="studyModal">Cancelar</button><button class="btn primary">Registrar</button></div></form></div></div>
 
+<div id="confirmModal" class="modal hidden"><div class="modalBox confirmBox">
+  <div class="confirmIcon">!</div>
+  <div class="modalHead"><h2 id="confirmTitle">Confirmar ação</h2><button class="close" data-close="confirmModal">×</button></div>
+  <p id="confirmMessage" class="muted confirmMessage">Tem certeza?</p>
+  <div class="actions"><button type="button" class="btn" data-close="confirmModal">Cancelar</button><button type="button" class="btn primary" id="confirmOk">Excluir registro</button></div>
+</div></div>
 <div id="toast" class="toast"></div>
 
 <script>
@@ -309,11 +322,17 @@ function renderInvestments(){
 }
 function openStudy(){q('#studyForm').reset();q('#studyDate').value=today();q('#studyHours').value=2;openModal('studyModal')}
 async function saveStudy(e){e.preventDefault();state.studySessions.push({id:uid(),topic:q('#studyTopic').value.trim(),hours:Number(q('#studyHours').value),date:q('#studyDate').value,phase:q('#studyPhase').value,notes:q('#studyNotes').value});await save();closeModal('studyModal');renderAll();toast('Estudo registrado.')}
-async function deleteStudy(id){if(!confirm('Apagar este registro de estudo?'))return;state.studySessions=state.studySessions.filter(function(x){return x.id!==id});await save();renderAll();toast('Registro de estudo removido.')}
+function askDeleteStudy(id){
+ q('#confirmTitle').textContent='Apagar registro de estudo?';
+ q('#confirmMessage').textContent='Esse registro será removido da sua trilha e as horas serão recalculadas. Essa ação não pode ser desfeita.';
+ q('#confirmOk').textContent='Excluir registro';
+ q('#confirmOk').onclick=async function(){state.studySessions=state.studySessions.filter(function(x){return x.id!==id});await save();closeModal('confirmModal');renderAll();toast('Registro de estudo removido.')};
+ openModal('confirmModal');
+}
 function renderRoadmap(){
  const phases=[['01','Fundamentos + Software',['Lógica e algoritmos','JavaScript + TypeScript','Python','Git + GitHub','SQL + PostgreSQL']],['02','Backend + APIs',['Node.js / FastAPI','REST + autenticação','Docker','Testes','Projeto real publicado']],['03','Cloud + DevOps',['Linux','AWS ou Azure','CI/CD','Terraform','Monitoramento']],['04','IA + Segurança',['APIs de IA','RAG e agentes','Application Security','Cloud Security','Projeto final']]];
  const now=new Date(),ws=new Date(now);ws.setDate(now.getDate()-((now.getDay()+6)%7));ws.setHours(0,0,0,0),hours=state.studySessions.filter(function(x){const d=new Date(x.date+'T12:00:00');return d>=ws&&d<=now}).reduce((a,x)=>a+Number(x.hours),0),target=Number(state.settings.studyHours||2)*5;let recent='';
- if(!state.studySessions.length)recent='<div class="muted">Registre seus estudos para acompanhar evolução.</div>';else state.studySessions.slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,7).forEach(function(x){recent+='<div style="padding:8px 0;border-bottom:1px solid var(--line);font-size:11px;display:flex;align-items:center;justify-content:space-between;gap:10px"><div><b>'+esc(x.topic)+'</b><div class="muted">'+x.date+' · '+Number(x.hours).toFixed(1)+'h</div></div><button class="btn small danger" data-id="'+x.id+'" onclick="deleteStudy(this.dataset.id)" title="Apagar registro de estudo">Excluir</button></div>'});
+ if(!state.studySessions.length)recent='<div class="muted">Registre seus estudos para acompanhar evolução.</div>';else state.studySessions.slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,7).forEach(function(x){recent+='<div style="padding:8px 0;border-bottom:1px solid var(--line);font-size:11px;display:flex;align-items:center;justify-content:space-between;gap:10px"><div><b>'+esc(x.topic)+'</b><div class="muted">'+x.date+' · '+Number(x.hours).toFixed(1)+'h</div></div><button class="btn small danger" data-id="'+x.id+'" onclick="askDeleteStudy(this.dataset.id)" title="Apagar registro de estudo">Excluir</button></div>'});
  let cards='';phases.forEach(function(p){cards+='<div class="card phase"><span class="pill blue">'+p[0]+'</span><h3>'+p[1]+'</h3><ul>';p[2].forEach(function(item){cards+='<li>'+item+'</li>'});cards+='</ul><span class="pill purple">foco</span></div>'});
  q('#roadmap').innerHTML='<div class="grid two"><div class="card"><div class="head"><div><h2>Trilha principal</h2><span class="muted">Software → Backend → Cloud → IA + Segurança</span></div><span class="pill purple">12 meses</span></div><div class="bar"><i style="width:'+(target?Math.min(100,hours/target*100):0)+'%"></i></div><div class="muted" style="margin-top:8px">'+hours.toFixed(1)+'h nesta semana · meta '+target+'h</div><button class="btn primary" style="margin-top:12px" onclick="openStudy()">＋ Registrar estudo</button></div><div class="card"><div class="head"><h2>Histórico recente</h2></div>'+recent+'</div></div><div class="grid phaseGrid" style="margin-top:14px">'+cards+'</div>'
 }
