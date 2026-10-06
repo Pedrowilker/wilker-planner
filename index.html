@@ -230,6 +230,12 @@ body{font-size:13px;letter-spacing:.002em}
 }
 .mobileBoot{display:none}
 @media(max-width:700px){.mobileBoot{display:block;margin:0}.mobileBoot .head{margin-bottom:6px}}
+
+.studyHeroStats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:15px}
+.studyHeroStats>div{border:1px solid var(--line);background:#fbfcff;border-radius:11px;padding:10px}.studyHeroStats b{display:block;font-size:18px}.studyHeroStats span{font-size:9px;color:var(--muted)}
+.studyMethod{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.studyMethod div{background:var(--blue2);border-radius:10px;padding:9px}.studyMethod b{display:block;font-size:15px;color:var(--blue)}.studyMethod span{font-size:9px;color:#66728a}
+.studyPhase{margin:9px 0;padding:0;overflow:hidden}.studyPhase summary{list-style:none;cursor:pointer;padding:14px 15px}.studyPhase summary::-webkit-details-marker{display:none}.phaseSummary{display:flex;align-items:center;gap:11px}.phaseNo{width:34px;height:34px;border-radius:10px;background:var(--blue2);color:var(--blue);display:grid;place-items:center;font-size:10px;font-weight:900;flex:0 0 34px}.phaseTitle{flex:1;min-width:0}.phaseTitle b{display:block;font-size:13px}.phaseTitle span{display:block;font-size:10px;color:var(--muted);margin-top:3px}.phaseContent{padding:0 15px 15px}.studyGoal{font-size:11px;color:#58647a;line-height:1.6;margin:0 0 10px}.studyModules{display:grid;gap:7px;margin-top:10px}.studyModule{display:flex;gap:9px;border:1px solid var(--line);border-radius:10px;padding:10px;background:#fff}.studyModule.completed{background:#f9fdfb;border-color:#d5eee5}.studyCheck{width:23px;height:23px;border:1px solid #cbd4e1;background:#fff;border-radius:7px;color:#fff;display:grid;place-items:center;flex:0 0 23px;font-size:12px;font-weight:900}.studyCheck.done{background:var(--green);border-color:var(--green)}.studyModuleBody{min-width:0;flex:1}.studyModuleTop{display:flex;gap:9px;align-items:flex-start;justify-content:space-between}.studyModuleTop b{font-size:11px}.studyModuleTop .muted{margin-top:3px;line-height:1.5}.studyResource{display:flex;align-items:center;justify-content:space-between;gap:9px;margin-top:8px;padding-top:8px;border-top:1px solid var(--line);font-size:9px;color:#647188}.studyProject{display:grid;gap:3px;margin-top:10px;padding:11px;border-radius:10px;background:var(--purple2);color:#5f4aa5;font-size:10px}.studyProject span{color:#665f7f}.studyRecent{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:11px}
+@media(max-width:700px){.studyHeroStats{grid-template-columns:repeat(3,1fr)}.studyMethod{grid-template-columns:repeat(3,1fr)}.phaseSummary{gap:8px}.phaseTitle b{font-size:11px}.studyModuleTop{display:block}.studyModuleTop .pill{margin-top:5px}.studyResource{align-items:flex-start;flex-direction:column}.studyResource .btn{width:100%;text-align:center}.studyHeroStats b{font-size:15px}}
 </style>
 <meta name="theme-color" content="#2868EE">
 <link rel="manifest" href="manifest.webmanifest">
@@ -313,7 +319,7 @@ body{font-size:13px;letter-spacing:.002em}
 
 <script>
 const APP_KEY='wilker-planner-state-v3';
-const DEFAULTS={tasks:[],finances:[],investments:[],budgets:{},goals:[],bills:[],studySessions:[],settings:{studyHours:2}};
+const DEFAULTS={tasks:[],finances:[],investments:[],budgets:{},goals:[],bills:[],studySessions:[],curriculumDone:{},settings:{studyHours:2}};
 let state=JSON.parse(JSON.stringify(DEFAULTS));
 let apiReady=false;
 const hostedMode=location.hostname.endsWith('.github.io');
@@ -331,6 +337,7 @@ function normalize(raw){const x=raw&&typeof raw==='object'?raw:{};
  return {
  tasks:clean(x.tasks),finances:clean(x.finances),investments:clean(x.investments),
  budgets:x.budgets&&typeof x.budgets==='object'?x.budgets:{},goals:clean(x.goals),bills:clean(x.bills),studySessions:clean(x.studySessions),
+ curriculumDone:x.curriculumDone&&typeof x.curriculumDone==='object'?x.curriculumDone:{},
  settings:{...DEFAULTS.settings,...(x.settings||{})}
 }}
 function localSave(){localStorage.setItem(APP_KEY,JSON.stringify(state))}
@@ -437,12 +444,59 @@ function askDeleteStudy(id){
  q('#confirmOk').onclick=async function(){state.studySessions=state.studySessions.filter(function(x){return x.id!==id});await save();closeModal('confirmModal');renderAll();toast('Registro de estudo removido.')};
  openModal('confirmModal');
 }
+const STUDY_PLAN=[
+ {id:'p1',num:'01',title:'Fundamentos + Software',period:'Meses 1–3',goal:'Construir base sólida de programação antes de avançar para frameworks.',project:'Projeto: mini dashboard pessoal com JavaScript e Git.',modules:[
+  {id:'p1m1',title:'Lógica e fundamentos',topics:'variáveis · tipos · condições · loops · funções · arrays · objetos',resource:'MDN — JavaScript para iniciantes',url:'https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting'},
+  {id:'p1m2',title:'JavaScript + DOM + APIs',topics:'DOM · eventos · async/await · promises · fetch · JSON',resource:'MDN — Guia JavaScript',url:'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction'},
+  {id:'p1m3',title:'Git + GitHub',topics:'clone · status · commit · push · pull · branch · PR',resource:'GitHub Skills',url:'https://skills.github.com/'},
+  {id:'p1m4',title:'Python',topics:'sintaxe · funções · listas · dicionários · arquivos · classes · testes',resource:'Harvard CS50P',url:'https://cs50.harvard.edu/python/'},
+  {id:'p1m5',title:'SQL + PostgreSQL',topics:'SELECT · filtros · JOIN · agregações · INSERT · UPDATE · DELETE · tabelas',resource:'SQLBolt — exercícios interativos',url:'https://sqlbolt.com/'}
+ ]},
+ {id:'p2',num:'02',title:'Backend + APIs',period:'Meses 3–5',goal:'Aprender a construir aplicações de servidor com banco, autenticação e testes.',project:'Projeto: API completa do WILKER com usuários, tarefas e PostgreSQL.',modules:[
+  {id:'p2m1',title:'Node.js + HTTP',topics:'runtime · módulos · npm · HTTP · filesystem · async · event loop',resource:'Node.js Learn',url:'https://nodejs.org/learn'},
+  {id:'p2m2',title:'REST + Express',topics:'rotas · controllers · services · middleware · JSON · status HTTP',resource:'Node.js Learn — HTTP',url:'https://nodejs.org/learn'},
+  {id:'p2m3',title:'TypeScript',topics:'types · interfaces · unions · generics · modules · narrowing',resource:'TypeScript Handbook',url:'https://www.typescriptlang.org/pt/docs/handbook/intro.html'},
+  {id:'p2m4',title:'Autenticação + testes',topics:'hash de senha · sessões/JWT · autorização · validação · testes',resource:'Node.js Learn — Testing & Security',url:'https://nodejs.org/learn'},
+  {id:'p2m5',title:'Backend + PostgreSQL',topics:'modelagem · queries · migrations · integração API/banco · projeto real',resource:'PostgreSQL Tutorial',url:'https://www.postgresql.org/docs/current/tutorial.html'}
+ ]},
+ {id:'p3',num:'03',title:'Cloud + DevOps',period:'Meses 5–8',goal:'Entender Linux, containers, CI/CD e infraestrutura em nuvem.',project:'Projeto: colocar sua API em Docker, CI/CD e cloud.',modules:[
+  {id:'p3m1',title:'Linux e terminal',topics:'shell · arquivos · permissões · processos · SSH · variáveis de ambiente',resource:'Ubuntu — Tutorial',url:'https://ubuntu.com/tutorials'},
+  {id:'p3m2',title:'Docker',topics:'imagem · container · Dockerfile · compose · volumes · redes',resource:'Docker — Get Started',url:'https://docs.docker.com/get-started/'},
+  {id:'p3m3',title:'CI/CD + GitHub Actions',topics:'workflow · jobs · secrets · testes automáticos · deploy',resource:'GitHub Actions Docs',url:'https://docs.github.com/en/actions'},
+  {id:'p3m4',title:'Cloud — AWS ou Azure',topics:'compute · storage · database · IAM · networking · monitoramento · custos',resource:'AWS Skill Builder — Cloud Essentials',url:'https://skillbuilder.aws/'},
+  {id:'p3m5',title:'Terraform + infraestrutura',topics:'providers · resources · variables · state · modules · plan/apply',resource:'HashiCorp Terraform Tutorials',url:'https://developer.hashicorp.com/terraform/tutorials'}
+ ]},
+ {id:'p4',num:'04',title:'IA + Segurança',period:'Meses 8–12',goal:'Adicionar IA às aplicações e aprender a protegê-las.',project:'Projeto final: WILKER AI — assistente que analisa estudos, tarefas e finanças com segurança.',modules:[
+  {id:'p4m1',title:'APIs de IA + LLMs',topics:'prompts · Responses API · structured output · tools · avaliação básica',resource:'OpenAI Developer Quickstart',url:'https://developers.openai.com/api/docs/quickstart'},
+  {id:'p4m2',title:'RAG',topics:'embeddings · busca semântica · contexto · chunking · avaliação',resource:'Hugging Face Learn — Agents',url:'https://huggingface.co/learn/agents-course/unit1/introduction'},
+  {id:'p4m3',title:'Agentes e ferramentas',topics:'tools · actions · observação · workflows · LangGraph/LlamaIndex/smolagents',resource:'Hugging Face Agents Course',url:'https://huggingface.co/learn/agents-course/en/unit0/introduction'},
+  {id:'p4m4',title:'Application + Cloud Security',topics:'XSS · SQLi · CSRF · SSRF · auth · secrets · rate limiting · IAM',resource:'PortSwigger Web Security Academy',url:'https://portswigger.net/web-security/learning-paths'},
+  {id:'p4m5',title:'Projeto final + portfólio',topics:'documentação · testes · observabilidade · deploy · README · apresentação',resource:'GitHub Skills — colaboração e projetos',url:'https://skills.github.com/'}
+ ]}
+];
+
+function toggleCurriculum(id){
+ state.curriculumDone=state.curriculumDone||{};
+ state.curriculumDone[id]=!state.curriculumDone[id];
+ save().then(renderRoadmap);
+}
+function openPlanResource(url){window.open(url,'_blank','noopener,noreferrer')}
 function renderRoadmap(){
- const phases=[['01','Fundamentos + Software',['Lógica e algoritmos','JavaScript + TypeScript','Python','Git + GitHub','SQL + PostgreSQL']],['02','Backend + APIs',['Node.js / FastAPI','REST + autenticação','Docker','Testes','Projeto real publicado']],['03','Cloud + DevOps',['Linux','AWS ou Azure','CI/CD','Terraform','Monitoramento']],['04','IA + Segurança',['APIs de IA','RAG e agentes','Application Security','Cloud Security','Projeto final']]];
- const now=new Date(),ws=new Date(now);ws.setDate(now.getDate()-((now.getDay()+6)%7));ws.setHours(0,0,0,0),hours=state.studySessions.filter(function(x){const d=new Date(x.date+'T12:00:00');return d>=ws&&d<=now}).reduce((a,x)=>a+Number(x.hours),0),target=Number(state.settings.studyHours||2)*5;let recent='';
- if(!state.studySessions.length)recent='<div class="muted">Registre seus estudos para acompanhar evolução.</div>';else state.studySessions.slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,7).forEach(function(x){recent+='<div style="padding:8px 0;border-bottom:1px solid var(--line);font-size:11px;display:flex;align-items:center;justify-content:space-between;gap:10px"><div><b>'+esc(x.topic)+'</b><div class="muted">'+x.date+' · '+Number(x.hours).toFixed(1)+'h</div></div><button class="btn small danger" data-id="'+x.id+'" onclick="askDeleteStudy(this.dataset.id)" title="Apagar registro de estudo">Excluir</button></div>'});
- let cards='';phases.forEach(function(p){cards+='<div class="card phase"><span class="pill blue">'+p[0]+'</span><h3>'+p[1]+'</h3><ul>';p[2].forEach(function(item){cards+='<li>'+item+'</li>'});cards+='</ul><span class="pill purple">foco</span></div>'});
- q('#roadmap').innerHTML='<div class="grid two"><div class="card"><div class="head"><div><h2>Trilha principal</h2><span class="muted">Software → Backend → Cloud → IA + Segurança</span></div><span class="pill purple">12 meses</span></div><div class="bar"><i style="width:'+(target?Math.min(100,hours/target*100):0)+'%"></i></div><div class="muted" style="margin-top:8px">'+hours.toFixed(1)+'h nesta semana · meta '+target+'h</div><button class="btn primary" style="margin-top:12px" onclick="openStudy()">＋ Registrar estudo</button></div><div class="card"><div class="head"><h2>Histórico recente</h2></div>'+recent+'</div></div><div class="grid phaseGrid" style="margin-top:14px">'+cards+'</div>'
+ const s=stats(),doneCount=Object.values(state.curriculumDone||{}).filter(Boolean).length,totalModules=STUDY_PLAN.reduce(function(a,p){return a+p.modules.length},0),overall=Math.round(doneCount/totalModules*100),now=new Date(),ws=new Date(now);ws.setDate(now.getDate()-((now.getDay()+6)%7));ws.setHours(0,0,0,0);
+ const hours=state.studySessions.filter(function(x){const d=new Date(x.date+'T12:00:00');return d>=ws&&d<=now}).reduce(function(a,x){return a+Number(x.hours)},0),target=Number(state.settings.studyHours||2)*5;
+ let recent='';
+ if(!state.studySessions.length)recent='<div class="muted">Registre seus estudos para acompanhar sua evolução.</div>';else state.studySessions.slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,5).forEach(function(x){recent+='<div class="studyRecent"><div><b>'+esc(x.topic)+'</b><div class="muted">'+x.date+' · '+Number(x.hours).toFixed(1)+'h</div></div><button class="btn small danger" data-id="'+x.id+'" onclick="askDeleteStudy(this.dataset.id)">Excluir</button></div>'});
+ let phases='';
+ STUDY_PLAN.forEach(function(p){
+  const pdone=p.modules.filter(function(m){return !!state.curriculumDone[m.id]}).length;
+  let mods='';
+  p.modules.forEach(function(m){
+   const checked=!!state.curriculumDone[m.id];
+   mods+='<div class="studyModule '+(checked?'completed':'')+'"><button class="studyCheck '+(checked?'done':'')+'" data-id="'+m.id+'" onclick="toggleCurriculum(this.dataset.id)">'+(checked?'✓':'')+'</button><div class="studyModuleBody"><div class="studyModuleTop"><div><b>'+m.title+'</b><div class="muted">'+m.topics+'</div></div><span class="pill '+(checked?'green':'blue')+'">'+(checked?'Concluído':'Módulo')+'</span></div><div class="studyResource"><span>📚 '+m.resource+'</span><button class="btn small" onclick="openPlanResource('+'\''+m.url+'\''+')">Abrir material ↗</button></div></div></div>';
+  });
+  phases+='<details class="studyPhase card" '+(p.id==='p1'?'open':'')+'><summary><div class="phaseSummary"><div class="phaseNo">'+p.num+'</div><div class="phaseTitle"><b>'+p.title+'</b><span>'+p.period+' · '+pdone+'/'+p.modules.length+' módulos</span></div><span class="pill '+(pdone===p.modules.length?'green':'purple')+'">'+(Math.round(pdone/p.modules.length*100))+'%</span></div></summary><div class="phaseContent"><p class="studyGoal">'+p.goal+'</p><div class="studyProgress"><div class="bar"><i style="width:'+(pdone/p.modules.length*100)+'%"></i></div></div><div class="studyModules">'+mods+'</div><div class="studyProject"><b>Projeto da fase</b><span>'+p.project+'</span></div></div></details>';
+ });
+ q('#roadmap').innerHTML='<div class="studyHero grid two"><div class="card"><div class="head"><div><h2>Minha Trilha TI</h2><span class="muted">Estude em ordem, pratique e marque cada módulo concluído.</span></div><span class="pill purple">'+overall+'% concluído</span></div><div class="studyHeroStats"><div><b>'+doneCount+'/'+totalModules+'</b><span>módulos</span></div><div><b>'+hours.toFixed(1)+'h</b><span>nesta semana</span></div><div><b>'+target+'h</b><span>meta semanal</span></div></div><div class="bar" style="margin-top:14px"><i style="width:'+overall+'%"></i></div><div class="toolbar" style="margin-top:13px"><button class="btn primary" onclick="openStudy()">＋ Registrar estudo</button></div></div><div class="card"><div class="head"><h2>Como estudar</h2><span class="pill blue">90–120 min</span></div><div class="studyMethod"><div><b>30 min</b><span>teoria</span></div><div><b>60 min</b><span>código</span></div><div><b>30 min</b><span>projeto</span></div></div><div class="muted" style="line-height:1.7;margin-top:12px">Não tente terminar dezenas de cursos. Aprenda um conceito, pratique sozinho e coloque-o em um projeto.</div></div></div><div class="studyResourceBox card"><div class="head"><div><h2>Mapa da formação</h2><span class="muted">Do primeiro código ao projeto com IA e segurança.</span></div><span class="quickStat"><i class="quickDot"></i>4 fases</span></div>'+phases+'</div><div class="grid two" style="margin-top:14px"><div class="card"><div class="head"><h2>Histórico recente</h2></div>'+recent+'</div><div class="card"><div class="head"><div><h2>Projetos obrigatórios</h2><span class="muted">um projeto por fase</span></div></div><div class="muted" style="line-height:2.1">01 · Mini dashboard pessoal<br>02 · API do WILKER + PostgreSQL<br>03 · API containerizada + CI/CD + Cloud<br>04 · WILKER AI + segurança + portfólio</div></div></div>'
 }
 function navigate(view){qa('.nav').forEach(function(n){n.classList.toggle('active',n.dataset.view===view)});qa('.view').forEach(function(v){v.classList.toggle('active',v.id===view)});const titles={dashboard:'Visão geral',tasks:'Tarefas',schedule:'Cronograma',finance:'Finanças',investments:'Investimentos',roadmap:'Trilha TI'};const hints={dashboard:'Seu centro pessoal de planejamento.',tasks:'Organize, priorize e mova suas tarefas.',schedule:'Veja sua semana sem perder o contexto.',finance:'Controle receitas, gastos, contas e metas.',investments:'Acompanhe seu patrimônio de forma simples.',roadmap:'Registre sua evolução e mantenha o foco.'};q('#pageTitle').textContent=titles[view]||'WILKER Planner';q('#pageHint').textContent=hints[view]||''}
 function renderAll(){q('#dateText').textContent=new Date().toLocaleDateString('pt-BR',{weekday:'long',day:'2-digit',month:'long',year:'numeric'});const status=q('.quickStat');const hint=q('#pageHint');if(hostedMode){if(status)status.innerHTML='<i class="quickDot"></i>Online · dados neste navegador';if(hint&&q('#pageTitle').textContent==='Visão geral')hint.textContent='Seu centro pessoal de planejamento, hospedado no GitHub Pages.'}else{if(status)status.innerHTML='<i class="quickDot"></i>Local · salvo automaticamente'}
