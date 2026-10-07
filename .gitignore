@@ -1,8 +1,6 @@
-node_modules/
-*.log
-.DS_Store
 Thumbs.db
-data/*.json
-data/*.tmp
-
-!data/finance-news.json
+.DS_Store
+*.log
+data/wilker-state.json
+data/wilker-state.json.tmp
+index.backup-*

@@ -2,11 +2,10 @@
   "name": "wilker-planner",
   "version": "1.0.0",
   "private": true,
-  "description": "Planejador pessoal local de tarefas, estudos, finanças e investimentos.",
+  "description": "WILKER Planner - painel pessoal local",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "health": "node -e \"fetch('http://127.0.0.1:8080/api/health').then(r=>r.text()).then(console.log).catch(()=>process.exit(1))\""
+    "start": "node server.js"
   },
   "engines": {
     "node": ">=18"
