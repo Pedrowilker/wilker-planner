@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T19:29:40.126Z",
+  "updatedAt": "2026-10-17T22:23:15.996Z",
   "items": [
     {
       "title": "Lagarde diz que choque de energia é “grande demais para ser ignorado” - InfoMoney",
@@ -7,6 +7,13 @@
       "pubDate": "Sat, 17 Oct 2026 18:03:26 GMT",
       "source": "InfoMoney",
       "category": "Mercado"
+    },
+    {
+      "title": "Magalu, Smart Fit e Raia: as apostas do UBS BB após rali de 20% no varejo com eleições - Exame",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMUwtTnZiLW9tUlBrVndkdG1mckg0cE5jUEdVUEJUNVRQRFd0YTFqUHQzTlgwdlBicERBYmc0ZmJQM3RENWhnR2R0SlJBLUZVM2RZMWtOazJ0U2IyTUJKTF9DX1VyWjJmbnZaVUtSeGNVTERwMXhRdk5WRnM1MW5wNGFCanJ6STVkWjcwa3QxQ0tJVnNVdDVXazZCODROaTNXX3kzSjUzajBwZFNHTFR2NnN1UGVPb1ljdVE?oc=5",
+      "pubDate": "Sat, 17 Oct 2026 17:58:56 GMT",
+      "source": "Exame Invest",
+      "category": "Investimentos"
     },
     {
       "title": "Presidente do BC da Alemanha diz que China é parceira-chave e concorrente da Europa - InfoMoney",
@@ -53,13 +60,6 @@
     {
       "title": "Dólar volta a subir na semana: é um bom momento para investir lá fora? - InfoMoney",
       "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTGVnNlhPQ1h4Z011LTljM2dHVFdJZndVWkNFam5WMDc1UWgyQTNhMjJIeFZZY25hWWQ5VENkanFVZXg5bzBlMGdwYllsMzVRdUhma1h6LUQ2ZzdsbS1CSURMdHFtTngwSG5rb1BEb3FZZFhJWUJ1NmVuTHZfVG1ILXFrOWVvQmUyak91M3ZUUTV5RUlPaFJnYk5R0gGfAUFVX3lxTE1MWkN0b200Sk5lc2h3TktraTFidVNmTnVhMWhkN2VBeXF6UElxWDRWbVVNS0lGaEJUdGNsLWNTM0Vfd2JJbXkyYi1FQ0pSRXduaW5Bc0NGN2RKU0JCdHBuamstY29RWlZXZ05Lcy1NTUxaVnpzM0ZsRUFEaTdwUUlnVlpxNlFnS0M0OHIzclVia09RMGdGeDBCeE9KdjVsTQ?oc=5",
-      "pubDate": "Sat, 17 Oct 2026 08:00:00 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Mercado de certificados pode destravar a descarbonização das companhias aéreas - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQTFtMElJeFRWN0YxZWdlWjRTR0x3Q1FaVUNIRWVLVXZlZURyQkZWSG81RG1wcGp4alJLenZXTWJJV1d6VEQxbXdTYjZidjBLbVppQXd3Mm1hWTJMVHRVYm93SHFmOWQ5d19vMlJjVERrMWVsOC03QlJhWFJlUzlraDJCOFNuX0FPY1VUTzJCUWFhbHE4Q01qdjVDSGgyZmVJR1BnX1FGR1NhbzZVWXVzNWZQdHR0emvSAbwBQVVfeXFMTzF5YXZqd2Z6elc3ZFRRemxaSjgzelN1ZjREV2xoQXlzMHlJa3ZsMmp2dTJ2dlpYVjlYN2gxeG9LdGExQXdhcXk3ckVYaDZaY1hjX2NNOHFidlZ6aWhnQ295b2VzYTVtMjlfam9IY3RNdk1qend5WjFOcVRoRE5XMTlsTXlROFpqOENKVmN4SVRMeGU3UjhRT0sybEZFOUREd2MtU1NMaGFiOU9OYjdVaUxEM3JzWXMtM0poXzc?oc=5",
       "pubDate": "Sat, 17 Oct 2026 08:00:00 GMT",
       "source": "InfoMoney",
       "category": "Mercado"
@@ -296,13 +296,6 @@
       "category": "Economia"
     },
     {
-      "title": "Zona do euro: balança comercial passa a déficit ajustado de 6,8 bi de euros em agosto - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUlFxOEc3Y0F0cjJuN0VVa1VjbW1wS2ZzMkRWRW0wdF84MjMtMTBLSmpYUDNFOGdiSHQyTFhfTFlQTWJxU05veHB4MS1EdVRXWHBTeVd2LUJCZ1BZN1JxUkxoVFFyRHY2TDBlY0ZzWi1BblR0NGhJNFJFUm5mSmVGTllfMzRLbHdPR3NvZmhicmNPZWliblVLbWMxelE1b0h6RDlLSlpTbWJpZnJieTVoUzlIUFNuMFZiT1VQNjdlVdIBxAFBVV95cUxNMWhmbzhaWmhBTVRodDY3QUsxUlNxMFlVUnFsU2loZTVnRlluR2RRRUZWUnhIMUpfVlphdndPUVNKMmVFY3NJcHpzSkR0V2s5eEZHb3poYkVFbmZxazZNX0lnb0hRSy0zUjlPSjRpQm8tQ0FieVdmVklETFJpZW5ianBMaVB6YzRuRFNnZDFtaHUxeldrWjYyalFzV09KR0QtYmJ3cjY1V3A2Z3ZmUHVQekJ5QlM1NHB4UjYxenB5ZGlsV0JN?oc=5",
-      "pubDate": "Fri, 16 Oct 2026 10:48:11 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
       "title": "Warsh: Fed reavaliará cenário em outubro e dezembro; evita indicar próximos passos - InfoMoney",
       "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeVRyZ0lxcUp5Z2pQQ1FFRG1yRk5MbUVQdTJsUVhrM1RudDZRX2R1X3lqWVNmaXlxOHpuNThKXzBwOWtiRGtsSktxNzZ1T1F3ZEtDTkFPQlN3bWdBWUZELVNJM0RUT0k3cVVaVHY0SWlYdmRzR3F1T2F2Qjd5Wi04cVhvRUJnVmsxVzVxdXZuVUd3d2NDdlVxVmNwSXJoeHNBT3I2bS1MQWFhQUNCM29BcEJZRG56NExMX3Bz0gHAAUFVX3lxTE4tV2pyZThLX3NJRXJSOXAxanJMdTc4aU02N3JINzB2QUUzZmRXVEJpZk4tbFg3a3pFbUUyamJPWVd1eVMzWThJZG0zSzF0MDljejgyTHE1WUtyUlVrWHdpRE56ZTdVTGVYNnlYQ0cwX2xTalllSG9nN25JZVE3WjZMOG1zRUdpcEZ2RmRZU0lmdFE1OFh4c0FSYU9OcHRmeS1ZZFNYVFZsM2lWQjVCdWdyNkpiWU8xLWJqSkMyVXVyTQ?oc=5",
       "pubDate": "Fri, 16 Oct 2026 10:46:59 GMT",
@@ -418,6 +411,13 @@
       "title": "Sicoob entra em mercados de capitais e capta quase R$ 1 bi - InfoMoney",
       "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQX3pORkdvekJtZjBzeEs2UzRReTJiTXBndnlCYmVLekNKWDYwZVEyYU53SDRrOHRCYlpXaUkyQWszVnJDR25neHlvdEFEU2IzTElGMHJrUDJVZWpicmgxUEt0UnRDeWdLZmFoS0Q5Ny1UQnZjaW5qaV93eHUxSEFvVFctejM4eHpwdlpKZTFnV1EzeFpFNE4yNzlIaXPSAaIBQVVfeXFMTzR5NkhVcThsWUNvWHh4Qm5rNFY0MEd6eXJpZTh2a0xDVU9Wd09VM2d3U1ZXYy1YdEJkWkdOVUtFUWJ2dmx1NFZKMUlZU0ZITENMU3JpdDNUQmszQVhod0NHQlJHR0VRVXQzZzdjMWFDalhmdFI2aE1aODZMSmFjdzB1WmxwUkFMbEFOLTYyOXY0TlFRa1pVWDB1WGxhcnlyOEd3?oc=5",
       "pubDate": "Thu, 15 Oct 2026 20:37:12 GMT",
+      "source": "InfoMoney",
+      "category": "Mercado"
+    },
+    {
+      "title": "Ibovespa tem terceira queda seguida, após 6×1 e pesquisa; dólar sobe e vai a R$ 5,08 - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeHY0RndWel96bm83Y3hVa1V5bThIR0F2aXdJX1dEdklqcmdJaGNveGY3cGk5Z0RjdzFyRG53UDdIUXdyQ0hkcXFLb2ZFSzFZT19RZjZDWU0zOUZJeFZtSW12aHU4M2NXSXE0WU80cTF6QXVGVTBVdWR0Q0J1WUlUak9jNkdNQU5QWnZnTEFzVQ?oc=5",
+      "pubDate": "Thu, 15 Oct 2026 20:33:25 GMT",
       "source": "InfoMoney",
       "category": "Mercado"
     }
