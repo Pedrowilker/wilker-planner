@@ -1,6 +1,13 @@
 {
-  "updatedAt": "2026-10-30T01:05:28.550Z",
+  "updatedAt": "2026-10-30T07:12:26.404Z",
   "items": [
+    {
+      "title": "Mega-Sena não tem ganhador e prêmio sobe para R$ 6 milhões - Agência Brasil",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMW5mYnZnRWQ5UGNUdXlmZW1ZU2JVdVcxZGQtZ3JPN2RsV3ZaYXBRQ2VwZmMyOGdWTk1qbTRLN2hGVk1EbFlBYk00V3JJX3BOakwtcHI2bDBBV2lNX3hqMk53WnpxRWVYb29KU0lORWJxcEk1cGk4WjhVa0lSUlkxcmNsZVM5c0tUXzVlbzhndzljU0tSRXlnZ044YUdaem5NWnB3NGZ2NVZBMzZuQVZxSm5PT0VGdw?oc=5",
+      "pubDate": "Fri, 30 Oct 2026 01:03:00 GMT",
+      "source": "Agência Brasil — Economia",
+      "category": "Economia"
+    },
     {
       "title": "Petrobras anuncia 3ª descoberta de petróleo em poço na Foz do Amazonas - Agência Brasil",
       "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNOGtpRW5BeUlzMlB2NUU1cTdTbklpWGFHOFlvQTlPZmI2S09RejU1U0ZMSmpyZlBQOW5mT0xOclcxQU5jTzJRcVExMkc2QlIxTTRDLVRrXzQwTUVvelhQQi1jLXBPUnFNNWJnNXZ6VjRuX0MyNFlmMmlJVWRjUkxvOVZxQk81RXgyejBBRGVpOE1iRlBnbzlFLVFfajJhb2t3aTlnUUJhemhsdjUxVHljWlpTWndKbVNCZHJuSk4wZnR6UHh5eG1j?oc=5",
@@ -79,9 +86,23 @@
       "category": "Mercado"
     },
     {
-      "title": "CVM promove 2º Encontro com o Mercado do GT de Tokenização, em São Paulo — Comissão de Valores Mobiliários - GOV.BR",
+      "title": "Ibovespa cai pela 4ª sessão e acumula perda de 17,5% desde a eleição; dólar vai a R$ 5,38 - Exame",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcW43bzNzY1pYaEgzRWswVnFuNnhGSmpMNXg5SGZlMFhJcXR5ejEwakJoSkFpeDNYLUNzT0NPTk40Vy1xSHdvcTVseHU0R0FWVm9WYUljclNSQTFkNVd0R1NEdXRDYk1BWTZZSlhwcFozelpDWjB4dlN3MFotT1Z3Tlh1dm84V01HbkNWT0tUOHQxSzhSWmFQOGhoam9SNlI0WnlFaExjNU1nbnplVC1PRDE1Z3F5QXpzY01r?oc=5",
+      "pubDate": "Thu, 29 Oct 2026 20:42:00 GMT",
+      "source": "Exame Invest",
+      "category": "Investimentos"
+    },
+    {
+      "title": "Dona do Google tem pior sessão da história e perde US$ 500 bi de valor após resultado - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOaTdiWjNYbWlVSlIxWGJEQzA5bVk4Ym9HRXVPUVhJOUt5d2c4U3RxM21xTk5yUFh3dkRCWmV4OG95ZEtLaGpvX1Rldm5Va2ktY2ltNFlKRVBLZk1TV1ZpeW96X2FaRUI4RnB6dE9RLXR3LUxOa1lfbGY5N3NOV2g4cFRadVFodnpPWHpnbHVOdG5LRkRVM3JPN2FQcGJlT1NaNnlrR29JdUJUZXlGcDdaSFNuNGJKVUZT0gG-AUFVX3lxTE1jaXUya2pwQ2FUN3p4cHNQWGVfWm5hV1RTemFjek1va3haMUpUTEN1dnBsSkZIRE5QbmFuOWtFV3BFOVpUOFI4Q2gtMFdXelZXRzd0QjF1RDV3cDYxQmZoWGFHXzFGdUpyZVhUSEVwZEVzVzh6NWo1SDJGa3BTMjBmWmJkZDNQYW9rbkpmNjBONkpOdnB0ZVJwc3lkSld2YzRTNFhBa2ltbFJIQnVFQ2ZFZlRpMFptTlNTRThLZHc?oc=5",
+      "pubDate": "Thu, 29 Oct 2026 20:40:33 GMT",
+      "source": "InfoMoney",
+      "category": "Mercado"
+    },
+    {
+      "title": "CVM promove 2º Encontro com o Mercado do GT de Tokenização, em São Paulo — Comissão de Valores Mobiliários - Governo Federal",
       "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxObG5HaTRiekRUenc4MzJjX2VtQmNvQXgyZENGYUxpT2Q3YVU3RkFvbk5qcDRCSFgzWmVaSW1DOVU2WHR2cGxsQWw5UWpYaFNuRktEQ3VuMmRfb1gxcW8zWEtqQUxzSUQ0bUlPRmJwRm5LMTM0UTB0MEhRckJPUms3Sm1QQ042MjNYN09VYkY3RnpIRndtU0NVUmlBcEQ4RTVMTXN3N3RCYUJrTEdSTk1QcDRzZjg0LWZTQTRNcDF4Uzk?oc=5",
-      "pubDate": "Thu, 29 Oct 2026 20:36:26 GMT",
+      "pubDate": "Thu, 29 Oct 2026 20:36:00 GMT",
       "source": "CVM — Investidor",
       "category": "Regulação"
     },
@@ -107,11 +128,11 @@
       "category": "Mercado"
     },
     {
-      "title": "Taxas longas sobem com mercado sensível aos desdobramentos da vitória de Lula - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZGJIdW5RN1ozSVdDdXZaZnRTNUM5RVZEblR3NlN4R2FjSVMyaFduZE9qbmRvMU5Qd2FYRzlXTDdFaFp2V3QzcTNTTWQ0ZGxjMXg1dVltdlM4YmJlNE5WcnMtMElUWk4zY3hNaUFXSnZjRVN0RnNGN0t4b1V5QV9OZWNLZEd6dGNEODVQVkl6SEtHdVp0dHZrVWJMTzJKZzdnaFRkaTRqNnhLclBxeFIxV2JvNGhCTlXSAbwBQVVfeXFMTi1HUFRsaVU5VGdEMUliOHpwVFVLQTdUZko3dDlraE5PWk9TZ0Zpa0pEVC05c0JFc2Rtd0QwemJmN2pmcU1sbU1xZUVjcFNvSGVPZF81ekZkblNQWHdwMndNLTE1U1k0ZFJQYlQ5VThDbVFrWlVYOGE2TTRMYW9RR0VDZ2tRcjNzM2E5YnBtYmI5ajhrXzVlcDhDRDdNR3lLUUFuM0Y3Y2JQRkdyOUtsZWxpYy1tUlBiSnNyZ0c?oc=5",
-      "pubDate": "Thu, 29 Oct 2026 20:10:12 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
+      "title": "Ibovespa recua mais de 1% na quarta sessão seguida de queda; dólar avança para R$ 5,40 - Exame",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZTZqU3JRYy1WVW1acEh2MGFUMzYteDRESTZyV0poTjN6d2hRcmpveFdzYjU4Q2JkdUhPZk41NElsRFZKVmJUM0c5dWJDR0I2YjAyTmNNWkduZmY2Si00UzNGaGNNQllkd3kzT1huc3dwYWVnQ2pQTEdETlI4T0R1RUV6VFNVVlNNQ0xRS0g4aWxvOFY3MkxNM1pkZTV6aDFvdVpxcFF2UGl0TFpxWER4Rndack1KcmRfS2c?oc=5",
+      "pubDate": "Thu, 29 Oct 2026 20:08:46 GMT",
+      "source": "Exame Invest",
+      "category": "Investimentos"
     },
     {
       "title": "Dívida pública fica em 82,9% do PIB, e déficit soma R$ 5,5 bilhões - Agência Brasil",
@@ -126,6 +147,13 @@
       "pubDate": "Thu, 29 Oct 2026 19:46:01 GMT",
       "source": "InfoMoney",
       "category": "Mercado"
+    },
+    {
+      "title": "Quanto vou receber de 13º salário? Veja a tabela do valor líquido em 2026 - InvestNews",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE04SHpJbmpXaTZPdVJfeG42YTBhVG5fMk5PTnJaZkQtQ3ZZeGhReE9pR2hhVVJYTTh5LXd1Tzd5bV83dkwxT1E1eVExYmFMX2hJSWx5YnpscElSWWcwa0VET1lCd3RDal94YWNpLWdfeURvV3M1bWlNUdIBfkFVX3lxTE9pSjRXdHJNWE9VN3puTnp6SDc1TmZlRFVteGJSeW9hOXZjdjNSZU5pd0J1bDRmeG9TVTFENnJUSm96RjByMFptVHh4T0tTSVVCV1Zjc0FTblpGM1ZkTTVpVkVjQzI5SjhpYlRmd1ZTMlpaQXk0aXJUVGVZTTdZZw?oc=5",
+      "pubDate": "Thu, 29 Oct 2026 19:38:55 GMT",
+      "source": "InvestNews",
+      "category": "Investimentos"
     },
     {
       "title": "Inscrições para três vagas do Programa de Estágio de Pós-Graduação em Pesquisa (PEPP) são prorrogadas até 13 de novembro - Banco Central do Brasil",
@@ -147,6 +175,20 @@
       "pubDate": "Thu, 29 Oct 2026 19:05:11 GMT",
       "source": "B3 — Bora Investir",
       "category": "Mercado"
+    },
+    {
+      "title": "Google cai 13% e perde US$ 500 bilhões em valor de mercado - InvestNews",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPLXRzNkE4b2JROHNpZnhxTU1IQktrZzhDbU5KeWgxOFZTbkYtZ0RYczlHSzN2YlE1MHlOaXlIZHlFMDBnZWtNR05vZWwzTm84Y0RwbmdraEM5VWJEYXh5ZDRIemd3MnJmSWdWdy16SXk2aTF5UVJyQjB6QlFGUG9GeUtJZm54MUVDbV94ZmF6RHVHbEJ5UkI00gGcAUFVX3lxTE9aUFd1TmtSNjZNSVVjX2pNSi1OSWVrVWlPdmFiREF0Wk5IWFdCeDlMN3dfbG43UkRMSnJqWWdjaGdqNEpTb0lpWDRZdUpKUmtOQlEwRkNHaHVDcWJIRGw1dzhRVlhCLW9IZGpNWEdYWDE0V3BSOGhFVWl0MFlKZzlrMEtvZGpQYXduVEZOQmZEN2RWNV9pR2JvSmttQg?oc=5",
+      "pubDate": "Thu, 29 Oct 2026 18:37:03 GMT",
+      "source": "InvestNews",
+      "category": "Investimentos"
+    },
+    {
+      "title": "ETFs podem superar 400 produtos no Brasil em 2027, diz S&P - InvestNews",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4xODJGQ1RFTFU1SE5wVzRYRXRVai1mbjJtZ1A1MUZHNlBmd200bUNoT2N5ajJsSXJ0ZHduUXNOVDRNaFRHcXNGaDFrRnBadjk2RFNzbFBNQ0FkNXJsTE9jVEtKSzQ5TjlXVHI3TS1nekVFMlNKT2ZFUGRuR0xXZ9IBgwFBVV95cUxPZlF6N1Y3N2tLcm9oNHYwakpockZuV0JoY1lubk94OU1MMEdzM0tWbldTbkR2aEFsOVBZZ2RhQzdERkpfenZjSjJ0RGtDZk8tY0liMWpFRWVqT2xBdW9saWUwNnF0aVh3ckFqbWJEc0EzYXo4TXNfOUxuMnlLZmtaSExxaw?oc=5",
+      "pubDate": "Thu, 29 Oct 2026 18:29:17 GMT",
+      "source": "InvestNews",
+      "category": "Investimentos"
     },
     {
       "title": "Raízen dá à Shell direitos sobre negócio de distribuição de combustíveis em reestruturação - InvestNews",
@@ -275,11 +317,25 @@
       "category": "Mercado"
     },
     {
+      "title": "IA do BTG monta cesta de ações e ajusta carteiras a partir de um comando - Exame",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRWVTNDJBeWhXaDBDS1lqN0RDZnFHQXdDbjdtMlV3aEFHMF8zdmIxcHY0UjVFR05maUxnejl4QUtHc29Takg0MEtFWndRVTVsaS1aT09HekdzU0dYTmZsakFqOWpKblBrYUlIdTZ5QnpPVjgyNlZGQzVycF93cGNsWTZZMzIxcEhTVDBkMm90S0ZCdmxYMkNhS00zS05BaGdQbDJoOGRwQTd6TEE?oc=5",
+      "pubDate": "Thu, 29 Oct 2026 11:47:51 GMT",
+      "source": "Exame Invest",
+      "category": "Investimentos"
+    },
+    {
       "title": "BBA fica mais conservador com Bolsa no Brasil, mas foca em qualidade com 10 ações - InfoMoney",
       "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNcUUxb2tFNGtSeTdMOC1fOU5kUVlXSTNQbXptTUk2MTAzeVZWZndJbGczdmR2YTM4RWU3S0RROUVDOXNHR3RkVml3Q0d0T2ZGSEduVGNVWGZMSnpoM1dGbTBQVzJLWUtaczRFa0xtUEZ2alR5ZWR5V0t1eDBFaVI4dThXaENyRzJ4YkpsM2pMZ3JraDFzRzRnUDJQdk9mdHZtbmNQaGZVenE0cEh2NDRFWWRfNHE2REZEbHlIWVNJWWo4UdIBxwFBVV95cUxNV0FFRV9fYkp4eE1lRkdJQjVTWVltV092OXdLNWhVN0hIWmdOVUZmcUxXQ1E3TnBVdzVkN19GSEIwSlhZSlRHYTR0a2k0WUt4SEhRV1lNZG1tZWIxXzNVeDFPY08xZ1RoR0MxdEk2YzI3TV9jeWdQb3dXTk01RUpwV2hpOWw0YlBmQ2M0SjhwbTZDdkFyd09jYkJzeTRjV0JqQmNRbE4ySFRmUXFzSVpKWFUzdzBEVENid3M3b1ZJTjRoU1gyMHVJ?oc=5",
       "pubDate": "Thu, 29 Oct 2026 11:46:20 GMT",
       "source": "InfoMoney",
       "category": "Mercado"
+    },
+    {
+      "title": "Banco Central decreta Liquidação Extrajudicial da MW Instituição de Pagamento Ltda. - Banco Central do Brasil",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0yUGJtZW01TTVWX1d1Yl9XUXFJZHFyWVNqYnVQN1dhV1YxRjRvaFk1aXg5YThjQncyZWNxZHB1VklDbkxRaVZtQkkyNUw1b1l3ZHBmUDJ6cDg3STdq?oc=5",
+      "pubDate": "Thu, 29 Oct 2026 10:39:00 GMT",
+      "source": "Banco Central — Focus",
+      "category": "Economia"
     },
     {
       "title": "Economistas criticam usar corte de gastos para conter dívida pública - Agência Brasil",
@@ -324,6 +380,13 @@
       "category": "Mercado"
     },
     {
+      "title": "A nova economia do sofá: como o brasileiro vai às compras - InvestNews",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5hWTcyQnZiUmFpd3RJQi1SRmxCWXdhVGc5YXJpazJWLVV3NnVlWUFkRFprQ0tfSUp6NHY5VVVmencxSDFKYW9yRVhIbkVDd2ZFb3E1U2s4Ump1WjZlZERXMWR4OTBXRml0WjREMi1DZV9ic1U2Wm9UZnVTWldmeHfSAYQBQVVfeXFMUGRCZEhoVDY4YjJ5aEM5WFl6ZFlrYnN4WXJYNTN0SUYxOGl2VFlCMkZPMFBkMnI3OUM4RTVSY3ZJNURVenlrMVRUWnh2Rm45SUdfaG9Sb1RfUGJhZzFVLVoyOUpYTjc4bVQ4SDJIdjBuU2Y1eEFNempFNW5MZVZ6Z05NTURQ?oc=5",
+      "pubDate": "Thu, 29 Oct 2026 08:00:00 GMT",
+      "source": "InvestNews",
+      "category": "Investimentos"
+    },
+    {
       "title": "Aposta do Mato Grosso leva prêmio de mais de R$ 324 milhões da Mega - Agência Brasil",
       "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbW13QnJ0TWtfT2dnM2xiSDZncmdFZFdHMjRDV20yOUFKcUJmVzZaMjdqYUVDOWRJMTIxaWdsZjFxNEpXRXdoZVhoc3N3RUVfa0plaVdhVk0xSTBTZGE2UFdFQU0yTEpEcU5EWTgyQXBwLTJkVzFMNXZaelp0WW9qMGpHd1Rna0o3XzR5UTZUOHhYM3JaZGFlc2J3V25wVENqbTdKWEx3cUh3VzhOZE0xcHYzZVdXUHBqMTRIWHJvTU9EUQ?oc=5",
       "pubDate": "Thu, 29 Oct 2026 01:54:00 GMT",
@@ -335,6 +398,13 @@
       "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQS3VRS0NnWnRjZldCUTA1TGx2ekFWOXpsM000VE9UNnFUZWoycDFlV05CWUZBQjFrUUJ0QVd0WFVlSGx6QkYzSGZDdExTNldNczJjYnVGUVNkektSeC02LTZKZW9WSHYteEFsWDUzWXZCQ3RmcFFZRXhQdXNlRDlZcVBnN0F6bDJydHBrTmNOWFJacHFBTUJhOUxtUDkxcUpTTWwyUXYyb3NEQmdYNXRN?oc=5",
       "pubDate": "Wed, 28 Oct 2026 23:38:35 GMT",
       "source": "Exame Invest",
+      "category": "Investimentos"
+    },
+    {
+      "title": "Sob nova direção, Fed muda calendário e terá menos decisões sobre juros a partir de 2027 - InvestNews",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBpRjBISlg1emJneE55VDYzMmJPaXIyTHNidXZaNzQzOVI3X2kzRHBKTlRTdjZReUtRZDhPeTN3RllsMW90QU0zcHJuOVNQcmtXLVZvOHJGYm5HcTZ5cVBKWHc3LWNPcUtmdG5wUGhORElWRWJidjN3VzBlVEhtQmPSAYQBQVVfeXFMTnFlY0xKUnVkUTVnck56d2RVd0l4VWhoRkFyRUF5UFpPdm1sLVFGYXY3MGl0QlhmenllTG5GWG9WejFTUVEtb1BNR21WV3JRbFVjV2VidGtTSXVYQXRxaUNUMENWTzJlQXQ0dUVQZFZ2aUV5NGtWYUtRNG5RV2RfWHRuZkNX?oc=5",
+      "pubDate": "Wed, 28 Oct 2026 22:40:15 GMT",
+      "source": "InvestNews",
       "category": "Investimentos"
     },
     {
@@ -350,76 +420,6 @@
       "pubDate": "Wed, 28 Oct 2026 22:28:00 GMT",
       "source": "Agência Brasil — Economia",
       "category": "Economia"
-    },
-    {
-      "title": "União libera R$ 950 milhões para instalar Comitê do IBS - Agência Brasil",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTHUzVnRlY2xmYnBVM0JuYkZkTXV4Sm1oNENQQlRUUnRxTTh1VlplbjVkaE5wbnZFNjNsMWNJZEFROWxNNzM1TWhDNnhudXNaX2RRSGJoSl9TYWh1RWUzQnV6NVlpM3RPM2ZMQWRIelpHdTJ4em9NV3lSbXhHWVZQU25qMVdNdERpN083UGZSdXhjRVB4aVZweGVCdHRkYU9zaWd1UUxveEtxamZPVVVrZERn?oc=5",
-      "pubDate": "Wed, 28 Oct 2026 22:28:00 GMT",
-      "source": "Agência Brasil — Economia",
-      "category": "Economia"
-    },
-    {
-      "title": "Intelbras (INTB3) eleva lucro em quase 20% no 3º tri, a R$ 177 milhões - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQclE4UU9XWGduWkx3R3dua0ZEVzRPZXBRT1dXRWU5QUFZTU9mYWhadFU0M3R5VmowX1dONXp2aC1IdGo1UEwxMzVnMGZnd0J2WU9wR3hUQUxsaTBULWlqVHZkNzI1cVAtVHNiWnp3WjgtYi1TMTFoX1lQTDlab3pQeTNMVXdEMTFBVUl3OFQxQlEzOGPSAZgBQVVfeXFMUEY0WXV6aXZ0ZTUxMXB0dEl2T05yZWdHVEphNnBVSi03OWJ4ZHBvSlNERHdibWhmM1Z4YzZMdDhqbXZMcEhOWnpmM21rOVc3emkwU25DYnZJZDlDZE9oTEhrTEx4WlJPckpRUU95UFJZNDZzTjc5bFhnS2FMVHBCUVFsbkhRdGJtWG4tX2RvS09KTmZtN3lvdXI?oc=5",
-      "pubDate": "Wed, 28 Oct 2026 21:53:16 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Oracle promete limitar captação para IA e vê pico de investimentos até 2028 - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRmZ5OTk5R1B0TnVqZ1NxaUR5SEJnbnVCOTJmSnd4azlzVlN4aDVzSUtzaFF4bDhVczlRVW52WENWWFhJUVRqa2JESGUwdmFTTlAyLVlZMkhkSmVBSWpOMUpYV0w2LThaa0JzMEJKQXpaM183THZrY0F0SmJpWmJ2cnZ0eE9Ha2NlVzRJazB2QVFDbWF0Zi1HSlZvSjloYVVWNEhJRFU2Z1hwN1MzQlpOUG5iSnfSAboBQVVfeXFMTmo2aUlwVWxJUDc2NVVFZEhhUXZycXE1T3Bxa29kYVl2dGlDdzRkaDFTaE1hamRJa25GaHhqdnVOY3FKbGNRSW5qMi1yUUVSLVE1d3h1SEttT2VnY05jMzdKWTd2VzNsX01nTlllV0hTRENhUDJPYUVzQW9ndzktSVZaQTRGa0dIek85WmV6VEo4MnZHS0pYejVnZDRYVENZN1M3MVJTQ3J4NW1aeEsxZ1JQTVMzNXBPaVdR?oc=5",
-      "pubDate": "Wed, 28 Oct 2026 21:42:08 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "“ETFs devem ser vistos como um bloco de diversificação dos portfólios”, apontam especialistas - Bora Investir",
-      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPUmVSdG56MzVQU0NzSVowSE80UDRvUks2WU5oUGFLb0ZmMl9vRWZHOHN0dDN6YnBKdkZIUEwwQW5PRFNsU2dmV183a3FpcUVmWW1fV1VmZ3NmeGdKYWc2TEk0RlV2dkJGLUdfTXRRY0hic3NtOFJJeVBZaWxRdFh2SzEtWktJNTdxX3dJLVhLMndjVkdGRWoxMjZjeTRoMlphcHpZWHplNEFtLXBnc0J3ZkpKaUk0UEVzbWdvY2VXd0d5N28zVDlOUUdnMlNJTXhWZlNqUTBXSkNOQ21pdV9ncXpvUGdhM3R3TEJ3c0lvYmRiWFRQQXRKTw?oc=5",
-      "pubDate": "Wed, 28 Oct 2026 21:27:00 GMT",
-      "source": "B3 — Bora Investir",
-      "category": "Mercado"
-    },
-    {
-      "title": "Dona do Google amplia queima de caixa e lucro vem abaixo do esperado; ação cai 9% - Exame",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSUJMRjM4RUZ3YUp6aUpQUFExanlsLWJGaHlhbjA3RG5tS1JpUDVNN1EwZWM4ZnV2X0c5N1JqY0FsaFMybHR4M2l5RVNiZE5NZWxpV0lfdUhybTRmb0w0OEkyTWFOTHBNQTZ3YVJac09raWIta2c2bzRzeGdDT1Q3anhzZEpOWV9mOEtjOUx4YVlVMWJNMWJtd2FnOGtUXzNyY3dhWmJOZFNzeE5oOGhPTy11RnE?oc=5",
-      "pubDate": "Wed, 28 Oct 2026 21:09:22 GMT",
-      "source": "Exame Invest",
-      "category": "Investimentos"
-    },
-    {
-      "title": "Ibovespa B3 recua 2,68%, puxado por Vale e bancos após balanço; dólar cai a R$ 5,34 - Bora Investir",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTE1iRHljN0dGT1BPczQtQU5tVVdhNlZZdXdMRnNfYWpISjl2SlQybVpqdHVBMWFJcVVPdXlkclVxUjVZbFV4QmZHTVp1amdjdkZ3bndkWFdqVE1HNUg3b1NxR3hBenh6VVIzQVUwUWY1MmJRYmVTM3E1SkJTcFBEbGtlMU5FRWw2VXZzeTBBeV8zbVlNWE1wSWpubExrUFJFZU5kRjRwYVVhYTk0bGdUQlphN3Q2bWZkWHZOQlJTdVRUS1p0?oc=5",
-      "pubDate": "Wed, 28 Oct 2026 21:04:00 GMT",
-      "source": "B3 — Bora Investir",
-      "category": "Mercado"
-    },
-    {
-      "title": "Ibovespa afunda 2,68% com temor fiscal após reeleição de Lula; dólar volta a cair - Exame",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPOTI0QkZmTGplN2U1NndnSlVYa0VicWRtemdDLWJQeS1xQk9JRjkzRlZZcER2Y083eFU3TkIxWFAyTVBaU0xfdGQ0VmhGcnNBNXJ6bXBla0djX3JfaTZuVzdfUkNFX0kwWlFydVB3a1JrNDVnMWg0cnY1Rmd6SUxtcTQyWnFqRnZDOXl0MXJsUk5WcHpQUHdXaExFakl2c3AzaWxUSTM5c1FOdFJRTWJNbXFqRQ?oc=5",
-      "pubDate": "Wed, 28 Oct 2026 20:48:05 GMT",
-      "source": "Exame Invest",
-      "category": "Investimentos"
-    },
-    {
-      "title": "Dólar hoje vai a R$ 5,34, com noticiário eleitoral e decisão do Fed que manteve juros - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYXItZGV1dEdTa1Bac2NFRFhJdXhyVHZtWk1OMkVzN1RTS20wV0dhZzF2ZjlOWFBNQVlTUi1MQ2pic0V4U3pWbjdldTV0N3BIdmVrbEhZdzZ4VWY1ZWc5Tk1YZ0NWXzdYeGhxTG92dmtFRFhQcEt4YXNkY2NzZU96M1ByTmhSU2JfbWZVd2pjOFhuNmN0N3lvUkpwbHLSAaIBQVVfeXFMUFdzZ1hkdVJFSzVxT3czWlZVWHFKS3VpZl83NnIxMDFFSUkzN0tESkc5Mjl0eGRCTGlwaTJxQWdNRF82RGNWczh0QXVRWkZlNkhhb0piODM2ZUd2amlwQzNtWWhDX0xJYmhXOHpVU3l6bXlwVndWMER2b0JLb0hfakxNMUd6dUpaNW5mTzdkS3hxSUZyLV9hMmpsT0E2d1ItTWh3?oc=5",
-      "pubDate": "Wed, 28 Oct 2026 20:47:27 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Cosan, Vamos, Magalu e mais ações caem forte com disparada dos juros futuros - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPS0VyS2dFbFliMGhaNTV4M0FMRTU5TFFXYlJJN0tIdzhEaUxwaHNOMTQxRlpYRVN1VzdpMEwtbVpqaGtPbDl5Y3ZLQnhOanYwQnN0aWd1Q3lRdGw0Uy0xdUJfdVZZUjJRcl80VWRIb2VLYmY1akI5SGtoZjhwMnBQUTg3OGFsQk5GeUU1RWJtdGItRndTT1NHbHQ3WGZya2lXNDVjNUV5eXNncTNzdUNHekRtOXdlcVhLTGJ5czBxRGtHWkRG0gHKAUFVX3lxTE1QUFdRYmRNd25pcUtwVUlyNklaVGUyTmRIUUpZd1o4WlhRUXY2NjE0blN0aUFmYjM2MEF1UTdQYy04WU1VQUFuLWQySDB4ZXMzVmkzdGoxY1d4SUdEUm81S0xjQXF5QzFlbnVteXZEcGw3MTZBQUtoUXJXeEhKNWxRM1Vlc3J4Zmo5YzJZb1prSmM3blRpTDVPZ0hTNVJhbTE2aUlhQ1VNNWtOZ1pUMUk1QkJmQW4zaDZpeXdiaEVIRVRISVBkNUdDVnc?oc=5",
-      "pubDate": "Wed, 28 Oct 2026 20:38:50 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Microsoft lucra US$ 36,6 bi e investe quase metade da receita em data centers - Exame",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRFZsMDVYZFpSc2FRRXRBYnZOSnh6bDY5ZVNCSlhlUDJzd3hjXzI0X0tTLW1xaDkxN1NEdWd4aGlITEF0dmsxSDFDZUg2Y0VhOXM4bGloeVZhaEpjNjZsbGQzczdqeExlM0tBX0dtb3VFYldhdGRBTXYxdUZwS05MWmVnNmNNRmZIU2FFSU5IVDJhejJ0YUxqVC1MRzVLSnFxV2NxVXEwMEdxNDMyNFBV?oc=5",
-      "pubDate": "Wed, 28 Oct 2026 20:36:22 GMT",
-      "source": "Exame Invest",
-      "category": "Investimentos"
     }
   ]
 }
