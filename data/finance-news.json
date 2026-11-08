@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T00:42:13.177Z",
+  "updatedAt": "2026-11-08T07:25:56.864Z",
   "items": [
     {
       "title": "Exibe Normativo - Banco Central do Brasil",
@@ -7,6 +7,13 @@
       "pubDate": "Sat, 07 Nov 2026 23:55:39 GMT",
       "source": "Banco Central — Focus",
       "category": "Economia"
+    },
+    {
+      "title": "'Brasil perdeu chance de ajuste gradual. Vai ter que ser no choque', diz Rodrigo Azevedo - Exame",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYVFWUHVLbml0WGRKdW1qT2Z6RnJsT0hQZW5xMHFjaTY5cTZyUnB6UEZOenZ2Tm5FSlk3RFV5RmlDRWE1d1g1am1jeE1RZmRjZGgyMjF6Q2RaYmpfdXR1akxCS1NMMlRsN2N0Q0NDSEpBUVRnX3ZzTkhlRmhVVnQwZjNSdGJrTzVXdGJkOWg0VmZyZUdFRDFHUWtkY3poUTkxLURjcnJLWkRNWF9DNVVvdlpOZ214RDc0c1dB?oc=5",
+      "pubDate": "Sat, 07 Nov 2026 23:10:22 GMT",
+      "source": "Exame Invest",
+      "category": "Investimentos"
     },
     {
       "title": "Por que o Brasil atrai US$ 85 bi de estrangeiros e ainda assim deixa dinheiro na mesa - Exame",
@@ -79,13 +86,6 @@
       "category": "Economia"
     },
     {
-      "title": "Notícias e tudo sobre o Mercado Financeiro - Bora Investir",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9hUENfeGJ4TDhBT1ZVeHJsaDdJQXh0MzB2RTZVcXFjMUxvRmdMaHNJc0N5blQ3VlFBaUhyUkJyd3ZCd0xWMkFEenFTWnp1cGlJNUwxaFM2SzFCajRWRUxiZkRIVVNjZDJj?oc=5",
-      "pubDate": "Fri, 06 Nov 2026 21:55:51 GMT",
-      "source": "B3 — Bora Investir",
-      "category": "Mercado"
-    },
-    {
       "title": "Ibovespa B3 sobe 1,39% e termina semana no azul; dólar vai a R$ 5,50 - Bora Investir",
       "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVGVCVk8xRUE1Wmg4ZXBYbFprYVpwY0VtdDZZbHFDRTc0VFhjMFRXMDFFdS1iZi1kUmtQRlM1UzJ3YnVQR2MxT2djMGZDMzQ3MVVLZEV4RjBtTERJR1lLT1VmQ25rd043OWJHRXM2WTNGVUdBNnN0Yy1SUW8zZ2ZTX25xbTdHem9ZYVNVdTMxd0IybHNCSVpDSm5XbFg4cE5hX1hLNWs4czdnOVpqcVVBVG5R?oc=5",
       "pubDate": "Fri, 06 Nov 2026 21:48:00 GMT",
@@ -96,6 +96,13 @@
       "title": "Por que o Ibovespa subiu 1,39% nesta 6ª e fechou semana em alta mesmo após payroll? - InfoMoney",
       "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNem1YcXEzVEkzeTBXUDJJTXlNeWh2WGJEd1ItcjVUN09aUHE4N3BEdzlVU3M3TDV5bXBwU211RDFqMXRBN3JrTmJTSURjWW1RWThQX25OamRfY1hWNTU0eGE3NUs4NUwwNHZOTXcxaks2bVhKOVBfdWEwTjIzaFROMWE4YjBvN1o5eEQta1hOX2dGTzhFbVM4dy1ZMVVJVjJlYnEweFMwOTM5UDdUTnFaZ3dtTmzSAboBQVVfeXFMT1dLTmhLVTctUzZvZThHYkMwX1REM3ZNYlFzcFVyMXdzMkdSWGdMemFqVGhneDZLUUJXSHlwN0t1OXZaNXBkVk9qVWRITVJlVl9NNWFCWTdOeVFaNlUtakVpY185UllJTi1GNGtvQU54SnlPWThhVUVGRENPWW5WTUlISDFOYjZJbUl0WnBuSU1Jbkw5Z0JXWDgwTVNBdnNmZm95T0g5OG5ZNG4wOW5zTjRLMWthWkkwRUtB?oc=5",
       "pubDate": "Fri, 06 Nov 2026 21:45:32 GMT",
+      "source": "InfoMoney",
+      "category": "Mercado"
+    },
+    {
+      "title": "Nasdaq sobe após setor de chips corrigir perdas, mas persiste temor de alta de juros - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQR2hUVUdKeUk3ZWtJRm9pNVRwOWcwUGp1TDlUMk1BaTZQendlQllHY0doc1E1YUJjdU1WZ2xickpGNml1bU5GaGJNZWoxMWd6MEJhdm1DakZLemxTblBwd2ZsaDdZbzNfSWpSN2JvSDhDV3RlN2NlTzNoOFFtTUgyenhyak5VN3hMdU1fNmU1TnNIR1RaVFFoZWxGR0V5SEJCN0h6d0lfRDMtVDRMeG1lSHlYSk1QV0N6WjFsMnVR0gHDAUFVX3lxTFBNdVV0OUtXZmE3LXQxc3ZnV1pfY19FT0k2Q09hMVdZOVpET1F4WDZKbk0ydm14OHpRVnRfUFg1UmpTZzcyMVJzQnRVZ0dxSThCSEMtNnN3a0I3OXgxNFhSS1NGdHlJcmF5NFNJVnFTN29iSFBTSlhmUlJZQUVJUndLS01oTkJTb25OS2o0bTg2SGt0d0VLbnYyUzBabVBqUTRxWlJ3SUtGaEVORzRkNGdvSjEzbFpZRFdSVHhTREM0N0ZPbw?oc=5",
+      "pubDate": "Fri, 06 Nov 2026 21:33:15 GMT",
       "source": "InfoMoney",
       "category": "Mercado"
     },
@@ -170,27 +177,6 @@
       "category": "Economia"
     },
     {
-      "title": "Aberta consulta pública para a Orientação Técnica OCPC Nº 06 (R1) – Apresentação de Informações Financeiras Pro Forma - Governo Federal",
-      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPT2k4NW1FYUJPWThFR0VHeHRLdEhSbEdoWFJsTWk4aFRVWXJXQUlHZl81TWZZS2VkVlQ1ODVzR3Z2NXdaRC1zaEs5T2p0SXN0ckkwemU0VXBXT1RhcWNUWlU4SWxvS1N6WmZFWXZrZnVvVzIwYlNDYjNTVlhlcF9nd3o5M0tvLUpKYms5eXRHZWRINVcwNmtSbU1BQkRDd19uVEFkaWR4VUZrOV9sTG4yOTJ0YnZhVEhTb3A3Z2RjU1FtYnM3eHlhZEExZm1sUjV5MkowUkxpSHpHSTkwRWtGT1Q0enh3ZWp6WE9tMVVPMzhtWjFMS2s3Tk56TlFNVjg?oc=5",
-      "pubDate": "Fri, 06 Nov 2026 19:36:28 GMT",
-      "source": "CVM — Investidor",
-      "category": "Regulação"
-    },
-    {
-      "title": "CVM inicia consulta pública relacionada à Revisão de Pronunciamento Técnico CPC 31 - Governo Federal",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOcG14U3VzZlhKeEhRbTM1eFV3cURoUkJRa21EVERVZlVRZzR0WFdSV0wyRkk2djYxX0plbGp3Mzh2em16QTBnZUdHd3duYkxidHdLYjdjOGIxZEpFb2ktSlV4VDlKSUJHdFdRR3JtSEREdC1hR25fSjVrY0tlV0ZmbGFVN0p6a2ppTGVaQkNPSUFFeFVCSXJrdFZMTWZENlU3dWpLU2Jld2ZBWm96SEtCakk0Mjc3NU5CVmIzVzFOelQ4LU9kQnhqT05QT0FTTFE?oc=5",
-      "pubDate": "Fri, 06 Nov 2026 19:35:40 GMT",
-      "source": "CVM — Investidor",
-      "category": "Regulação"
-    },
-    {
-      "title": "Aberta consulta pública para tornar obrigatório Pronunciamento Técnico CPC 34 - Exploração e Avaliação de Recursos Minerais - Governo Federal",
-      "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOR2dtbXhsa29Zb1BOWXFjZHdBWF9Ub2Ntd1B2VXBvNVdoLWVXNXRMVzVCRjlkMlViX09LcjJEX2lTN2gwX0Itb2JoYmNsSDB4YWU5ZFFwd2tqUFRfQjhQZjlwRDZYT2d6RkNMdjVqaWV1RVIxbC00Qmx5SThCcWx5dThmdk80YjR6cksza1lsUHh3N0JDU0lNTkE0YmxnVGhJREF1c00yekJTaVpSWTFUMXdRSkZhZDJpLXg4Vy1CMEFrMEczV0VnRkMxRVhraFR3bF9zblJWc2U0YXVRVndac2xLUXc3OFJrRTJ6dE15TlBkdmtHcnd1aV82VmgxLUFnLVdN?oc=5",
-      "pubDate": "Fri, 06 Nov 2026 19:34:49 GMT",
-      "source": "CVM — Investidor",
-      "category": "Regulação"
-    },
-    {
       "title": "Nubank e Mercado Pago suspendem parte de operações com cripto após problemas com prestadores de serviços - InvestNews",
       "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1XVHpidDZqeVF0RjMwRXFDNkFuRjczcU9CbHgzVkNjb2JGUjM4dzVPMC1ZWGh4NEowQW5Rb0RQNkVZQkpHbXpsaGFKLWxGUVdfcGlUY3YxMEZGNlduNXNQTEhwRlUyMHFpcGJpVW1aQUJiX2l5cW1kcWRB0gF_QVVfeXFMT2dyRXVqalhkRGxod1AyOUZFeEtYUHBkd3ZPeWRxYWZpUG9VcVdnSnpWNnY2U0RpREZ3T2J0UHR3M3dVN2lnV3FrSDFPb0ZoMzEzb21wV2o3ZkxIdW8wZTByY1JtSWRBQlZqRzhVNEF3Qi1GVmJQTENhdTktVnRYdw?oc=5",
       "pubDate": "Fri, 06 Nov 2026 19:33:46 GMT",
@@ -210,13 +196,6 @@
       "pubDate": "Fri, 06 Nov 2026 18:37:38 GMT",
       "source": "Exame Invest",
       "category": "Investimentos"
-    },
-    {
-      "title": "Perfil de investidor: o que é, quais são os tipos e como descobrir o seu - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOWG84RWJPQmpfWHh2SDltQTBHTS1ibnBCX01ucDhIR2JxZm13eXpzQzlvcnNON1E1NWYzVVgyeFczcVp0RXBzWVFFWE9CRk5oZnhQaF9uc0RHSEhuQUF5V3ZKMzFIWm04eUxuMlZBbTF4Q04zWHVRaW5mbnYwdDhhR1hWMA?oc=5",
-      "pubDate": "Fri, 06 Nov 2026 18:30:00 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
     },
     {
       "title": "Mercado revisa crescimento de 2027 para baixo, por juros altos e incertezas fiscais - InfoMoney",
@@ -275,13 +254,6 @@
       "category": "Investimentos"
     },
     {
-      "title": "Para onde vai o dólar? Moeda tem instabilidade à espera de sinalização fiscal. Veja como se proteger - InvestNews",
-      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOeVFfTEZEVjlaVnBYTXluejQ3eUg5eGpQUEtZS3J4Zjk4MmxCakEzbWNDdFVNTmtMUFdpX1lTYWw4TG1WbkZxMXB1LTlBN05sM1JrRTBaT3BXMG9oc3lzTXljUlpjQ1JEeTZ1QXRXVXB1Y2JrXzhuOVJRUTlKbW1sZk80Qmh1ektJakRXRlB1Zm5qZjM4Qk1lZzFrajIxS0JySzFSRm9tWlM4RDd1YmZDOXpBSEQyZFlqeDRhOGh6d3FCSWVPNFJza1AwR1ZUdmF1MlN2cGFB0gHbAUFVX3lxTE9nTmJqUnc2WUhFQUpOb2ZRZkkwUGEwTndyYkxvNXF5Zy1ONVlURW9vUTJLUURwSW1CQzRldGJraGdhTHJfbG5Jd0VZWnFHT3dOQkw2Wk1Jc1RXTkttLWxIdGJoTGRJaGR4d3dsOXBFYUxtbzBHVlhTQlhMY19LLTRxOGRMUFRYWTc5R2paOW96eV9COXBCSVFnTnY0dkxJRlZTMEhVcXdTcnpZNU0zVUg4WGxLd1d2SExxeldYN2JhTHZkM0QtSFljYmFPbklNNGl4RWRpeHZhcjg1TQ?oc=5",
-      "pubDate": "Fri, 06 Nov 2026 15:10:02 GMT",
-      "source": "InvestNews",
-      "category": "Investimentos"
-    },
-    {
       "title": "Payroll e reação de Wall Street dão fôlego ao Ibovespa; dólar sobe - Exame",
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcm5fVTZ1RHVHbWZlRFFYYm1nVXJSc0llTUlrRlBLX3BUZFpxbXFlN0lac2pYSnQ4c3hSTm9MbV9WUTUybm5Vb3lVUkVpX3dUVUIwcHNOM3czRGVhbV9kMi10OXpkdjQwNl9KektsUTZqUEpxbzU3cy1BeWRtQmhucFhHRlR5Q3lZQnhCNWhGaVBRWFRDZkNwWExNTkxrQ0pZaWc?oc=5",
       "pubDate": "Fri, 06 Nov 2026 14:09:17 GMT",
@@ -303,6 +275,13 @@
       "category": "Economia"
     },
     {
+      "title": "JPMorgan mantém Brasil entre favoritos com lucro resiliente no país - Bora Investir",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVXhLcFZ6TUZHa1I2dGJlQlJ6cXhEOUlrZTlmUFY4ZjlhOUVJNmtsYV9wLW1EU2VSN08xbVpWQ3N2UW5YMHdWTnFSNldxcjVVcWVCT184b0hrUFBOSjl2dmdJcDRwNjVqMEtGZTc1OUxfQTBMUVlmNDYtMk9SdHdjUEJWWDRiT01aZTVkcVc4b0VDMWZESXRxU1JvM3lPdFVjZE5Fbk5VRGh6REg3?oc=5",
+      "pubDate": "Fri, 06 Nov 2026 13:57:00 GMT",
+      "source": "B3 — Bora Investir",
+      "category": "Mercado"
+    },
+    {
       "title": "Payroll: EUA criam 165 mil vagas de trabalho em outubro, acima do esperado - InfoMoney",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5ZeDZwWFFXYmVzc1J5a0VIQTRSRXJJeWNiVWY5WnlaZVNpdUVPSUZGbUJObjBBemloSkJZYUtFWnV1X2ZEc1p3aC1oVVdZVUR6dmZNVWhJT2ZfTUlCWmk4c3VLRXhIcXNHX3NEdWJpbVLSAXZBVV95cUxQcHhIcnJURmgydjNYYWRDRzVqdVlEUlY1bExVVGZ3SEJrd1FVTEZ0by05aEtCZUhtSVF5aUF5enJWSHVWU2Y3eC1SUDBxVU45U1dQLVlPdE9fM2Fxai1uc3hodmctM3JtRV9QYkdHQnBEeGdtZHhR?oc=5",
       "pubDate": "Fri, 06 Nov 2026 13:32:24 GMT",
@@ -313,13 +292,6 @@
       "title": "Bradesco BBI rebaixa B3 em cenário de juro alto; XP e BTG têm recomendação de compra - InfoMoney",
       "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNWxvSC1SWTVhOTVlamo0bGpkRklKVGFuN1VvRklMMVA1RFM3R0hMS0tkY09MUzhwaXJjVHNoV0NhbC1kbGVLTmZVUkM1eEh2d3VnQnpZSkVSX29uSXF0UG4xMHFJMXI1R015MmVjcFktV24xQlp6T29BOGlxbkRnS3daTzVjWEpUV0VKYTd4TjNOblVRWm1hMTBqN19GQ2tvYnJHN3YxMktyQU5jWnRzQnhvaHhSZEZKVmE3bUtsY9IBxAFBVV95cUxOWHdEbUY1ZkZld2RrQk9IVzF0aVVGNGt3dUdtM3dvcl9ON0xYNTE2MUFfUmVtaW80T3NEYTRMdVhmanBnZHNZTWE4YVkwVjZVejRrYU1lTWpOaERlR1NLZkNlSXN0ZXBVbFY4QlZvSXB6OXc5TWt0T3BfMkQyTl9ZVHhrcW54VklsTEZjVV9WeVZfUVpHcjJ4UW52d3lVS1VMczB0N2JrZU40SnFxSGY3YlIxNVFkZ2diUm9Sd2FJMHdHQ0FR?oc=5",
       "pubDate": "Fri, 06 Nov 2026 12:58:51 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Cortes artificiais na Selic: AZ Quest discorda e prefere esperar sinal de Lula - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOYzMwa3pqa1RLd21VajctM09MS0RGTzJpTXBHRExqc0FtOERyR1pkLWtLaGdiZDlNc1A1Tkx1STRBZlI5dm14UVRjS0tUck5kMUFjOFp1SV9fVkh6anN1TnpWazR3eldMUVNVcjFIQWxPdl8xN0NXN3ptNHo2OWRSN041Zl9SZkZMWEtCc1hxNWxqTENzTldPTkp1c25Fc0pmRkFIcTRza196MjdlNnBCN3pMYUpTSzRWdFFsY0Vn0gHDAUFVX3lxTFBDSmVKa2RmMnBFaTJIZHgtNWdteXRNWFZqYXNvaVQyWUZFUXdsRUVOZDJvSHJQemF0SW05WHU2THBsRVZYZEJkN3U0RzVZYWVncExYOTRycFpwa0hJZEJ6b3BnN09xNDFFSXMxN1ltVnlPM2VrVkp0c21HWUhUTkdRcFE5cmhOYTA0Rk54R3plQ1ZPMmpxTHRNVDBxUlI4LXpVYWR6MENZM2JuMzBMS2hNWk94amNnZjFaN0tWd3U0djU1VQ?oc=5",
-      "pubDate": "Fri, 06 Nov 2026 12:54:11 GMT",
       "source": "InfoMoney",
       "category": "Mercado"
     },
@@ -387,9 +359,30 @@
       "category": "Mercado"
     },
     {
+      "title": "Bolsas da Europa recuam com aversão a risco após liquidação tech e antes do payroll - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQcmlkc3VnelVTbms2emJNQ2hLcHg3bUF1dnB2TjhpSl9UM3UtbVF4UkR6YkpMZ2tISlZ6RWlsQUZLWlpvdTZXRjIzRkxJOXFOS3g0ZnF3anFhVUFwX0N3UXZtbWoxRGYtOFFPQldSRWw0Y2tSd3JjejFza0h0WDNsaVNwakp3ZTZKeTExWHdtd3lybHJCdHpuc1BickxDS2M3Qjdod29jQ1k3Z0hpNG1xWmY2RlhDUUdvN1V6T2ZKb9IBxAFBVV95cUxPa0loM1F6VXZ6Y1dKMkUycmZrdDZhNWdFS202b0hWaWNvektwZmRaY2JoWG9MVlNwT3JBb3BZRXhLSFFmXy1XOEtVQ21WZmdJWS16R0hfbWUweTlRRTdhT3lQMWlYVjdsLURxVzFoT3Z0aU1HSXJkMzItY3loZm5qTUl4aTNUSjQ5d19XY2FiWmRSOWNGUlA3MEVIR1VfdUxjdlRGeDR3R3FMNDAzSHJjQU9EUWFYV1ZJWmpYUWd0RERuaE9S?oc=5",
+      "pubDate": "Fri, 06 Nov 2026 10:49:31 GMT",
+      "source": "InfoMoney",
+      "category": "Mercado"
+    },
+    {
       "title": "Bolsas da Ásia: Nikkei entra em bear market e mercados despencam com liquidação tech - InfoMoney",
       "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQNWNFNUkzUEx5aVk1UHpMTnpkdnFvZVF3YTVsQzFtNEZNWTFVQ21VVTdhRklIczM4b01IQVpldGp2S0lORm1ZUlg5LXVHWm1YTUwyQ1F2TllRd0RfdnU2SkZTSlVXX0tydW1HVXhmbXNtNUp4Zkd2RE9COFYtcGFJSm13ZTktcWo2eFczV0FrSHhKOWZmandWek8tNnEtZnFjdkMxeXdmMzZGR0dqUlpIMFBqN1pUT3RWSHA2NmVvTdIBxAFBVV95cUxObjBqMFVTZk1nRVQ2NTFIS1ZvamZDdlViTDJadXdydU4tSUdlZkhJdEtPY2k3VHhzVTFlTU5BRXM3SUtrNW50cngwY3NsRjA2SF9xVTNqYUNXOHMwVE5CZ0R0WWFsLUREdlFsbU9XcUdlNVYteWozQUVjdFpuM05rY0xKWXVNZk1ndWtJMm5yTm9nWHpFYmtNSjRIMi10bmlWdXQ5bEZsTDFUOHg0cW03TjVuY3hIaVBZODRZYzFKc3lnWXNo?oc=5",
       "pubDate": "Fri, 06 Nov 2026 10:48:02 GMT",
+      "source": "InfoMoney",
+      "category": "Mercado"
+    },
+    {
+      "title": "Na Dasa, investimento sobe para expansão em diagnósticos - InvestNews",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8tWGRNNkNIYkt5RXFYNWd5LTlHYU53cjdacTRaaEVyenZveGtMR3Z3b0lxVHVPOXdUdXYxVG9USTJpcElGQXFDSTc0cTBmZnY5UnNrRHZXdVpFU3llaVBBN1VYSEdVa0dka0FDSjJHWjlJYnVhTUpVRS05MlRSS2fSAYQBQVVfeXFMUE1Wd1VLTTFQckJkVVowMFJtV2liMTlFbkxTQjhJQ2ZROXpuSjRNZEdHR2tCTmVpVmdXR2VsYi1lVVpiS0luaHJXVDE5Zm1RWXpYVUc3TDZVckYxeTRlb2VoM0VxdzJIRkd3MXVEMENJQ0VEdHg2OWhaWFY4TnZQRndVekh3?oc=5",
+      "pubDate": "Fri, 06 Nov 2026 10:44:12 GMT",
+      "source": "InvestNews",
+      "category": "Investimentos"
+    },
+    {
+      "title": "Último dia da Casa Clear terá Tati Princesa com foco no emocional do trader - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOemJHeTVBYV9nVmJ0TkVlNW1jY0UxUHlKOUtaS0Q4RnZRcEpsR192TDR2X1hSdkhRY0xnTk85U084dDAxVDJZS0duaVVFMHJSQVRzZ2wyUEkyQTR0eGNlWnRScVg2Vk1WaXh5T2xId2lvQl9MSENwQjRHUW5aRXhQYVhqdWdzUkhUVFA2WWtrb3hEaXBoM2NZbjNkeFpwYmtFc0FBelQ4U2VyZXJGRU9wV2dRT0HSAboBQVVfeXFMTm5PYUNXZV9XcUZNWUYwN0R1S3R1Y3U3V3QtdERPNFE1VnkzU2dUZ0xJQVVRQ1hDSHRWZ3FxSFFrckNZRXg4N2lqbGhWbmNfOVZpZVBnclBlUGxUWFZNcFdZeUVadl9LNmJuUWY2cUUyTDZuN3pROFF1WDZsV2w1UkVlc1lYM3dWTXM2NmUtNnJSSmVWNjFOYjJWcU9kMWRGWllCVnR1cFlfNi0zLVQtalVnTTEyTHJTSVVR?oc=5",
+      "pubDate": "Fri, 06 Nov 2026 10:30:00 GMT",
       "source": "InfoMoney",
       "category": "Mercado"
     },
@@ -420,6 +413,13 @@
       "pubDate": "Fri, 06 Nov 2026 09:49:07 GMT",
       "source": "Exame Invest",
       "category": "Investimentos"
+    },
+    {
+      "title": "Grendene reporta lucro ajustado de R$ 150,984 milhões no 3º trimestre, 18,2% menor - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNX19kUk1wY3pfaGNZTGFlTnVvRnNsT2tvX3drcWFkTE1xOWZ5cWY3SzFfWkpGLXkyZUZJdkVTV0t4Y1RFV0hRbzlGOUVXbFRpOGJYMnJFaXU4TXd0NGtRd1d0Y0xuaEhiWE1ydXBZRU9LNmVzeGVVMVpvV3JSM05wWmZoeTBIdjdKRWdObkZPdzIwZkk5OEMzd3NfX0xEOEdZMFppa3FjWWRoUHJialpxektkVHpXeVHSAbwBQVVfeXFMTWVxcS1TY3RnTVR0QkpmVEJaTE5zemNPT0tRbDRPUGFGcmUwRjNLLTJ4TE13Q21URlpQZXF4dklDanFNSGN2OEJhVWN0bjF6WXV4NC1DZl9OVkhqNE03dVRFaWxCTWs3Yjg0LUJZNkJlT1Nod1JNUkhvb0g0ZnlOazVDT1lGbHV6SXBlLWRTbElHVHNpVzltaUpFRktNcWdUZDZsblp6UGNNLUxQS3FYOTY0YVZrTTdKQjl6dkU?oc=5",
+      "pubDate": "Fri, 06 Nov 2026 09:14:27 GMT",
+      "source": "InfoMoney",
+      "category": "Mercado"
     }
   ]
 }
