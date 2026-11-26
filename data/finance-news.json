@@ -1,31 +1,213 @@
 {
-  "updatedAt": "2026-11-25T15:40:19.367Z",
+  "updatedAt": "2026-11-26T00:26:30.700Z",
   "items": [
     {
-      "title": "Ibovespa tem alta modesta com fiscal no foco - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOXzEtcEhCb1Utb0MzaWZQZDF4cE16MldqeG8yMEdPZEdzYkktTEV0TDQtVVotWVZHbkx1MnNwMXoxbTYydGI3ZEd5TUZYSlFtNXh1R3I1SU9PNXdhVGktY3F0a1FSZnFLSEVzY3BIQV9WQVBKWTRvaGItVTBReUJMVy15MFpTdV9oZGZz0gGQAUFVX3lxTE1yMlFkRnFRYTczQjhOM3ZxVHV4ZzEyaURJai1IQlVXeDlVNk1wbUVNU01TMVRwRWtEN0ZTNGxjMDFkUUVqMFctR2VIVFJYTnJjV3B5MmV5ODVWY25SZ21EYXlJa040Q1FiUE1JQ0pfRUNTcHhLV0VaZW5sYTBlcVBVZGJHa3BLelZmeVZ5VGlaMg?oc=5",
-      "pubDate": "Wed, 25 Nov 2026 14:47:50 GMT",
+      "title": "CMN e BC anunciam novas regras para conter endividamento das famílias - Agência Brasil",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNZk1aRmJhZUN5YXI1UmhhcGU3ZV9RWUpTNk9iRGdCMUZfN19ROEM1QnpOVGhJSGJ4N2p0MUEzZUluaDZRcjVlRkVmeXVROFgxdW1XYXRadTJyRmcwSmhud2VPLXlnbVNKMjhHWEF5enJzNEhUSVlPa2twVlpjclJ0Z01sRV9mZkVMYzRmYlY5OUJQOWZBSHljcUxhUjZxRlg5cVNTc2VZUW5TVE9Sa2RnZXhJVW5ZTkpkZVNyVXd4QVpPQ2Z5UUE?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 23:37:00 GMT",
+      "source": "Agência Brasil — Economia",
+      "category": "Economia"
+    },
+    {
+      "title": "Amcham participará de consulta dos EUA sobre tarifas ao Brasil - Agência Brasil",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYy1nUmZ5RTRVR1FzeW96NVBmRmM0VEFha09SQXU3MkI1TkNMS09hd2FHRTZNSDJRNWxOUk1LMlg4dTY2ZnJvUUFjM0VTczNFR19lLUNLa0JuZW9JUlBJamptQmNFcGhNbFRXVjJ5QV9INGgxVFdRMlRyV3gzcnhaTUd0Q0pTTUJ3RGhwM1IxVko1TEIwdm0xYm5CLXBQY1g2SDI2ZkNxNmszbHlob3ZST2FSNkprOEJWV05EVg?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 23:22:00 GMT",
+      "source": "Agência Brasil — Economia",
+      "category": "Economia"
+    },
+    {
+      "title": "Brasil critica possível novo tarifaço dos EUA e diz que não cederá - Agência Brasil",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNV1NkSTNWVDVFY0s2Z1RDRnhrZUVmdzlOMjhkVXdNWWtCRXU0MWZuM3BSRmRDTjFldWk3Q2QwcnpoQ1BOOExJYTZQbWp5S0t4UXVud01ha0NZSHRBbzVjTUZPbW5BR25NZXpONl9TdmF5bHpxakxBS3BBcTVZN2twMDExb1MzdXZXNl85eTBxREVyMEo4eTRDXzdWUWhsSDVldmdBbFNPRHlwLXZUekFxOEpuN3BxSXZ5dkZoQ1VIS1R2dw?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 22:34:00 GMT",
+      "source": "Agência Brasil — Economia",
+      "category": "Economia"
+    },
+    {
+      "title": "Ibovespa fecha em forte alta, acima de 1%, com expectativa de nova rodada de ajuste fiscal - Exame",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1nRkd2YjktU0paekNSX2psWmJxbzJaSVpxdFdrTDVxOHJXclk2TE1BQlotMS1VYjh4eHRnaVBETko5dVprdjVvYVJ4anBOSFJzNVVxZ05VY3ZaSFBhY2FDWDNYdG1UM2F0cXlV?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 22:18:15 GMT",
+      "source": "Exame Invest",
+      "category": "Investimentos"
+    },
+    {
+      "title": "Dólar cai para R$ 5,81, em meio à discussão de nomes para Fazenda - Agência Brasil",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxON05kUWR3YzhSSEJQR0o1Z2xGZml6OGIwbGJhdVBWLWMyRmhXLW5Rd3U3SGhpOUVyckNrUFpEMDBCZDZkMnBfT19zSWNIRVhHa3lWZlJSZlhhRmN6WHNEbEt0anZrdnVrV3lCWlluMzRZZTYzX1NVel9lZDhmemNGWThIU3Z5aDNkRHlqVF9TXy1SdFNxWWlHQmhWN18ydkZFU2xVRTFXN0x2WVdtOGNGN05WOWc1OGd1MHc?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 22:08:00 GMT",
+      "source": "Agência Brasil — Economia",
+      "category": "Economia"
+    },
+    {
+      "title": "Citigroup avalia retorno à Venezuela após cinco anos e negocia sanções com os EUA - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVWdNdHEwOHh5VzhzWFZWMnpDUlpBQ2ZLSVp2dE5zSHNoUHpZd1J4aDVTa196bVZpY2RYa3VoQ2VvUEFRTzZRNUVXWF9ON05zcjFuRU9mOVBaMDBfeEx4NWp0d3RRaDRaQXBGdEZyTFNrUk96dUhmd2lrcWgzUzFpT3JhZTk0cFpYbjE0ZldNMEx0aTdBc0lGMEFOcHh2S3Y0S1FKclBWdGFtanh1b3ZCWGFWTGoxeWRDZ2RrS9IBwgFBVV95cUxNQjJiT1VieTlnV0RvX1lfSWY4bHFENlFuakVNTG5rbWR5WkxFMG5fOGd5WG5MNEF2UEZiR1hhd2dkZlpkYmMzZ2o4OHZmblZZbXNYYVU0Yjkwa01ZMjRXR0pyRDUtR3BfMFRJUkdtaWdVbmRmeG8ycjZlbHptcjRuWVZsRnlWQnRoMFBpQWpQem9qQVZMUnZSRG9acFN0dy1wUGtEZ1NTWmczY25nd0lFdF8wRnA2ZE5iTzBBWTF3dE1OUQ?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 21:51:32 GMT",
       "source": "InfoMoney",
       "category": "Mercado"
     },
     {
-      "title": "Ibovespa Hoje Ao Vivo: Bolsa sobe com fiscal no radar; tarifas pressionam EMBJ3 - InfoMoney",
+      "title": "Nasdaq e S&P 500 caem, mas longe de mínima com investidor de olho em oportunidade - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPb3R6Y3oxZ0VnVDBUVm51dU5mNkZ3RGpyV0p2cE94VlBCcU1qTGVnVmY4MkhOSHRGM3NkV2MwZVVYRDlGUkJZR3pPbksxMjBXdEkyS1NWREtZUWNuenZaZUJOa3NwUDU4eGlPR2E1Z3ZuZmE4UE5RaU5lQUh4Mm9rb2tvb1RlWUR2NTE4LUVVZjFkZ1R4OG5vNXU4SGt2Snd4YlZJWjlvZGdyM2ZVVWlhYUxGRElFazRncVHSAb8BQVVfeXFMTV93ME40bDVyRHJocTEtejNnMzhnTVlpMlljUTdNRU9LUk80UUIxZ2RoTzZTLXN1SEN1Nm5FMXZsSEVEeVk1LURYaFJjbmd6bXdxWWIzSDNnSnR6czI3LV8yVnhDVmlfb3Y4ZzJQaG5XQjRuMU9YaWtuZmx2NkphdGZBMUd3THEtQ3dVNnhiTEktWExnZk8wTXM3YWdhblVmMmozWlh5WVdWdWR6ZW1YSnY4a2tDYWtkcmxHYmJLM3c?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 21:40:49 GMT",
+      "source": "InfoMoney",
+      "category": "Mercado"
+    },
+    {
+      "title": "Ibovespa dispara com notícias sobre ministério e fiscal; dólar recua a R$ 5,81 - InfoMoney",
       "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQ1RjWkZvaVEzX2VESmpsSHN4bFBBUEU3RFNWYzhIcGRXcU42YkFXbGRKYUM1MVVBeTVwdVJwNGRZb2V0Yl9VdXYzbVNCZ3JuelVVcThUSkpia3ItRFpnbHotV0JBNlR0TVBxRHZJTkFNcm9qazZ0SHpESFZNNHBkRnAyWlJMSDlJR1lmQnBYOA?oc=5",
-      "pubDate": "Wed, 25 Nov 2026 14:30:37 GMT",
+      "pubDate": "Wed, 25 Nov 2026 21:28:29 GMT",
       "source": "InfoMoney",
       "category": "Mercado"
     },
     {
-      "title": "Embraer (EMBJ3): ação cai forte com proposta dos EUA para taxar aeronaves brasileiras - InfoMoney",
+      "title": "Nasdaq ameniza após cair até 4% e entrar em bear market, mas fecha em baixa de 0,62% - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWFB5T2hNbzQ4TEk3VkNfdnNLTVRXaDE1MU5IU3hRSEVkdnkyUkpEdUVTRTdhbWd2amZ4T044aHFuaFpYUTBKZ1BvUGtSb0VKcEhwZHhRXzZDRnRFREdDUjYxRklaYXhjVjRubFhDaElMM0ZROFBFSG1MZkxqVWgzS0trVE1tVkxjUjRwcDZ1bDBJLU1IdFNPbnZNUmYtcFpaUW1veG5WRWIzTVNHZjg0NzVjS2fSAboBQVVfeXFMUHI1bWJGclJYZXRRWkhwV183enc5cWU2M05Hb3dEeEdIb3YyYV9QTXdPRDEwTDhrd0ZFWm96NnJIOEtVNWlFZFlKbFBubVFROS1wQThRTVdvWE9EQ01vVnY1WjhZNFgtYkdwaXZxa0QzaVFaQnFaaDVKYlI0VHNRNEFzaDNicktqbEJFbUVRdW5Dc1lWc0ZEaV9oZUhIbUt0MVBTMURySWgwS0JzTHgtVDlOS3dCdmV0MnBR?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 21:26:25 GMT",
+      "source": "InfoMoney",
+      "category": "Mercado"
+    },
+    {
+      "title": "Embraer: ação ameniza, mas ainda cai 4% com possível tarifa: mercado exagerou? - InfoMoney",
       "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdUJsTkNMWnVJc0FRZkdtcFRKNFpUYlQ4STlNb3VvSGc1SVU2M0FnRkpuNXBIemV3YnpaeEhaeTBmbkFNaWdoLUdaUHE5Y3U4M0l4VzlwcEQyMFQzTXB2YUJhaVV1VXkzSmxYenJwZFFycGxpeU1FZUZYZzNsaU5SNFV2dWR4SWFrbmVHbmNzaC0tNkVITEZrNFZLQWc5UE5vWUY0MmZNYS13alJCYzVmLURxc2YtSVVYZ3lfNWt30gHDAUFVX3lxTE56MVdsb180dkZwMkEyZGNaa3M4NnN3ZVQ0UEF3b0ZXX1Q2cVQ1SzNuRDJ4QkUxZkdFbzBxTHlxam9lWklvS2d3SXBCMmRoMHY1dU5FeEREUy1xYzZCUUV3bEMzdnlzNkJFbU93eEp6cU15Y1hfWjdFR1FWXzgxVVFxanBFOV9XNHJJVS1qM0MzYjBKNGtIR2NMTURpRHRVRmxlb2Z2RlJ1SUkta29lcFB4VVRXRFI2bXQtRjBUWFhYaUhIMA?oc=5",
-      "pubDate": "Wed, 25 Nov 2026 13:49:08 GMT",
+      "pubDate": "Wed, 25 Nov 2026 21:22:27 GMT",
       "source": "InfoMoney",
       "category": "Mercado"
     },
     {
-      "title": "Dólar hoje vira para queda após dados dos EUA - InfoMoney",
+      "title": "Governo deve renovar subsídio ao diesel por mais 30 dias - Agência Brasil",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQURNcHd2ZldPckZGNTBha1dSR3Y4LWRXWVJTRHVBbWs0aF80bXVwU09LUmVMSjM0MDM2Uy1wdmZFbEw2dy1rZXlLSDQtXzczTWNjZWtBUWxXd3pzbHlGY3hCTnlndEFHVTN0S2pMVzhsd3lwdWVHZkxSN3cxWC1hbGpfcVYxVnZMQlgxdlh4dVhqSV9QU0lkR3E2Q1gwS3pjZEtxUGlfZFFHemJUM3k1MlEyWE4?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 21:11:00 GMT",
+      "source": "Agência Brasil — Economia",
+      "category": "Economia"
+    },
+    {
+      "title": "Bitcoin oscila perto da estabilidade com apostas em juros em alta e fuga de risco - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQOXM5U2VvOVUtNTJyaUpjYmM4WWFJUVZCSUdDLVhsWDF6a3hKLWt1SVpMMV8tSHlVSmNRaWduMFoteW5HTDFjOERoN0kxR0NkM1JJWW1iYTVOOGxEUHpEcjBkX09KZ28yaEsybS1HUmV3TkYwYUtJQy1VZ2d3Z2RzTWN2aldhNkUwc2dWRUl5YnZNQWVCc0ZNWHFVSW9RRVRnalVqLUdIYm4yWGtwaGFEUmtySTJTVUwzLVpUT9IBwgFBVV95cUxNZlpXdEg4MGd0ZXJkU0hNRmFLY3BzM2FGbGtDSDFrZjIyX3ZZajRobm1PMzA4WERlTnNWemx6eG9EbTlXUlpWUmJpMFFHX1VfUXBiMFBuVFBtS0FZYWVoaFlzdzM5WEUtd1BGSzBKc2Vqdm50dTcydk5Ea3lMMXdzU0F2c3AtZkVUc1VwYms3ZGk1WV8xLWxOemFqd2VwSFJxVXJiWGJrWjl0QTRpMWl2Yll5eTVMeHVfeTRZTmRhTDY1dw?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 21:09:13 GMT",
+      "source": "InfoMoney",
+      "category": "Mercado"
+    },
+    {
+      "title": "Dólar fecha com queda de 1,5%, a R$ 5,81, com especulações sobre ministro da Fazenda - InfoMoney",
       "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQcEpha3pvUHNvaFpaWF9BZlhGQkZoWVF6aDZlaWE5ODhMc3NJc2l1RDJkQ2wyT0JoclJ2d2ZmRV96OVA3MDlacEJyNVRGbVhnNk9qM0xDTXIyOUotbmQzZ3ZRSHdFZ1owS3FfRXhyaXp0b1BESTFoV3V3Yk9CTlRvc01Qc1VNb3lVWVpMWWllSU5WaW01RUJXUjNGczLSAaIBQVVfeXFMUF9PSWJHUGdUWFBkR09VOFRibjlTX1RKQjZoV1JULUliV1dFd0tjN2xOLXBuVXpEQUNUMFd4bXFyeEphaDYyUGdpU3NtNDJzdUstTzZWYWtTMnVQdnJfdzJta2pSVUZ0bVlnVzV2dkYtU1dvSjVpQ3JBQ2lZRE12SjRrZDlRWjZxallhT3dhM0M2cWVad1oxOHdfcG1WZ0JWaWt3?oc=5",
-      "pubDate": "Wed, 25 Nov 2026 13:40:40 GMT",
+      "pubDate": "Wed, 25 Nov 2026 20:25:28 GMT",
+      "source": "InfoMoney",
+      "category": "Mercado"
+    },
+    {
+      "title": "Professor Mira: Vender no pânico? O feriado que protegeu quem tinha Nvidia - Bora Investir",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQQW9jeVdqbnFtZkZIN01WU05fdjRBaUxDRng1NEVDTi1XZlV0b3F4QllnZVN3QTdsQnktMWhXWHVCdEZEQ3Z6WWJ5Vkppb3o5NEJ2SVFhdXM1X1FPZEIzUjdFS0l3WXRhN2hBNGZ3OW4wdEljbVFQNGsxVGtlZ1dIYnpjMmJuUnF3c2dtblFsaThDX3hUYktVNkkza2Q2UTRqX3kwUGZWZjZOckFlU09pUU5fYVk3Zw?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 19:06:08 GMT",
+      "source": "B3 — Bora Investir",
+      "category": "Mercado"
+    },
+    {
+      "title": "Dados da Nielsen trazem boas notícias para ações de Assaí, Grupo Mateus e GPA - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWmthNjZxbEJsczc0U0Q2UVlDaTd0OFFtOU5iRnRaeDNjNTlucTQ2WkVIb1lTLUF2VDdXdWhfRlo5dWo4Q1FQXzF2UlBmZ2IycGpYajlRcE5pUFhlZ1dDOEM0T3hOWmw3VV9JTnNQN24wMk5NWW0zeUZxWEMyaE9YS3prazRzZXNIOWRXTjY0djNHaldBZVIxS21HWm1IOHlsdW1ha0FuZV8tNTNMMzRUb19JNWhiQdIBuwFBVV95cUxQbjRBR3UwTFpmRk1HUjFNVkhFNDVwamJkOURUUkNrcUlLSXA0MWNSZDFGSTF3eEJaSk1XZmRRZS14UDVYWG42RlByUU5vcE82dDA4dHNpTWFEa1pBOEExRlNJRzBNdzc4dVR1clpTSnJHWERQR2hvZzdJR2hMbWFySDJaT1VNN3VFUFZSemhMVE5xTGtJSzJadVJLT2xNcktiZUw5bXdldzJjMTgzMHhtczdMY0NROVJKd28w?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 18:49:08 GMT",
+      "source": "InfoMoney",
+      "category": "Mercado"
+    },
+    {
+      "title": "Controle de capitais no forno? Medida não segura dólar e encarece ajuste, diz UBS - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUmZZVVNNd195UHVDVjA0VG5vaHB1RXNwZWRVQ2lBYUFVNVhVdzZ6dGtIcmh2aTE4RGg4SDdYelA1a0owdEdOUjAxeGs0NTVNUUhONUtBSXVScnpyZkdXUVlPSjllaExfMklMdUk2NmZpZ3F0bVV4VmpMQ2g1ZDNHd05ILTM1c2xWdDAzSUlEWENyRUlNcUNMLU4zUTl0TmVHYnQ5bExSaGI0UmhNSzVkVG95OFZ2R0hEeUHSAb8BQVVfeXFMUDRoTjBQMkJLQjQ0STFQSnRCNTRsd0JPclIxeUlsZmgwZi1LR25rX3oyTVVmMnpkQlFpbUdXRmltNFpGME5vSTBSN0I0Z25rbTIyWkRnbDBHWW1NY2xrMnp5LW1haGxEeEpRbkpOXzRqZUstNXo0dTc1VTZ6UFRWZjdJS0taTFFMNWdXNWJDZi1VcHFodWI3MmlSa0pkUG5SWWozM0trOTE4V3piRXJ6bk9lZnZJbWlET1MzU3ZLYlk?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 18:00:00 GMT",
+      "source": "InfoMoney",
+      "category": "Mercado"
+    },
+    {
+      "title": "Índice de Letras Financeiras lidera valorização da renda fixa na B3 em outubro - Bora Investir",
+      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOWEVpX2Y1Ti1UWUI1WWZMNTVvUERqajNQVVE2Ym51ZlpNVjE2VnhhaG5FVC1aUWZPQVZWVGJYRGRMV3gyLVpJZkkxamVuMkE5eTFiZWM4OTR3cUJTMm1tcUVLNUJxSXZFOG1yYzZhVnQ1MGx4cUFkbi1TcDNDTEw0WEhUNGMwdXY2SWl4ellMRXZwWU5uTXdlWGluX1pBQ3ZJLXR0NXgtOThVVGxzMGpHcjdheXNEdHRueGxfWlBSZ2tOZGNsZmFicWFEMHNHdFU0RUNjNnlpTFktVFExRUN4VXVJVDNRejZrQnMwTg?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 17:50:00 GMT",
+      "source": "B3 — Bora Investir",
+      "category": "Mercado"
+    },
+    {
+      "title": "Nem só de fiscal vive o Ibovespa: “novo” risco para Bolsa vem de fora e limita ganhos - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZkpHUS1ZZll2a0loeG1lb3EtRU9kU0pBWXo5ZjZUN2hOUkZwNjdtRk03OVlfZTRrdEFGTmtKZW9VMTNYR19vODNRU1dkdGN2MkNNdHE2UFJCV09SckNwVEp3aGdLYS1TNFRuYmhkNTc0Nlpxck1tTF9oVmVoUTlOeW8wOGViVUJ4eW5kRzZBRE0zSTZrYW9OLU81QnVoN2psUzY1bDk3Qjc3aXZoVXNYRkRWbFhTSGtGblpJTjZB0gHDAUFVX3lxTE9WQWRhN25mRXVKdzQ5emMtSXIxUnJ1Tlk2RzdqOTY2MWRiWGU0Y2pEZWQyRlRtbmE1MXdXZUZjNVVQZVIxUE44TTZZUUVrSktQdC1XQ3E0eFdNVUE3eHE1eTJhVklzRmswYm9iRFgxZTJxMnRVRVhKRUlwaUVHRWJDalNTd3hqMk9BazJSVmkyOThYUk5OTHp5RGxfVFdXeFJVNEQ3TUNpYkprNWcySWYzS3lyMTRxN0RHRTVTcnlxNHd1aw?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 17:00:00 GMT",
+      "source": "InfoMoney",
+      "category": "Mercado"
+    },
+    {
+      "title": "Itaú vê 50% de chance de variação negativa do PIB ao fim de 2027 - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvZ0RJV2xzOF9yZ3ZqVVVjSXYyeW9ZMnhJSk9vN0lYLTMxOHlKU3pZbFA3d2hUTTU4N1JncXBsTlNfZWtxQlZ1ZWRCSTk0T1g1WnljdUJoaFNyYl90XzRDcGFqdTVEeGxDZTR0YjVYamxWWi1rMVFtYmxNeTBXeGPSAYQBQVVfeXFMT2NQZ09JYzI4M3RtYTR6b0p4Y0wwX2JIeWJ5bjZFOWlrdkZUSmNsZ3AyeDdSUVJaaGhFZWU1bUxIQUZNQUdpUkVJNVF3WWt6Yk4yX19EdnpkSTQ5SHB1WW9zOF82d0p0MU5MNjFkRm1xVzNsVkxZMi04UmxvQXhLaEYyYUIz?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 16:19:09 GMT",
+      "source": "InfoMoney",
+      "category": "Mercado"
+    },
+    {
+      "title": "Blue3, da XP, é eleita melhor assessoria em prêmio da ABAI; veja outros destaques - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPOFhITzVjdTlfVjFPVVlTMDlZQXRCRmVzOS1OWDZ2S2RrM3VhOUZPM2NlRDhveGN4RWpZN0tsbW95NFJ3S1FTS2NsY1pycjMtaDFQMjlLZ3ZhYjZNX2tlTWc3LTVVQVFpUmZyZkNrYXFwaUNSWXV1RHRnZDlfT09pU1FiempGY1Q3NlFJM015VHcwT1BkTVIzWWFRTjM5UWpSRG1teUhldUF2WVVhZE9mbkFFVF9ueFXSAbwBQVVfeXFMUC0xNnM4bzAtVVRmNDdNUlNWTE5JNjBLWFBzTjFxcVhhaUlmN1VWb2IzYVFsMGhaQjY3R1ZmMzg5VVZJUElhYU9Mcjdwdno1TVZWc3N2SXJwUm85eVp4WFJtWDRscUtHRGlqc3QxREh5NWxKLWdGOTJKQU1YZUxWTzY2UUJ5RzRLaXRLLTFPMWllbXVKQ250VUtCc2t5RzRER0FXNlZXYkoxdEM2cXVGR0ZoTVRORjdpeTl2SDU?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 16:14:36 GMT",
+      "source": "InfoMoney",
+      "category": "Mercado"
+    },
+    {
+      "title": "Vai viajar para o exterior? Veja como economizar mesmo com a alta do dólar - InvestNews",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNMDE3Qy1qN3ZwYTZ0V2FadmUzZDk2MzlMaVRYUUVGaXdPUklJRUtwa3B5NDV6c3FvQk9qNEt2NVgtakJialpZR2RqeFliUVEtZWhkRXlORkJwTXZ0YzExenNiY0hOUjBNN2RQcTBZNUViMmRka1VpeE1JejVZWXh4b0l6d9IBiAFBVV95cUxQYm5ZMnJDR0x3TmloUTM3TkFJeW5UNXBDX1AyT1FpZEVQUGcteHgzR29zVkNSVW5fT2JZOE94V0E3eGJLNkkydFRYZXpzZVZpSFgyd29FWTZ3Um9LYmlLeUV5ZzAtUVQ0VVBhVm1LYmlxTzBVeWNuUXNRR3RsbnZhY05FYmNaSFVO?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 15:47:00 GMT",
+      "source": "InvestNews",
+      "category": "Investimentos"
+    },
+    {
+      "title": "XP, Blue Owl Capital e Gama expandem estratégia de crédito direto nos EUA para Brasil - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeVlxQXZiZzZCcm9EQjhmckFocE92SVF5VmNCZGEwQXZybGlhMVJKTmg3UXlOVXFoRmo3d0JsYWM4ZHJTeHRwMXp1MkhPcTFFSVJMLVYtQmw5X2VST3ZsaTkweUxxdDlveUU2djNqdTZkZVJ3WkxzazluZUZXMjhFUkJxTmRTZl9zWnFQaklBM0p4X19WaUotT0tTUjVDNVZ3aHJ2emxYNE1TaHZwWkJwdnJGekhQRWxKNmo2eUpTeHbSAcYBQVVfeXFMTVRGOWd6cHJPaEotUHYwRVVENzNtN25Md2xMMUt2T0ZJY1dBd3phODFyVVRnLVlUZW9VSVVoNnVOWHNKYVp2Q01IQmVUT2JGREs3SnIwWDJUUmd1YVNnV2pTWU1uczBrRmlTekYtYlZCSVJaRWdvaWRyYmduc3M1Q0ctNkd0YXFNSTRFbzZ5NncyNGFvQ241NE11UzhPRDBrVHdZS1NkNzNFR3RYNldraUY0MEN5QXg0cUt4ajlCX05yZDM2Z3Rn?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 15:31:31 GMT",
+      "source": "InfoMoney",
+      "category": "Mercado"
+    },
+    {
+      "title": "Financiamento de veículos elétricos e híbridos mais que dobra e supera 392 mil unidades até outubro - Bora Investir",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQRFo4cElFNEdLZzJGb1JsSTNncDl5WU9YRHV5Wm9oa28ySHNpaWs3cWtwczdSdVk5c3d1VlRPS3FQeGZxUGVWR2Rzak43elBVX3ZxTjNfVzFQT0I3MGg0X2loaVFieHhqUFhENjVVeVhLVERVdkdZZ3ZQQVNaYlJUb092TXpUcHNaUWk1UFE0S3dCbklOQ0cxN2hhb2JvdlNQUmJyWE00T1NlTWxUWF9NTFlnclp3N1VyQVpRdlJJQVFMckdiU3hfLWlNc0w2ZGxKbVBhS1Nybw?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 14:35:00 GMT",
+      "source": "B3 — Bora Investir",
+      "category": "Mercado"
+    },
+    {
+      "title": "Da confiança empresarial ao Ibovespa: os indicadores que antecipam os rumos da economia - Bora Investir",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOV1NxUTVlVC03bUpfMkhfMUg1YTRGVFRjX2FMc0ZaemJnZDV3SEJ5T1VRbmlvZFhMdFRvZmo5Nld0X0NBdEFWSlNNb0RhOFlGUE9pRTUwbTQyVUZiRUlqdzI4cEFzc1J6d0pzcDJYanJwX2lmVndibjNkNjM3RE10VkwyMENuckx6Z1V5bEQyMHFMS0IwZmhWRXF3TUMtTUNvTU9ZY3Z3MURoODlKdUt6MU5RZkhldmdVQXVwc3ZKX19JS29PbHdCT3FHU01wQ1lo?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 14:24:00 GMT",
+      "source": "B3 — Bora Investir",
+      "category": "Mercado"
+    },
+    {
+      "title": "CMN e BC aprimoram medidas para prevenir riscos associados ao endividamento - Banco Central do Brasil",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBjZnFTSW9ISExmdTNyV3I2N1g1R1o5SmVoWnpsSjBRZmFDcVlmeWFnWDFjRFp5RzROLTBITVpsS2FhblNXQ2JNUVFXNVRDX05PeUVOVFFnY3oyV1RU?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 13:51:39 GMT",
+      "source": "Banco Central — Focus",
+      "category": "Economia"
+    },
+    {
+      "title": "O Adicional Contracíclico de Capital Principal relativo ao Brasil segue em 0% - Banco Central do Brasil",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBRQ3R1OTZ6ZC1TMjNtXzVkUUE0and3OVdFY1BmYXhnMUl0Rzh6R3FyM1NSQjNmYTNsZ1A2cVRvOTY3QlVYQmlTNG5TQkFoSEdaQm1mX3N5czRIeWVJ?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 13:51:39 GMT",
+      "source": "Banco Central — Focus",
+      "category": "Economia"
+    },
+    {
+      "title": "Diretor de Regulação do BC dará entrevista coletiva às 11 horas de quinta-feira (26/11) sobre as medidas que tratam dos riscos associados ao endividamento de famílias e empresas - Banco Central do Brasil",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1saEJYY29qLUJBYVBiemNBNzgydDVyMk5OUVZCeUF1THdpS01WMTFSS1JENGZfX2pzUkpWMnViaVJiTklxWFZNYzVzc1lraVpXZlJCZC1yUlJ3V1V1?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 13:51:39 GMT",
+      "source": "Banco Central — Focus",
+      "category": "Economia"
+    },
+    {
+      "title": "BC divulga IBCR de setembro - Banco Central do Brasil",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1PaV9FV3ZYOWpDN0dHTFZvRjV0bUVmd1EwbHdvdlVBNVk0QU5tRnR2N1h3Uk9KNTVJckNyVGF0Yy1vbVQxdE9meHZSbVp2V0d5TWdMYWhoQ3JVRGhq?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 13:51:39 GMT",
+      "source": "Banco Central — Focus",
+      "category": "Economia"
+    },
+    {
+      "title": "Inflação nos EUA: núcleo do PCE sobe 0,3% em outubro, dentro do esperado - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOQUZJbzA5UXV0bm0xSk9EWlA4bC1NREhtczExZnJkS3NmVld5ZjBTNlFELVNoU09fZ0k1MWVPd2JmQ2hqa2hWcm0zUDR2WkN2ZmZQenBQRU1PbzhHLW1FTzNOVkI3S3VhLWdSSE5GRFJ0VWpCZm52SFFfWTVsNm9WQlc2bnlFd9IBiwFBVV95cUxPMmJIUUVUXzNlY29BOVFRUERYV1JTS3VUVFhDZTlkYVdzTlZMSy1HamlCVUduY1Y3TzdneE1Edld4alg2RkRQT3JPQXRvRF82NklDQ04xTE5xT2RpU095UXZyWWxESlBhNnVYdXgzaVg1UGNycHhaWG1abVJhOGY1aGhDMEh5RFZFc000?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 13:33:30 GMT",
+      "source": "InfoMoney",
+      "category": "Mercado"
+    },
+    {
+      "title": "Cotação de RAIZ55 - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE41cWVTN2k5WWtxVnR3TWlkOWQwRkpqcjY1QjU1cHRjVWNfekdRaG5yMGNBODQ3U1pHMEtZcWlMUmtTaDgyTGlDajNoOU80MkhRNEZnVU5EaHk2NWhhUVdpYVRZMi1hODgtX3lhbw?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 13:31:51 GMT",
       "source": "InfoMoney",
       "category": "Mercado"
     },
@@ -35,6 +217,13 @@
       "pubDate": "Wed, 25 Nov 2026 13:29:53 GMT",
       "source": "InfoMoney",
       "category": "Mercado"
+    },
+    {
+      "title": "Ações da dona do Claude caem 15,7% após estreia na Nasdaq e e gestores recomendam cautela - Exame",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWUQyTUVlbl9TbzdtXzZENHAzWDVxOGZBRHFOV2ZISUVaTTVTbEhlcS1aMlZ0Z2R3Mm04WEE3WlQxVlRmMXFUaFczZVY4Zy1kUUV1UXFGRmdqRjVDOEgzLUM2UElfN0JqdldkQV9KUW1rWlAydXpLVDBUclQtXzhkUWRFRW9md250MHpWWG5WaGd2bGJFN1FWOFQ3VGdZaXhHN3ZQQV9aclRwZzlVbUZpaFhTeFByTlpaNlFORWwzcw?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 13:02:51 GMT",
+      "source": "Exame Invest",
+      "category": "Investimentos"
     },
     {
       "title": "IBGE: coleta seletiva avança e atinge 2.675 municípios brasileiros - Agência Brasil",
@@ -58,10 +247,10 @@
       "category": "Economia"
     },
     {
-      "title": "Economia da Alemanha cresce 0,1% no terceiro trimestre, abaixo da prévia - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNdXJhOG5qcG1xVHRoWmVpSDZyNFlRYjhQdEtnSXV3V3JmNlJMUWZyNWs5XzliMU12WEdlXzlhbWtYYjIzQ0ZmS1NwaWhGb0VTNVRjdFJtNGdkcXpRQ1lza0NaYmdxUzNyVW9GTk01OWsxYTBWdUs0YXFwVFdsZEFEY3c4cVFldE4xdFJYLXBSUWc5M3pNeEZLaHgtV0ZTS1hWQ2FuRl9UQ1dIOVVO0gGyAUFVX3lxTE00N095LU9nSzM2QzQxZ3l6alVCQmVwR1Rtb3NFSDA2WjVrSWxRYUtrTFc2VWRKNDkwNENrTG5sdGc0cWJob1ZuT2Yya2tCZzY1VV9vTXVYMkdaa0FYcDIxWE83ZkhidXh3enBQZ1ZfME5oaE5ESW9ybGEydV9jb093akc5NjR6UUxnNGMtdzNpVFFBaFJCNi1mbG0tQ2pvWHQ5YzctaFJNbmJNS3hZZ2prdmc?oc=5",
-      "pubDate": "Wed, 25 Nov 2026 12:29:06 GMT",
-      "source": "InfoMoney",
+      "title": "Mercados hoje: ajuste fiscal e inflação nos EUA ficam no radar nesta quarta-feira - Bora Investir",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPOWFvWmxuUVpJQmFmS0NISWR4clFQeHEtWHFhdWxWYU9WeTBYSVJGS3IxZVNjblFhbG5JQWJqeGVqWWNaUkp3T2dSNHcwMHhCVk9pNk5yNm91UlBFQkZ6WkhHeDFYZEdVNjF1T0lCRDcwNllaZk16N01vcjVyM2NvcUhjNXREMEtjaG1PSTd4ejdIMzhjdTBWZU9EdnNGaW02OVd4X3JnMHBsT09tYW15aG5MYmVSOFcwbzZBZWl6NjE2bDh5dFhhbg?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 12:32:00 GMT",
+      "source": "B3 — Bora Investir",
       "category": "Mercado"
     },
     {
@@ -114,6 +303,13 @@
       "category": "Mercado"
     },
     {
+      "title": "Ajuste fiscal: o que pode ficar mais caro ou mais barato no seu bolso em 2027 - Exame",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQVjlxNG5LWWlSSzZlLWFHcEdwaGR4SUhTOURLSzF1Wi1BazhKQWsyOThQR1J4VjAtTUNqMkNrbnhLY1FaVUtpTHpENDMzSzEzcW05bkhJUmRYdUpoTWhNR2dHdXBvVjE1UEctWFctOUo4MFRXeHhabzJ5bE43dVhnYnY4d2FKLTc5SFg1OEc3QVVEU1pUdkFVUDdDTTkzTDdWYkVSZU9JYWtvd0pULWFhZXFpU0hGanlEMlE?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 10:02:15 GMT",
+      "source": "Exame Invest",
+      "category": "Investimentos"
+    },
+    {
       "title": "Governo libera R$ 3,43 bilhões do Orçamento após ajuste fiscal - Agência Brasil",
       "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNZVBxUlM0UWtray11aVduQTJxYmk0NkdYVlV6RHUwNHBhbjFweUEySjZJSEQtM1JXSHd1THozYWYyOGRmZVlJTlgtNlBpTHBma25jMjFob1pDZ1pFOWt5QTBJYXY3UTNhQkxLSnhfaFc3cXczUHBOckFOazAxRW1aWi12ZkpzYjl0bzBGcnBjV2RMOUlmSUdaUjNYSzdob1VHN2dBYnl2VXdiY1ByQ0d5cFJxZ09KVkNuRWc?oc=5",
       "pubDate": "Wed, 25 Nov 2026 10:02:00 GMT",
@@ -142,18 +338,25 @@
       "category": "Mercado"
     },
     {
-      "title": "Real segue pressionado por fiscal, mas bancões veem espaço para alta em 2027; entenda - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSnQ4M0o2cVB0NTVZT1phQTFPOWJvcFdkWngxM0tpR3JRYmhtTzVFNDUzYS1IWllYeUJqTUdtc1QtTF9FWGpBb3Atc2h1RmlxT2RBSzU0a2huWnhJakdiWWp2dGJUSENmdmk4NTN6bEdsd3Y1WWpVSHY5Skp5NVVzNlVWV0FMMWRUOUVSTVI4SWZuLXB3eWVGTV85YmlOMG9XS2M2amZpaGhFbEllM085MzJ6TGMtZ1IyOVFRV2R1OXJ1MHhXY25scVdYbnZBczZJ0gHWAUFVX3lxTE1Zby1fY2w4OG9xR3FOOUF2dXlsbEpkYXVkMnFtMWVLOGdRbWRHdlM2MTl2U1VnR1VyOEhWUTdXUk9ZODF6WXJRR2tiSllLaUhpSmJtVmZJUnpvQm5wZlFYTHc0UzhKODlmd1JpbHYwNHRUM2laeGh2Qll3b2RIeTJQcjVZaW1NZzJvRW1idEpueVNHdzhYQktuaHRmWlJMYVVtdUkyaWJUaEJPXzAtS18ySWtjZnFnQ1h0SHFUdG9YZnVjSDJscDZ5cklZamJ4UGxnNzBTSmc?oc=5",
-      "pubDate": "Wed, 25 Nov 2026 09:00:00 GMT",
+      "title": "Um mês após eleição de Lula, Bolsa perde R$ 1 trilhão: veja ações que mais subiram e caíram - Exame",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNQXBCM09LQWtrY1otUkkzTG1lUXJVMDBlbGtQSWR4RVZTZ2VTaklMeVUzV3lBWHBwcEZUSGNscnNyRXNqeWZha2lmMTBnOVZvZ2RxSXdEMzB0OHFIVU9oMmNTeHhsVGlOaWFYVFdoU0VscDZHTmdhUlo1aWpaQjdTTGE3RzkzLTYyNTJnUGppVXpiSTNfbWx0bFdCTmlKZncyLTNyTlFzdW5ZbU13NHpvcThUbE42dUF6cngwVEFJQ3I?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 09:04:16 GMT",
+      "source": "Exame Invest",
+      "category": "Investimentos"
+    },
+    {
+      "title": "Dow Jones futuro cai antes de inflação dos EUA e em meio a temor de novas tarifas - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQYzc2QUhOcEhnS1MzOTlpYm84YkFuRVZrTlMwTXJxUW90M3VnY3VVY0gxdjI3YTBWaFVBVVlRZ1NncFUyOXdtNWFqRGkxUFFBWWdpZHROX3ducXROc1B1NzRCMlFpNENUY3pTY3FTUER0dkF4UnlIdzY1VEMwMFZHWjVqQWxWaGloYzVHODBJSmI1VUxONlZibWZSLUdNTTZCY1VObXhPRS1HUE94WjVzSDJTd1ctTFNyWjgxbg?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 08:49:22 GMT",
       "source": "InfoMoney",
       "category": "Mercado"
     },
     {
-      "title": "Dow Jones futuro cai antes de inflação dos EUA e em meio a temor de novas tarifas - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQYzc2QUhOcEhnS1MzOTlpYm84YkFuRVZrTlMwTXJxUW90M3VnY3VVY0gxdjI3YTBWaFVBVVlRZ1NncFUyOXdtNWFqRGkxUFFBWWdpZHROX3ducXROc1B1NzRCMlFpNENUY3pTY3FTUER0dkF4UnlIdzY1VEMwMFZHWjVqQWxWaGloYzVHODBJSmI1VUxONlZibWZSLUdNTTZCY1VObXhPRS1HUE94WjVzSDJTd1ctTFNyWjgxbtIBwgFBVV95cUxPR2c1bWJFbGFVbE84cW55SEpPOTJrR1FmMmlpalc2VFNZNFFjRklfenJBRHpDcllCSlZxQ0YwZFc3N0JJUHBHU0ZLaU12LUR1cWRGazM2cEtISW5KNkdydldRblBxWUFydThBM3JCZ0hOZFRUd2owTWNXSEtYZjk5bW1zaXdKaU82dE1MUk11dTFheTEwcWo5NFZDY0h0WFJNMk8wbDJIbVlKbUZHRzRCYUc1T0Jyb1BaMDVQWkNXam5zQQ?oc=5",
-      "pubDate": "Wed, 25 Nov 2026 08:49:22 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
+      "title": "Livro Bege do Fed e dados pré-feriado nos EUA: o que move o mercado - Exame",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRjdsb29QVGdmaG1zcXc2eFVwZTRCV0FzQjFmekMxaGZCazRrQ1lmTEdzbVpJZmNCVFlLYmZaMEo2T3V5ZEI0Z0l3S05zcFhxZXd3NWdmQnVsTXJnVTZFcXRsUWZhS3NiTzBSY1hQd0FIc211aVdXN2xLMHJzVzc0c09GUVpBbkVGeHFMV1BXTHNsSU80S3JzTmJfRng4c2ZlT0tr?oc=5",
+      "pubDate": "Wed, 25 Nov 2026 08:25:19 GMT",
+      "source": "Exame Invest",
+      "category": "Investimentos"
     },
     {
       "title": "Entenda como o dólar ao redor de R$ 6 encarece comida, eletrônicos e passagens aéreas - InfoMoney",
@@ -191,6 +394,13 @@
       "category": "Mercado"
     },
     {
+      "title": "Entenda o pacote fiscal que prevê ajuste de até R$ 56 bilhões - Bora Investir",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNemxoaHpqQXB0VGx3cHdiNmlwY05GdE5yX1NFWFpTVm81d2dKQVFhWjNTY3RCbHg5X3V1NzFJTzFfR3N5M21NdDlzSXZuZDhTMERzLVhleHJoR0Y4bmFTcnNuUW9lM0k5SE05MVA1REtPOW9Pa1R3RlBCWUdrR3F2SGpmeGdFRGxwTzc0VUwzanIwdmUtQXdtNWN2MGt5Y19oVEhN?oc=5",
+      "pubDate": "Tue, 24 Nov 2026 22:11:00 GMT",
+      "source": "B3 — Bora Investir",
+      "category": "Mercado"
+    },
+    {
       "title": "Dólar cai para R$ 5,91 com expectativa de ajuste fiscal - Agência Brasil",
       "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPblVnV2cxRXJiQVNFRmZkMDRGbXRRWUZYWUZPSzMxT2xvek4yWVA1bXZ2R0xESi1kWW8wV2JwRmMwY0FWTV82bG5KNWNDOGNrUGZHWWR5Sk8wSThaSEJtN0pWU3VyN1JVbEctcnY3cm5XckRnTlo4b1lUUUhmZlJXS0hKU1Z6N3pBMmFObnBpdl9QWHgyWXhvN2VZMHkzemFMQm5BVjBxZ0NjaEY2MEV2MQ?oc=5",
       "pubDate": "Tue, 24 Nov 2026 22:01:00 GMT",
@@ -198,226 +408,16 @@
       "category": "Economia"
     },
     {
+      "title": "Ibovespa B3 cede 0,43%, com peso de Vale e Petrobras; dólar cai a R$ 5,91 - Bora Investir",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQNTY1QlBJQ3ozclY1TXdHSHRPZkVNdTYxNTk5RlZrU2JKdW1hQ1M3TjNzS1JNeWl2d1pJdkFodjNDU042elhzQk5LcWJydXZZTUl4SldFVE9OWTZNOGs3dlVFc2RCWk5BMlFfelV5eHkxZ3FzdFF0Mm82RjU5dUpOOGVQUnJOTkN4dWFidHJWQjBtX0xmdDRYSk8yZktWQjh6UXp5N0E0Qk5ZNUY5RjBwdWZUOGtWU0k?oc=5",
+      "pubDate": "Tue, 24 Nov 2026 21:56:00 GMT",
+      "source": "B3 — Bora Investir",
+      "category": "Mercado"
+    },
+    {
       "title": "Por que o Ibovespa fechou em queda após subir 1,7% com notícia sobre PEC? - InfoMoney",
       "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSzFCaGttcmFyY0RLbkttdU80SmsyRVc3a0JmLXI4Uk1XWFVqcjFSN0FMMS15VUNGZGdKLWN2ekttdXNPOHZxaGR0Z3Q4U2FZSy1odGpzdTVyTVUtRHE0bk56UV9ibW9ENDR5Qk41eThNb1BQUG42aElaWFZNaFVBRk93X1JCbGU3RWZsLW5zTEtzcm14REVlOTVtVFNrN0lBWUpGaVhHRko5RFZv0gGyAUFVX3lxTE1Od2taQWxDNEoxcENuNUh6NUg2c2NjclNNcEwtQXF1Z3RlRVRaQm1Qa1dRMi16ZmVsMVE1d3ZIRDUzb2dPQUo4OXZBdDFpa1BOLUxZMFRxdE5DM1VCOVk4aGVpclpjSGhfX3JsU1hhN2JIOXR5eV9aa19NQVVUeG5HbmVNYUVoaTdnZ0xGZDFLTDVERmhRYVlpV0YxejBZekg2dENNWURqWnRRdGM4dDN1X2c?oc=5",
       "pubDate": "Tue, 24 Nov 2026 21:48:26 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Braskem (BRKM5) cai 14% após forte alta com acordo que pode diluir atuais acionistas - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYjYtbkV3NlV3S0hjWWEzZG1IMDB2MXZmWUtKVHA5X0F3QzlVTXNTNU5FYjFaVlB3UEpSNzFFdV9Nb1E0NUZHVWVjbXB3TktaNEVqc0J2RWFzSFlvcUlNbXRaSkJGOVVYMGV6dmZRdUNPSGMxZUZ3N0VzWmlnMFNfcWpENUVOdHU5X3FFREFnTzBiM01NeldleXgwYk9YUVNfT3RDWkcwUWJfT25GSFdNN1ZRV0hHc05D0gG-AUFVX3lxTFBnOFFIQ2J3WE81bnhLczI3cnZjTzM0ZmJHalhKcnFaMW1WMXQ2dWQ4cDN1bzRnQ3F0WUVjVjY2ajlwSmQ4d2hMQzFuSmUzY29nZHpvNDZhaDlhZG9DR2ptWm1KYU5yWVA1ZHNHSy1LWHJSQTRjLXFZLUc3VF9ZUmZnMTlxX0VEclNCaWlkUE1HeDZYYUtHYzd0YUxUSUdKb2VOd0RiRW5keUM2ZkhSdzVzUzdFSGdWR2xKS2lzbmc?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 21:35:06 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Ibovespa começa bem o dia, vira e fecha em baixa; dólar recua a R$ 5,91 - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQeUlLT3FVZHBJeVVQTjNISW5zWG0zZ1pjLUJTYlBHR1NabVhBbTRVclhQRXNKUjI3WU9hc0tBOWNYWGMtVjJnSW1KV2xmSzRLSHlsMl9XYkNmV1hhYmlLMHVnd3ctU05ndFAzMVFFMkhhYVBXNC1abEx1bjNxTV95SDB4SzMwb0E1Sy1RYTVqUQ?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 21:27:00 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Ibovespa cai apesar de 'alívio' fiscal, Vale desaba 5,5% e dólar recua a R$ 5,91 - Exame",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAzdGp1U0pLeVRpX01WdUJLYlgtR25EbXFMc0tSWE9GT3lfZ2ZOWFNaX1ZzV0VrYVFaajFxaHg5RzNzdGMwTmpQUVg5Um93UVVqU1o4dTNEUUQ3cWNNUDdUVnZaLVl1dmxWYXNj?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 21:15:58 GMT",
-      "source": "Exame Invest",
-      "category": "Investimentos"
-    },
-    {
-      "title": "Por que a Vale (VALE3) caiu mais de 5% nesta terça? - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPR2dZNGVJa190aTFNbElpUFd1aVB0TXZsbDJmaEZqRFBDcFlRQ1ByaDFJZC1MSzNZMUN6eTZkZC13eTBBZkdzMlZtTm5rTFRRTnZ1T29Ud3o3OFhqVTFwa0kyMHJDYU5WanhfeENURGxEdGpsX0RuR0gtbzRaRTBXMDVnZnhMbXFHeTFTWi1Xd9IBlAFBVV95cUxQU21qSWxwYjFBNTRzM2FOVDZQWEwxS1UzV3I1MXEyTmhEbVRqM0M1NTdBcFRQZFo4RFh2T0xjYWlIYzdzMWVTWFVqQ2huejQya0dQYUdIUk5vUjVuVnA5MXB2ZnlmT1JxazlRN05wdmhQUmcxS0prNGpUbDZ2VkFPTWo2dG9YR2FkVEZDU1R6QTN1a3Jp?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 21:11:25 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Taxas dos DIs caem com notícias sobre PEC do governo para limitar gastos - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOOEVEX2JNUEJieTJjeXVKVHFTVnNrRHFRTGhxc1BiZVVJekhLaER1anA5VUpaQkhhbHpoTEczVUxQMFRQclJHRnJGYVZWNW03UG1kS0l5MjJLcGRBNVBfUS1aMkNEdFA0M2pkbHJfNUxib1VrdjZXMW9MZ3BySGxsczU3RFR3UjNnV2M5cl9GVHZ6VHdMbWlYVnphcjZLaXNONGc2b05ZWFp1NGoxSEc2S9IBtgFBVV95cUxQRC1vbDh0VVY0bHRsR0tnNnl5dnVaR2JoQ2Vsd0Rjd3VtQUdtX0d3bmhLMVJhOW9aSkNUb0hVZ3hQOGlVRlRVaXRoOFd5YWt3Y1E4QjJZYkY5YlJNOUFWcDNDQk5ZVkN2Y0YtTU5XS2NIajAxRF9Db3ZZNjktNXBudUhYekFRY3pIc0tsY2JWT1RfSGUzZklFUVlFRWRWVjZ0dkJ3ckJPanVZMWpJZVpNYS11cVFUQQ?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 21:05:08 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Bitcoin volta a recuar abaixo de US$ 60 mil com realização de lucros e incertezas - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdEppVzdEcFhIckhOdUVvN3hWUHA2WGtPNDNKWnRHdWZKc25OY1lMWDZvcC1VRlBpZnBkYXdGZUxkd1NJU3lkS29aWTRyalVvdElaN182S29fZnpoQ3BoemxfdEVXNkN5c0J6cldFb1BPbmFGVGVqbzMtUllqT1ZweXRwRjM5MGM5MmljdnZZb1RKRjZTQlZOLXBMWkF3V3lTeXRGRGxfd0pKTGpFQlRrUjQ1dWlaTGE0MkJB0gHAAUFVX3lxTE1ieG1DVjVDREhCUWZQbXg2NTVmemRMQm16SlowWkJIbzR3VHRYWUNQZTVnSmpBeXBFcWRrOEhKWklJT0I3VG5MU1ptb0tob29tM3BLVE5FdWZ3X190bEpDQ3hDRlJ3RDVvWGxfdFVmQnRaX0ZvVmozNFZ2ZVhQbXNiX1BCOGZ2VGtoMUYwWjd5QjRIMDhneG1HZC1JZDdGTnlfYk9zZndGTEFLR2JrYTdlbjMwOFdBdHlmQ0UwTEYzTg?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 20:54:17 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Entenda o pacote fiscal que prevê ajuste de até R$ 56 bilhões - Agência Brasil",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRUpVZkljeC14ekVqOFFCbWNvTXZBMEJYZjNuQzlqSmRrakctci1Yd3FUc3JwRVpQdEV0d3JqRXpMRUxmRE5VeTBXcl95TTJJNGNHZ0pCVFA4dEZHNDZvRGJ0OUttSkUxTDRhUUt1WnZHOGxXTU1PV2lnNUhZT1p4T0xQUEZKV09TWGw4eHhDaGxrUjhid3VzQ1VyR3BHS3U3QndkSHFMR1VWeXIyRlRvcFBtNzBuLUJPb3c?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 20:54:00 GMT",
-      "source": "Agência Brasil — Economia",
-      "category": "Economia"
-    },
-    {
-      "title": "Seis fatores para entender a alta do dólar - InvestNews",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNd1lOZnFKYnFBMDRERmR0QnR4TlgwYjkxOC1hdGJRLUpaR09TWmVuTHFPb1hpUDB1OWxIM3k0MkFjQ0hSa2NoLXdwN0gtc3duQjRCQUJhXzZyU3pEbWtGZzlhYW1OUmczWW1QVm93RnMxLW5meklDUVBjNWdkWFJaVEZsdznSAYoBQVVfeXFMT1EteGdCUm5tdllpUXdTdEFsakY5VFZXUEVGdVFvQ0xpc0JZanJlLWg1aHJYYVA1TVNwZzFURTlJc0Q4SFNidF9lRWhiV2JVR0xYV1UzVkVJSl9TbjRWMlpNNEh1SlBsSlZna0pXbmRkU3lVTmpQMnREdFE4d3lub3dVb1FlNGJyMVNR?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 20:48:01 GMT",
-      "source": "InvestNews",
-      "category": "Investimentos"
-    },
-    {
-      "title": "Ações de grandes empresas estão nas cotações mínimas do ano - InvestNews",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5EcEFpLThuRnFDbnU3RkMtTVEzdEVNaWlOWFpvcDF5R01LdkFKRnIxeHcxWHVud1dCRDlXZHY2QnQzNkFUNFNTLUY1bWFTbTdpY0swbm55TG9xQWJjY0hUS21aaENsbURPWXVHM3otZ3NlQ3N6MkNhRldhUElQQdIBgwFBVV95cUxONFdHdUpGem1uSEhOXzNqNHAyWDgzS1VtbVdvU1RpMkFvbDM2SHNYS2MwWTlCOUdhRkVaeVVJY3pJSTBabXljc3VyaTFJdGNtdXFKYlNhcEt2X25XOTVxTjdldnFQSFY1b01TQ000YW0yclp4MnA3MmJ2MlNFZXV1Y0dvSQ?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 20:37:34 GMT",
-      "source": "InvestNews",
-      "category": "Investimentos"
-    },
-    {
-      "title": "Dólar cai a R$ 5,91, longe da mínima do dia, com notícia sobre PEC para conter gastos - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbDlTQ1RIbFRONHR4SnhyRVBoYnFaRWstQzZmTEh5RVJWRU9vSE1sQjVYbUlvYllUUmpuY0hKRGNGN2R1Z2dSOHpkdHBZXzItSGZDRVdnMEZNeUVCUVVUcW5vblhTa1MxMURBbTluTjIwRGpIMXNkdDZILTFTZVNHZUNTd0Z4Vk9pUUdva1llaVY0NGRBbTZJbWlVb0PSAaIBQVVfeXFMTU5pcGptQkZHWFZUaTlLdnN1WlRLRWhxTnFPNUZYNjU0Vk1LVGNoNFJpNmRNVFBtVjRoTGFrQXR2bjZHQkhpLVNCUnBGTkU0MUFZTW02Umc4REozdHRkTlZaeUtReFNJWk9WTENyZG5wbUZtTVFVenlYVlg5UmJPeUlDM1Qxa1UwNGNlcXVwdU9YZ2RtS3JDbi1TM3M3ZVRjdDlR?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 20:31:00 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Depois de fechar lojas no Brasil, Nutrien encaminha venda de produtora de sementes de soja - InvestNews",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JWmlvUzN0b1JsMDdVcUJyYjBWQ3lKUDZaZ1d6UHdmZFUwdVlybTNsZlRoLUxHamZUNEdsb19Oam9JdGxMVEdrR0FkdTd0LTBzdHk1RVQwbmR0bzc4NUZoVGdMNlpuX1gtNVdSMTR1bUEwWGvSAXhBVV95cUxQUlVmRlFRSk5IYUZENzhHaWFsTFhRZHJzZVNQVnpHMmJRZnZIR0pHLXJpVHpGb09yYkNPMUVLOHJObUZlbVZ2S2stR19sTlA2U1VrcUVsS005aHZXMFdCa3N4Y0ZZWG5GNE1XOEJSMkxkZ050RFo1aG4?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 20:31:00 GMT",
-      "source": "InvestNews",
-      "category": "Investimentos"
-    },
-    {
-      "title": "Mãe solo de 28 anos quer aprender trade do zero e ter mais tempo com a filha - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbmo5UjVTeFFJWWZSRWF3bUtfcHBMcFZVVE9KVzdCZ1Z6SGJHdGtwMTMzVGVnOHlDYl9ieTViVmc4Y2ZEN3NPaHAtWGV6b0lqV1lGNUh4WklDZE0zeXc1d3dfTmkzYmdmeENCeS1FZ1dWM3pXSFJHUE45TEhlb2RYMGh2Wk01Y1hyX0ZoNUI3ZkwxZzlCSlViZzNJTk1jUHR6d1FWdmRwaGljMC1TSzVWS9IBtgFBVV95cUxPdEFaT0lRa3JvcGVsX1ZHMkNLMTdmTDlibFRKcC1SNFNjd2ExM3Y1TTA4czdfYVRKQ2FxVjkxZElmdDZkYnB3LVdhcXQ2cVlRRFF4eGo5cHA4aU9kd05KN19yd0UzMnJtZ0hsdlBrbUhoVUY3QlJlYm1TdWlraVZKOUVueU01bFhBMU1HTGJ5c3NTUkFvTkl6TXNKS1JfYjNveVlHTXNRNWE1ZHljbzFwNk5UVlE4UQ?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 20:05:00 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Mercado após as eleições: como foi o primeiro mês pós-segundo turno? - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcjFZR0pDX1FlY3hYaGJaajNmMlFOM1A2ektVR0t3cXpMVjVkclFrU3lHMDFyRDY4NE5WYXgwNVVzNldmelFsYXpPdDB0cHB5S1pWWDJ1d25xM2xZdTFaOG5OeERWZDh5SW1sTkpIOUNITXZfeWZxbWEzTFRKTWNhS0h4NTdncDVjcENFR2xrVms4Mi12ZU5Ublk2YVFhZFlvbjVGdlJYNHnSAa4BQVVfeXFMUHRUT1duc3ZnOVdiSVo4Yzlhc2tWZjh2SEg3MmRtRUpxRzhYQU1UeTNoRlJRWHFVR3JTZlJzTjlDd1hSTEdERFpKbHJGRGdoOEdqYTQ5dFJqQW9yc09JTzBObEhLRE12RkRtMHlQYno4TksydDZDdE5HY2RtSzVkV3ZtR3c2UklRbEhnZGNPTWxLZy1aVW8wSDdyRXRiWUxwa1lEZXlFSXRwTEM1X2p3?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 19:49:24 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Após bater os R$ 6, o dólar está caro ou barato? - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObTFyMnViMC1MNWdPOHNnTEJQXzN0M0xQLWJUNFZHeWx1Mkh3U1VSZ2VvenVpMFNKYXU1bVhuSy02VlBDMDV3Um5KY3NTSUhvNlFUeFhmNVJYVmtmZ19WR1ZTYjdBRGpTNDF1U2tWQ0Z4aHlXOV9NMU43bXZVVWJ6RExBenhwSGJzbnFaMdIBkgFBVV95cUxNeWNxVWc5QVdmbDZnQ1RsRE1jZnNjd3g0ZU5EWDhxNWsxbnlzcDFJbnZQRDZQa0FMNXpCYVlLX2oyOHhSaWVyWXNGOXRNajd0QkhJSzZ2eFNHUTNEb0tPcEtvR3Nsc2xNMDJXN0FyaEQtNzdDMUJKc1l5cTliTjVvNUVBbFFDRFROVWRtVXZ4WVotQQ?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 19:19:00 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Trump pode ter lucrado até US$ 15 milhões com retorno de Huang ao comando da Nvidia, diz FT - Exame",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPRDBoT3JMVi1VcTJld0xFTlNxNnROVWx6d3pvRjZudnpQWXFCVDNVWTl6YWFaWGdWY3JFZl9wOEFZSTVFTEwzcmYxd2hqVmdGRkJXcGZVTElKZ0N5YkVoazhEc3F3STlCNWxPcDVMZWh4czBNTFI4eTloWDdZa3psbHRQRnRyZ2lFUG1iUFpiZGN4cTlzN0ZMMDRNTFNRYkVQNmdDbVZpQVNrYkVHOGpMX1FhUHpFSFk?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 18:39:17 GMT",
-      "source": "Exame Invest",
-      "category": "Investimentos"
-    },
-    {
-      "title": "Bill Ackman: buscar meta de inflação de 2% levará a economia dos EUA a outra recessão - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbmhwYzRRdVZVLWdIUkV0d0pRREJuZ1RDLVdhYzB3X1BLbThGYVd2alpjV3E0UGwzalZ6T0lvMk5sZHljM2c5RndtWlpmX0dwS0tLLVZjOTdiSmRleTdMN2ctbnREX2lzMktrbHVULUhkMGN4V19ud3hSOWtscjNMMjFsakw0OTlCWHVXOWJqTkpDQjVqSkluYmNNMFdKbzg3S05jaUpaQUNJa0JHdTZvQWRiNnNHY2ZGblhlcWZ0NHp5LXZJNWFLYtIBzgFBVV95cUxObzFpSDRickdPQXo1VHBvdXJrV2h1NVdDa3F0TlR5Zy1CSEt3b1pJWGFjQW9DbzJCRU54VFFpdDh5TTRvMTZKdklwd1kzZ0lLeDVqMDViSFF5c3hESlRCTDFhZmJBdjlqQXJMa3U5X1VXY1pfbmVtWlFyTk5ycUJCYnNUR1JoSGc1a3lQMEhRRWRieExOR1E0SUUwOGlpTmVwcEU1Ql9vOGh2STFBMDJtck9SOGxieEpINmZ4X0UtZzFNNTVDVVh2Q0tiQlBlZw?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 17:39:19 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Petrobras prevê investimentos de US$ 122 bilhões entre 2027 e 2031 - Agência Brasil",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVHpBRndLa1BGWTVwZlJEeXVLRWNQVGZ3VVhxUE44T0dLdV9nLWJSd1hBNWlJelZyOXppNlVOV1ZFYXFHUnFmejg4RWpSdEVxTk9LY1lpRG9RTjk0WVJsNEY0a2w0emxVcm9VWkNTZjU0TFcwSnZkMFlzdkZpYkszZTR5WnhXcGxPU0xjS2tpUDJzZDZ1eW1OaXNjLWVobTFFeVZOOEM4ZVBZc1JHU1BQckQzUHVZWVJiNGJONnBpRFc?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 17:31:00 GMT",
-      "source": "Agência Brasil — Economia",
-      "category": "Economia"
-    },
-    {
-      "title": "Morgan Stanley vê dólar a R$ 5,25 em 2027 e aposta em real mais forte - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQcGhBNUk4Y2lqMUoxWDR5WUVnR0FLUHY0NDJpMkpjSGRfSEx5dEdyWVpKSmxDdTE4Ui1obnBkeHNfSFh0dEM2MmxKS2RRT1ppaS1NbHlVV2owUnFzbWt3c0R0d3pVc0tGRG5HcnRfOUJ6a3FVcDhrZlo3Q0J0eTdhQU1zNnU4LTlsVFVOalRuTXAtNVVQdjczLXVsOUtlWG9sLV9CWkt5SE82d9IBrwFBVV95cUxOM094d3V6dGxiQlFXWnEwY1RnQVJqUnFhX2p6Zm5rZlJiYVNpc2FpWHVWcXcwa1MzemUxejdGbllSREtqbHRXMnM0ZmZWT0tlVzlVZjJXQ2pQdHFZOVJpRVJiREJkWlk2d1JiVGdHN1RfTVF3UmdmdEN1d1VEOWVjelF1Q0NsZVppa3FRLThubXpIZTExV09OeDlJQl8zR1dWN3Q2S19HaUtaOHBvTmlz?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 17:21:49 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Plano de saúde para idosos: como funciona o reajuste por idade e o que diz a lei - Exame",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQVUh1TXJWOVpDMHJ6NGhYeW5GZ3YzQkVDaXQtRFlSRHhUMU9sRHhZQldacVVRVF9IczIxdlNnd3VBQTRIRkp2cVNobWkwM0lQQjloWFkyQjE4dC1Sc3U0WGEzR1dvbHpkUHdqTDhySEhvVUN1RThreFhLUy1HdTB6QndtQWc5R2Q2VFZXUkszbk1BTzVwS0RDRHFyM1Qyay1aejNZZ0l5aUVmMnZkaXZlV2ZBZzJBYjhDNXphWnl3?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 17:12:07 GMT",
-      "source": "Exame Invest",
-      "category": "Investimentos"
-    },
-    {
-      "title": "Renda variável chega a 6 milhões de investidores pela primeira vez no Brasil - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQb0UyWWRvRTFvdWlvRXNuU1ROLWpLWXZWYzcwaVBJUEJhd2JDckR2WEJQT2V3c3dhU0dJMWxGNjlFa3hleW5aZ1h5YW02RGoxZkpBSGVVelNDUGJfR29PaHNBUjFQVGFNc3UwVWZPSWJLQVNTeDBHaWtJOVNzTy1RVXh0OXE1czRQck9qMmFETGVTNUMzMVBUNUtnLWxMNXRvUUJvRzlNTUpxcVVNQi1KSUtLV1NUZ9IBuwFBVV95cUxOUnM4aVQ1VndDakphT0lrNlYxcUN3LUpHMnhWRkpCbExIYk05MmpUQU96cFNaLWtMNjF4LURtSDZFZ3oyMDBkcURVTHVneXBvb0RrNExsdXcxZWVId3pSWkpsVWNtay1iUWhMR3dqNW5xeWg5Ri04RVBBMkhkNGZXUE12WHdLWlU1N1I4a1Z0UFpDVF9JWnBxZ2w2a0hXa044M2NOZjFhUEluS1dIRHV4d21uZWE5cmJVMDBF?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 17:04:14 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Ação da Petrobras sobe com dividendos extras, apesar de cautela com capex maior - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQdTFBYlA1Zng2ZjgyUFdsbkdWYXVDR3JWanJNWXNLZW1Vd1BNSThHNzAyaVUwWHI4YzE5R09aYXpWWDl4cllZbFh0Q2RTYmhNUzVsUGhRQmtySzEyWWQ2c0VPSzgzXzBRbHp6TEJmTDRuZWJQQU1sMi1LbW5rc191S0ZmMTBHU2NsVDY0TWY0Tm9xcDUyNU9sRHJVekZ4ZWNhQmJuYW9rams3MXhQb1hkZlBRVGduVi1yek85UlpxYmXSAcYBQVVfeXFMTmxwa3VqZDVDQlRBTWZyT3hPTXltckJrQUpia1V4T2Q3R3ZWMGhTendKcTdxM1pGRHY0dklocEJOaTBPWHh2RUN6aExRWDlBdnhLMklWcW5BbXhYUndGYlZwNU5kaHNpa2FEOVJFVXhRUjJUNm9jYzVZNXhiWXRKQzlfWmU0LVMxR1BPcXRlZElTb0RIRWxDZHpqR0J4NXJHdGtBNGlMdm5lTVlUN3lvczdSUHNkR1FJT21tSXBIQlRFWmpTYlJn?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 16:53:05 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Dólar sobe no mundo, mas real cai 6 vezes mais que a média de 78 moedas - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUmFWVHRlRm56RlFXa3A3UEV3RE1aY0lseUtFT05EWWtkZk4xRHdJQldtOS1zM3BWWkQtb04yTDE2c09hT3dJVHVwSGFER3JXRWx0aFd2aFhlSVhPQ2cxS2hlaV9pMzlZamw2VmFmcXBvaGlpWHFfMDlyU2tjY2NOZ2IxS19MM1nSAYwBQVVfeXFMT01remJqOTNmVGpVRXJDczA5TlRLRWdDY3Rqcl9UbmlhMk9uMDl5UWFwUHAwNk9LTzBUdDJyQUpwZkY0OTBSQUtXbl8wdzlZUHpEZWdaV2JWelpnU1pleG5hd2JBa2ZwR1ZRX1FOUUFtdlFBNE5JMDZ6VkFJek9MTEkxVGp5bEpMOGhKODQ?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 16:46:28 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "BCs de países de língua portuguesa criam rede de cooperação - Agência Brasil",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQ0V1QS13X1luejRWa1VyYUNkS1c0eFdHUHUxanNnam5HUDNlbGtBZWNROURQZE5GNlk2VEtYaEFYcTh5ZERPSlJ4dmpvbVJnX3pYWEtzWXBlUXB2d1p2QkE1MXNfaDNMWnp4MzBxSUxKTUNLWG5lWHNEeGRNUEtBcUQ0QS1SU0NwMGZTRlFNX1BMWk1vWmVFWWZCNWxlX1hsZDFHWXlXb3lhYl84RUN0SmtUYmh0cWRz?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 16:22:00 GMT",
-      "source": "Agência Brasil — Economia",
-      "category": "Economia"
-    },
-    {
-      "title": "Café arábica cai após maior alta diária dos estoques na bolsa em 28 anos - InvestNews",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE54RlVNbXg0OXlCaWRNdkU0RFlmRmNQSWJqRm1RdlFFSUFiWWZXUmdJaW9Dc1hoYU1LOENBRVg5RHR1LU83RFZ3QXRKYUptcTRZdzl3TTMydzExSDhtbExxVkRnYkNPakpwSjlRRXphbnQzemd3cXBKT2lB0gF_QVVfeXFMTnJJdndxeUc0Ykd0eUUyZktVcURIeU9oUHlScENlc3dXOXE4a3VlTks1UzNsM2hycHZaQUtnYnJHLWNmc3J0a2dER2VhaUZFM3YzSE1nVVlUSjJ2TTNTdl9VaW9WaFBBSjVJRUVCODhEVENQLUZubHJ5d3dzT0xaYw?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 16:12:16 GMT",
-      "source": "InvestNews",
-      "category": "Investimentos"
-    },
-    {
-      "title": "Arrecadação federal atinge R$ 294 bilhões e bate recorde para outubro - Agência Brasil",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMkV2a3BSeXY2REtfNi1CbXFISUNocE9Qd1BhamFxTzNsVlhITjBJcm00VEN4czctWGFydzBKQjNkYkowclZXYUh1QzNyT3dLMWo2SGV1a0tUS2NENW9acTFJZ3RXajZhN2RYR3dlRkl6ZVd3cDRobjNVVFAtMmU3YUg3WFZCSE1Tc3JkUlBGbTBWQWtGaENYVkJYN2V0SXpFaFRnRjNDSTBYNnp5aFd3OHpiREExOS05YTJjR0UwV09kejBf?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 15:57:00 GMT",
-      "source": "Agência Brasil — Economia",
-      "category": "Economia"
-    },
-    {
-      "title": "Venezuela revela dívida de US$ 237,5 bilhões e prepara reestruturação histórica - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUS1sOTU2cDNiSEFsRFpLYTlFLWZfaGwwdzA1QktOOG9yWmlNLXZNalJBcGE5bXpMYXQxNG9ZWll5Z2h4azFHaEpqV01RUDBfOWYwN2FsYWtBNjJRcFV0Y2pycXE3V2ZTRkdiVnFSM2V4WXNLRTVqaDFUY3g3Ym85NU5nMnJ2R1F5SF9ZeV9UZFpxWGQ5TDFqaHoybjk1MUlKYUpvNno0cG5TWVk5bU1yVk51Z3NqRU3SAbwBQVVfeXFMTm5WZHdJMFpwX1VsN0FuZG12TXhhUGVIWThRUnhTalF6TEVycXk3enFXYVhzTzRMSVVXdjF0aTVlN0U0eV9oemFlX2VWQ1BPSW83Y3h3V3p0WVlDZ3VXdWloQUpEejItS3pJWVl0a0hJVHphRV9IOTlBMW1RUHZoNXZuX0xjRXVsV0ZMdW9uazNOdHpUNmNVMUpOSkFab0x0UTYxd3oxNEMyT25LSmkyUHMtaGY2cU5zb0V3LTY?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 15:43:31 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Petrobras: Safra aprova plano bilionário, mas Itaú e BTG alertam para pressão no caixa - Exame",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQV0ZUV1N4a2wxaEdXOEVNVlNHdjZObzdiS3FyNWFGcGExb0xDbkVyb1JzS2F0QnFRX1F6SktpLV9DM0NyYkF6SUhxa1ZpMWxObTl0ZUs4UXF5MFJHU2xURU8zcElEY1dFWkROTC1oaGJVS1kyZ1Rxdmx4ZDJpN0Q3VEltYXFkSVNGS2xSdlYycFBJWDZFOUZrWmgyd21hY01aRWY3TVUzWVV4Q2Zxc2RwZF9BV3JYbUNKQXNN?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 15:22:08 GMT",
-      "source": "Exame Invest",
-      "category": "Investimentos"
-    },
-    {
-      "title": "Por que a Petrobras pode ter menos espaço para pagar dividendos nos próximos anos - InvestNews",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUmdwa1FpMXhLQnotUnYwLVlJdGhZdEZwTzl2WXFWWVRyZlB4MzJ4b2l2ZVo1aXdNSmVpb1BoTm1xckFUVnVFN2Q0RXZsZHpYdEdhbDBlWHM4ekhPWXpVLVBVSHZPS2FOa2p4bWMtenJWbGhtbXhncEpVTlJSV25QYmNZX29tYTY2MEdrenpveXUtZXdOa005bU9pVjU2dEpGN2JRVGlkMlNqYmVkc0RDaWNHUkFxSkdx0gG-AUFVX3lxTE9UUEZHckxIdWt5SElnWEd5Y3dvLXJjVHhiN00zc0c1TE5EMnRoUXd5MnVJX3FkT29PTjk4Mzdhd2U0YzRaUmlGWHlLclRDZDgzREpuczcxUzcwUFFxOTd0QTNqZWd2by1FaXZuS0FjZzZNZUhXM0NBRk15N0c3UEhZNWlyN3c1OFBveGo0UVAySGtZNUtuVHlOcVpQTE96dlpaWUw1UkJ0YUl0UTRJajJVa21IbGhKT2Vmbi16T3c?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 15:12:04 GMT",
-      "source": "InvestNews",
-      "category": "Investimentos"
-    },
-    {
-      "title": "O que mais pesa para o câmbio: os fatores externos ou os dilemas internos? - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSmxGcGJISnZhWk5UMTA1YUV4TzJZWURVY0ZJbmFjS2c2YmFhSVdXR3RNdzVpRk0yeXFxSVFWRnJCTHFrRUt1UC1rNmNyWlFHN0NoN01rRmlQaWVGWHJndzZBby0wT0RHV3E2Z2tCMWhkMjlzbTVYdlZfVlpEV1lFVTQtalNGdkhXSklQbmN2dF82a0JHU2t5YTJQcVFqaXJpdVpOS3BGVVZDd1czZlJzZ9IBtgFBVV95cUxOZGh5TndydUQwMnZDeWFhTmRTU1M4WW4tQ3Z6dXRwQ1o3YXotVFhMTVJ5bENKS0FhM2daeUxCZnJsWXZpMXNwOWJaN28yZUpnT0ZZUTFnWDdsMnd6alVNbFpaUTRWSkd3Z2hXNUhOUjVZdWpGak96OGxWdDhBa0xwRkRqYjJVbkxhMHZqUTJXZGtfT0NpWnpNM2l2WnB1b01KVkhHSDY2Z21OSmhCVmxMcVVadHBtUQ?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 15:00:00 GMT",
-      "source": "InfoMoney",
-      "category": "Mercado"
-    },
-    {
-      "title": "Por que a economia pode ter o pior ano desde a pandemia - InvestNews",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4wVFRveEh5R21VQXJRVG5CcDVvUno5NDFLY1VIQkhFUGhkNHppVDNKbF9YNkJySzF1UG52Y1lSQldqaVZoYWRtc2QtMFZfRXJKejhmQTFQT3pvRlR6VnlnRWRZekJJb2I1QTZhanpFTE1XcWUxTHZaNHptVzJmaknSAYQBQVVfeXFMT2dpMVFNdURQOUI3RUtHUWJGWFRMVVJaVWk5RFhQT3FMYUtCNFdhX2JLakVKWFZSR3Y3UU9UUmNWSWoxMlR4SUtpNDJ1bW1mRmhiODlZY2NHZTJpcFZiMDZWZnQ1SG1zOHhKYVpsRUxlc0dqaVIxZ21Pd2Q4MXIyVTBhWVFn?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 14:44:57 GMT",
-      "source": "InvestNews",
-      "category": "Investimentos"
-    },
-    {
-      "title": "Ibovespa a 182 mil em 2027? Estrategistas veem ano de alta, mas com compras seletivas - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONU9IalB6ajRsOTRmcFpva2c0ZURVcTBQZ3AtaDN0cTVWZWVuVW9Ya0lLNXV1UVdKejM0Uk9NamRtdG5yWkV2cGFQcGpHME5fSUNkdnVwNWFJNng0dVVIajBrNmVGdWZEdTU4UXo0aUxiOWNZUExCZEJRNXVLZC03emtrS29lU2hNSWY3a29vLXBUbHJHQnl1R3JfX0FZQmkwcDdwNjFwSk5vS1d0b1l0Zm9hcXc1TVJiTWU5RVBYQdIBxAFBVV95cUxQazdpQmFWeW1OUjk2cE9IenUzbDVsV19ZM3BPLUI1S0ZFc3NIZjlDYUNCOUFCNk5GakJaMDNPLVJITFlVM3haX0F4TEQ0akFVdnN2SmlPREVIYjJCNVVITWNfNjBrR0M5NHBnMXhKZkZoMDBYNnBqTVVOVjdGaDVHaVBpSGFPNVBWRG10Nk1vZEdDVVZlSjZFd0RsbVQxWFFvcXpEMU1NZ1pYeGhiM09KUUFwOHdQTUJ3aWFVT2REdUgyUWJQ?oc=5",
-      "pubDate": "Tue, 24 Nov 2026 14:41:39 GMT",
       "source": "InfoMoney",
       "category": "Mercado"
     }
